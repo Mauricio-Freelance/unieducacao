@@ -191,8 +191,8 @@ body {
 
 .categoria, .modalidade {
     flex: 0 0 auto;
-    width: 150px;
-    height: 150px;
+    width: 175px;
+    height: 175px;
     margin: 0 10px;
     scroll-snap-align: center;
     position: relative;
