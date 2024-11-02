@@ -5,11 +5,11 @@
 usando SSH
 
 ```bash
-git@github.com:Hermeson69/LandingPage_unieduca-a-.git
+git@github.com:Mauricio-Freelance/unieducacao.git
 ```
 
 Usando HTTP
 
 ```bash
-https://github.com/Hermeson69/LandingPage_unieduca-a-.git
+https://github.com/Mauricio-Freelance/unieducacao.git
 ```
