@@ -1,0 +1,731 @@
+@import url('https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap');
+
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Codec Pro', sans-serif;
+}
+
+.detalhes_span_unieducacao{
+    color: #accc44;
+}
+
+.cab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1rem;
+}
+
+.Mais {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+
+/* Navbar container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #F2F2F2;
+    color: #000000;
+}
+
+.line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+    border: 0.2px solid #000000be;
+    margin-left: 10px;
+}
+
+/* Logo */
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 30px;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    font-weight: bold;
+    font-size: 1.325rem;
+    margin: 0 10px;
+}
+
+.nav-links li a {
+    color: #2F4D77;
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #000000;
+}
+
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-links a.active {
+    color: #B5CC44;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.fab {
+    padding: 5px;
+    size: 1.85rem;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #555555;
+}
+
+/* Burger menu */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000000;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+/*Banner*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.banner img.active {
+    opacity: 1;
+}
+
+/*Categorias*/
+/* Categorias section */
+/* Categorias section */
+.categorias {
+    display: flex;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    height: 300px;
+}
+
+.modalidades {
+    display: flex;
+    overflow-x: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    height: 300px;
+}
+
+.categoria, .modalidade {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    margin: 0 10px;
+    scroll-snap-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.categoria:hover, .modalidade:hover {
+    transform: translateY(-5px);
+}
+
+.total_categoria {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.total_modalidade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Images within categoria */
+.categoria img, .modalidade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Headings within categoria */
+.categoria h3, .modalidade h3 {
+    position: relative;
+    margin-top: 120px;
+    font-size: 1rem;
+    color: #333;
+    text-align: center;
+}
+
+/* Hide scrollbar */
+.categorias::-webkit-scrollbar {
+    display: none;
+}
+
+/* Top 10 section */
+.Top_10 {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    position: relative;
+    height: 300px;
+}
+
+/* Top 10 container */
+.top_10 {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Total categoria */
+.total_top_10 {
+    display: inline-block;
+    scroll-snap-align: start;
+    text-align: center;
+    width: 220px;
+}
+
+/* Categoria */
+.top {
+    text-align: center;
+    flex: 0 0 auto;
+    width: 200px;
+    height: 200px;
+    margin: 0 10px;
+    scroll-snap-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.top:hover {
+    transform: scale(1.05);
+}
+
+/* Title */
+.title {
+    margin-top: 10px;
+}
+
+.title h3 {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Hide scrollbar */
+.Top_10::-webkit-scrollbar {
+    display: none;
+}
+
+/* Educação Gratuita section */
+
+.free-education {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-free-education {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 400px;
+    min-height: 250px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-free-education:hover {
+    transform: translateY(-5px);
+}
+
+/* card-free-education image */
+.card-free-education img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-free-education h3 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card-free-education p {
+    font-size: 1em;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.card-free-education button {
+    background-color: #063c77;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.card-free-education button:hover {
+    background-color: #0056b3;
+}
+
+
+/* Informativo */
+.informativo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.informativo .video,
+.informativo .carrossel {
+    flex: 1;
+    margin: 0 10px;
+    width: 50%;
+}
+
+.carrossel {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    touch-action: pan-y;
+}
+
+.carrossel-item {
+    display: none;
+    min-width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-item.active {
+    display: block;
+}
+
+.carrossel img {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 5px;
+}
+
+.video {
+    width: 25%;
+    display: block;
+    padding-left: 15%;
+    height: 75%;
+}
+
+/* Anuncie Aqui section */
+.anuncie_aqui {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Card */
+.card-anuncie {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 10px;
+    flex: 1 1 calc(33% - 20px);
+    max-width: calc(33% - 20px);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card-anuncie:hover {
+    transform: translateY(-5px);
+}
+
+/* card-anuncie image */
+.card-anuncie img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/*Cursos em alta*/
+.Cursos_em_alta,
+.Cursos_bem_avaliados,
+.Planos {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    min-height: 250px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card p {
+    font-size: 1em;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.card button {
+    background-color: #063c77;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+.parceiros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 -10px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+
+.about-container {
+    padding-left: 25%;
+    padding-right: 25%;
+    text-align: justify;
+    font-size: 1.2em;
+}
+
+.about-container h2 {
+    color: #2C4C6C;
+}
+
+.about-container h3 {
+    color: #7FA325;
+}
+
+/*NESUX PAGE*/
+/* Cursos Nexus section */
+.cursos_nexus_section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Cursos Nexus container */
+.curos_nexus {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .cab {
+        text-align: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding-left: 0.5rem;
+    }
+
+    .Mais {
+        font-size: 0.875rem;
+        padding-right: 0.5rem;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .line {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 80px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .burger {
+        display: flex;
+        z-index: 11;
+    }
+
+    .burger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .banner {
+        height: 50vh;
+    }
+
+    .banner img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.98);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .banner img:hover {
+        transform: scale(1);
+    }
+
+    .categorias, .modalidades {
+        height: auto;
+    }
+
+    .categoria, .modalidade {
+        width: 100px;
+        height: 100px;
+    }
+
+    .informativo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .informativo iframe {
+        width: 100%;
+        height: 300px;
+        margin: 10px 0;
+        border: none;
+    }
+
+    .carrossel {
+        min-width: 100%;
+        height: 200px;
+        border: none;
+    }
+
+    .carrossel-item img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .video {
+        width: 100%;
+        padding-left: 0;
+        height: auto;
+    }
+
+    .Cursos_em_alta,
+    .Cursos_bem_avaliados,
+    .Planos {
+        flex-direction: column;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .parceiros {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .about-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .free-education {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-free-education {
+        width: 100%;
+    }
+
+    .anuncie_aqui {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .anuncie_aqui img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        display: block;
+    }
+}
