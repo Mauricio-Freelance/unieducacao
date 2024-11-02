@@ -434,6 +434,7 @@ body {
     max-width: calc(33% - 20px);
     text-align: center;
     transition: transform 0.3s ease;
+    height: 500px;
 }
 
 .card-anuncie:hover {
