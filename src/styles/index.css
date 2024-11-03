@@ -536,20 +536,25 @@ footer {
     color: #000000;
 }
 
-.about-container {
+.about-container, .mission-container, .vision-container, .price-container {
     padding-left: 25%;
     padding-right: 25%;
     text-align: justify;
     font-size: 1.2em;
 }
 
-.about-container h2 {
+.about-container, .mission-container, .vision-container, .price-container {
     color: #2C4C6C;
 }
-
-.about-container h3 {
-    color: #7FA325;
+.about-container h2, .mission-container h2, .vision-container h2, .price-container h2{
+    color:darkorange;
 }
+
+.green{
+    color: #7FA325;
+    font-weight: bold;
+}
+
 
 /*NESUX PAGE*/
 /* Cursos Nexus section */
@@ -579,6 +584,10 @@ footer {
     text-align: center;
 }
 
+.perfil h2, .perfil-solange h2, .perfil-sueli h2{
+    color: darkorange;
+}
+
 .perfil img {
     margin-left: 200px;
     width: 150px;
@@ -596,7 +605,7 @@ footer {
     font-size: 1.2em; 
 }
 
-.perfil-solange h2, .perfil-sueli h2{
+.perfil-solange, .perfil-sueli{
     color: #2C4C6C;
 }
 
