@@ -318,13 +318,22 @@ body {
     background-color: #f9f9f9;
 }
 
+.cards-free-education{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
 .card-free-education {
     text-align: center;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 400px;
+    width: 250px;
     min-height: 250px;
     transition: transform 0.3s;
     display: flex;
