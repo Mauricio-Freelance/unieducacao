@@ -1,5 +1,6 @@
 from json import dumps
 from pandas import(
+    DataFrame,
     read_csv
 )
 
@@ -12,30 +13,17 @@ from gemini import (
 model = create_model()
 
 
-CSV_FILE = "file.csv"
+CSV_FILE = "data/Qualificação por Competencia.csv"
 JSON_FILE = "file.json"
-CATEGORY = "Tecnicos Regulares"
+CATEGORY = "Graduação"
 COURSES = "CURSOS"
 DURATION = "DURAÇÃO"
 
-def main():
 
-    df = read_csv(CSV_FILE, encoding="utf-8")
-
-    print(df)
-
-    prompt = df.to_string()
-
-    print(prompt)
-
-    result = use_model(prompt, model)
-
-    print(result)
-
-    dic = df.to_dict()
-
+def from_dict(dic: dict) -> DataFrame:
+    
     new_dic = {}
-
+    
     for idx in range(len(dic[COURSES])):
 
         course, duration = dic[COURSES][idx], dic[DURATION][idx]
@@ -47,10 +35,49 @@ def main():
             "Duração": duration
         }
 
-
     result = {
         CATEGORY: new_dic
     }
+
+    return result
+
+def from_gemini(result: str) -> dict:
+
+    lines = result.splitlines()
+
+    del lines[0]
+
+    print(lines)
+
+    new_dict = {}
+
+    idx = 0
+
+    for line in lines:
+        course, duration = line.split(",")
+
+        idx += 1
+
+        new_dict[str(idx)] = {
+            COURSES: course,
+            DURATION: duration
+        }
+
+    return new_dict
+
+def main():
+
+    df = read_csv(CSV_FILE)
+
+    prompt = df.to_string()
+
+    print(prompt)
+
+    result = use_model(prompt, model)
+
+    print(f"String do GEMINI: \n\n{result}")
+
+    result = from_gemini(result)
 
     result = dumps(result, indent=4, ensure_ascii=False)
 

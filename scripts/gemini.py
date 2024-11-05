@@ -15,7 +15,7 @@ def create_model()  -> genai.GenerativeModel:
     return model
 
 
-def use_model(prompt: str, model: genai.GenerativeModel) -> dict:
+def use_model(prompt: str, model: genai.GenerativeModel) -> str:
     """
     Gera um dicionário, onde cada chave é um gênero de anime, e dentro das chaves contem os animes em formato de lista de string referentes ao gênero.
     
