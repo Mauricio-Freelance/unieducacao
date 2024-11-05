@@ -1,0 +1,100 @@
+{
+    "Tecnicos Regulares": {
+        "0": {
+            "Curso": "Técnico em Administração",
+            "Duração": "06 a 12 meses"
+        },
+        "1": {
+            "Curso": "Técnico em Secretaria Escolar",
+            "Duração": "06 a 12 meses"
+        },
+        "2": {
+            "Curso": "Técnico em Transações Imobiliárias",
+            "Duração": "06 a 12 meses"
+        },
+        "3": {
+            "Curso": "Técnico em Teologia",
+            "Duração": "06 a 12 meses"
+        },
+        "4": {
+            "Curso": "Técnico em Informática",
+            "Duração": "06 a 12 meses"
+        },
+        "5": {
+            "Curso": "Técnico em Eletrotécnica",
+            "Duração": "06 a 12 meses"
+        },
+        "6": {
+            "Curso": "Técnico em Eletromecânica",
+            "Duração": "06 a 12 meses"
+        },
+        "7": {
+            "Curso": "Técnico em Mecânica",
+            "Duração": "06 a 12 meses"
+        },
+        "8": {
+            "Curso": "Técnico em Eletroeletrônica",
+            "Duração": "06 a 12 meses"
+        },
+        "9": {
+            "Curso": "Técnico em Refrigeração & Climatização",
+            "Duração": "06 a 12 meses"
+        },
+        "10": {
+            "Curso": "Técnico em Segurança do Trabalho",
+            "Duração": "06 a 12 meses"
+        },
+        "11": {
+            "Curso": "Técnico em Farmácia",
+            "Duração": "06 a 12 meses"
+        },
+        "12": {
+            "Curso": "Técnico em Veterinária",
+            "Duração": "06 a 12 meses"
+        },
+        "13": {
+            "Curso": "Técnico em Agricultura",
+            "Duração": "06 a 12 meses"
+        },
+        "14": {
+            "Curso": "Técnico em Agropecuária",
+            "Duração": "06 a 12 meses"
+        },
+        "15": {
+            "Curso": "Técnico em Meio Ambiente",
+            "Duração": "06 a 12 meses"
+        },
+        "16": {
+            "Curso": "Técnico em Estética",
+            "Duração": "06 a 12 meses"
+        },
+        "17": {
+            "Curso": "Técnico em Cuidados de Idosos",
+            "Duração": "06 a 12 meses"
+        },
+        "18": {
+            "Curso": "Técnico em Condomínios",
+            "Duração": "06 a 12 meses"
+        },
+        "19": {
+            "Curso": "Técnico em Finanças",
+            "Duração": "06 a 12 meses"
+        },
+        "20": {
+            "Curso": "Técnico em Marketing",
+            "Duração": "06 a 12 meses"
+        },
+        "21": {
+            "Curso": "Técnico em Agenciamento de Viagens",
+            "Duração": "06 a 12 meses"
+        },
+        "22": {
+            "Curso": "Técnico em Compliance",
+            "Duração": "06 a 12 meses"
+        },
+        "23": {
+            "Curso": "Técnico em Inteligência Artificial",
+            "Duração": "06 a 12 meses"
+        }
+    }
+}
