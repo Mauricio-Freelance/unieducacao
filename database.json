@@ -904,7 +904,7 @@
                 "Duração": "3 a 10 Meses"
             },
             "35": {
-                "Curso": "Gestão De Recursos Humanos",
+                "Curso": "Gestão De ReCurso Humanos",
                 "Duração": "3 a 6 Meses"
             },
             "36": {
@@ -1390,7 +1390,7 @@
                 "Duração": "3 a 10 Meses"
             },
             "46": {
-                "Curso": "MBA em Gestão de Recursos Humanos",
+                "Curso": "MBA em Gestão de ReCurso Humanos",
                 "Duração": "3 a 10 Meses"
             },
             "47": {
@@ -2239,100 +2239,100 @@
     "Graduação":{
         "EAD":{
             "1": {
-                "CURSOS": "ADMINISTRAÇÃO",
-                "DURAÇÃO": "4 ANOS"
+                "Curso": "ADMINISTRAÇÃO",
+                "Duração": "4 ANOS"
             },
             "2": {
-                "CURSOS": "CIÊNCIAS CONTÁBEIS",
-                "DURAÇÃO": "4 ANOS"
+                "Curso": "CIÊNCIAS CONTÁBEIS",
+                "Duração": "4 ANOS"
             },
             "3": {
-                "CURSOS": "ENGENHARIA DA COMPUTAÇÃO",
-                "DURAÇÃO": "5 ANOS"
+                "Curso": "ENGENHARIA DA COMPUTAÇÃO",
+                "Duração": "5 ANOS"
             },
             "4": {
-                "CURSOS": "ENGENHARIA ELÉTRICA",
-                "DURAÇÃO": "5 ANOS"
+                "Curso": "ENGENHARIA ELÉTRICA",
+                "Duração": "5 ANOS"
             },
             "5": {
-                "CURSOS": "ENGENHARIA DE PRODUÇÃO",
-                "DURAÇÃO": "5 ANOS"
+                "Curso": "ENGENHARIA DE PRODUÇÃO",
+                "Duração": "5 ANOS"
             },
             "6": {
-                "CURSOS": "ENGENHARIA CIVIL",
-                "DURAÇÃO": "5 ANOS"
+                "Curso": "ENGENHARIA CIVIL",
+                "Duração": "5 ANOS"
             },
             "7": {
-                "CURSOS": "ENGENHARIA AGRONÔMICA",
-                "DURAÇÃO": "5 ANOS"
+                "Curso": "ENGENHARIA AGRONÔMICA",
+                "Duração": "5 ANOS"
             },
             "8": {
-                "CURSOS": "TEOLOGIA",
-                "DURAÇÃO": "3 a 5 ANOS"
+                "Curso": "TEOLOGIA",
+                "Duração": "3 a 5 ANOS"
             },
             "9": {
-                "CURSOS": "SERVIÇO SOCIAL",
-                "DURAÇÃO": "4 ANOS"
+                "Curso": "SERVIÇO SOCIAL",
+                "Duração": "4 ANOS"
             },
             "10": {
-                "CURSOS": "PEDAGOGIA",
-                "DURAÇÃO": "4 anos"
+                "Curso": "PEDAGOGIA",
+                "Duração": "4 anos"
             },
             "11": {
-                "CURSOS": "LICENCIATURA EM ARTES VISUAIS",
-                "DURAÇÃO": "4 anos"
+                "Curso": "LICENCIATURA EM ARTES VISUAIS",
+                "Duração": "4 anos"
             },
             "12": {
-                "CURSOS": "LICENCIATURA EM CIÊNCIAS SOCIAIS",
-                "DURAÇÃO": "2 anos"
+                "Curso": "LICENCIATURA EM CIÊNCIAS SOCIAIS",
+                "Duração": "2 anos"
             },
             "13": {
-                "CURSOS": "LICENCIATURA EM MATEMÁTICA",
-                "DURAÇÃO": "2 anos"
+                "Curso": "LICENCIATURA EM MATEMÁTICA",
+                "Duração": "2 anos"
             },
             "14": {
-                "CURSOS": "LICENCIATURA EM PEDAGOGIA",
-                "DURAÇÃO": "2 anos"
+                "Curso": "LICENCIATURA EM PEDAGOGIA",
+                "Duração": "2 anos"
             },
             "15": {
-                "CURSOS": "LICENCIATURA LIBRAS - LÍNGUA PORTUGUESA",
-                "DURAÇÃO": "2 anos"
+                "Curso": "LICENCIATURA LIBRAS - LÍNGUA PORTUGUESA",
+                "Duração": "2 anos"
             },
             "16": {
-                "CURSOS": "LICENCIATURA EM HISTÓRIA",
-                "DURAÇÃO": "2 anos"
+                "Curso": "LICENCIATURA EM HISTÓRIA",
+                "Duração": "2 anos"
             }
         }
     },
     "Qualificação por Competência":{
         "EAD":{
             "1": {
-                "CURSOS": "ADMINISTRAÇÃO",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "ADMINISTRAÇÃO",
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "CURSOS": "ENFERMAGEM",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "ENFERMAGEM",
+                "Duração": "60 a 180 dias"
             },
             "3": {
-                "CURSOS": "FARMÁCIA",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "FARMÁCIA",
+                "Duração": "60 a 180 dias"
             },
             "4": {
-                "CURSOS": "MECÂNICA",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "MECÂNICA",
+                "Duração": "60 a 180 dias"
             },
             "5": {
-                "CURSOS": "MEIO AMBIENTE",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "MEIO AMBIENTE",
+                "Duração": "60 a 180 dias"
             },
             "6": {
-                "CURSOS": "SECRETARIA ESCOLAR",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "SECRETARIA ESCOLAR",
+                "Duração": "60 a 180 dias"
             },
             "7": {
-                "CURSOS": "SEGURANÇA DO TRABALHO",
-                "DURAÇÃO": "60 a 180 dias"
+                "Curso": "SEGURANÇA DO TRABALHO",
+                "Duração": "60 a 180 dias"
             }
         }
     }

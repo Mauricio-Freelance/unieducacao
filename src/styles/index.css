@@ -316,6 +316,13 @@ body {
     justify-content: center;
     padding: 20px;
     background-color: #f9f9f9;
+    color: #063c77;
+}
+
+.free-education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7FA325;
 }
 
 .cards-free-education{
@@ -573,15 +580,17 @@ footer {
     padding: 20px;
     background-color: #ffffff;
     overflow-y: auto;
+    height: auto;
+    width: 100%;
 }
 
 .categoria-container {
     width: 100%;
     margin-bottom: 20px;
+    border: 1px solid #000000;
 }
 
 .categoria-container h2 {
-    border: 1px solid #000000;
     font-size: 1.5rem;
     color: #000000;
     margin-bottom: 10px;
@@ -603,7 +612,30 @@ footer {
     display: none; /* Esconder subcategorias por padrão */
     margin-bottom: 20px;
     animation: slideDown 0.5s ease-in-out;
+    padding: 10px;
 }
+
+.curso-row{
+    padding: 10px;
+    background-color: rgb(241, 240, 225);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.curso-row:hover {
+    background-color: rgb(241, 240, 225);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+@keyframes zomm {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
 .subcategoria-container h3 {
     font-size: 1.2rem;
     color: #000000;
