@@ -565,27 +565,89 @@ footer {
 }
 
 
-/*NESUX PAGE*/
 /* Cursos Nexus section */
 .cursos_nexus_section {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
+    overflow-y: auto;
 }
 
-/* Cursos Nexus container */
-.curos_nexus {
-    text-align: center;
+.categoria-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.categoria-container h2 {
+    border: 1px solid #000000;
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.subcategoria-container {
+    display: none; /* Esconder subcategorias por padrão */
+    margin-bottom: 20px;
+    animation: slideDown 0.5s ease-in-out;
+}
+.subcategoria-container h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.curso-row {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
-    background-color: #f9f9f9;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
+.curso-button {
+    display: flex;
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #063c77;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 75px;
+    border-radius: 15px;
+}
+
+.curso-titulo {
+    flex: 1;
+    font-weight: bold;
+}
+
+.curso-carga-horaria {
+    margin-left: 10px;
+    color: #000000;
+}
+
+.curso-titulo {
+    flex: 1;
+    font-weight: bold;
+}
+
+.curso-carga-horaria {
+    margin-right: 10px;
+    color: #0c0c0c;
+}
 /*ABOUT PAGE*/
 .perfil{
     display: flex;
