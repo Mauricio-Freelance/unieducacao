@@ -583,6 +583,14 @@ footer {
     height: auto;
     width: 100%;
 }
+#search-bar {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
 .categoria-container {
     width: 100%;

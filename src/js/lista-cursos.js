@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
+    let cursosData = {};
+
     fetch('../../database.json')
         .then(response => {
             if (!response.ok) {
@@ -7,13 +9,90 @@ document.addEventListener('DOMContentLoaded', function() {
             return response.json();
         })
         .then(data => {
-            const container = document.getElementById('curso-lista');
+            cursosData = data;
+            renderCursos(data);
+        })
+        .catch(error => console.error('Erro ao carregar o JSON:', error));
 
-            // Iterar sobre as categorias principais (Pós Graduação)
+    const searchBar = document.getElementById('search-bar');
+    searchBar.addEventListener('input', function() {
+        const query = searchBar.value.toLowerCase();
+        const filteredData = filterCursos(cursosData, query);
+        renderCursos(filteredData, query);
+    });
+
+    function filterCursos(data, query) {
+        const filteredData = {};
+        Object.keys(data).forEach(categoria => {
+            const subcategorias = data[categoria];
+            const filteredSubcategorias = {};
+            Object.keys(subcategorias).forEach(subcategoria => {
+                const cursos = subcategorias[subcategoria];
+                const filteredCursos = {};
+                Object.keys(cursos).forEach(key => {
+                    const curso = cursos[key];
+                    if (curso.Curso.toLowerCase().includes(query)) {
+                        filteredCursos[key] = curso;
+                    }
+                });
+                if (Object.keys(filteredCursos).length > 0) {
+                    filteredSubcategorias[subcategoria] = filteredCursos;
+                }
+            });
+            if (Object.keys(filteredSubcategorias).length > 0) {
+                filteredData[categoria] = filteredSubcategorias;
+            }
+        });
+        return filteredData;
+    }
+
+    function renderCursos(data, query = '') {
+        const container = document.getElementById('curso-lista');
+        container.innerHTML = '';
+
+        if (query) {
+            // Renderizar apenas os cursos que correspondem à busca
+            Object.keys(data).forEach(categoria => {
+                const subcategorias = data[categoria];
+                Object.keys(subcategorias).forEach(subcategoria => {
+                    const cursos = subcategorias[subcategoria];
+                    Object.keys(cursos).forEach(key => {
+                        const curso = cursos[key];
+
+                        const row = document.createElement('div');
+                        row.className = 'curso-row';
+
+                        const button = document.createElement('a');
+                        if (categoria === 'Pós Graduação') {
+                            button.href = 'https://wa.me/1234567890';
+                        } else if (categoria === 'Tecnologia') {
+                            button.href = 'https://example.com';
+                        } else {
+                            button.href = '#';
+                        }
+                        button.textContent = 'Mais';
+                        button.className = 'curso-button';
+
+                        const title = document.createElement('span');
+                        title.textContent = curso.Curso;
+                        title.className = 'curso-titulo';
+
+                        const cargaHoraria = document.createElement('span');
+                        cargaHoraria.textContent = curso.Duração;
+                        cargaHoraria.className = 'curso-carga-horaria';
+
+                        row.appendChild(title);
+                        row.appendChild(cargaHoraria);
+                        row.appendChild(button);
+
+                        container.appendChild(row);
+                    });
+                });
+            });
+        } else {
             Object.keys(data).forEach(categoria => {
                 const subcategorias = data[categoria];
 
-                // Criar um contêiner para a categoria
                 const categoriaContainer = document.createElement('div');
                 categoriaContainer.className = 'categoria-container';
 
@@ -21,7 +100,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 categoriaTitle.textContent = categoria;
                 categoriaContainer.appendChild(categoriaTitle);
 
-                // Adicionar evento de clique para mostrar/ocultar subcategorias
                 categoriaTitle.addEventListener('click', () => {
                     const subcategoriaContainers = categoriaContainer.querySelectorAll('.subcategoria-container');
                     subcategoriaContainers.forEach(subcategoriaContainer => {
@@ -29,11 +107,9 @@ document.addEventListener('DOMContentLoaded', function() {
                     });
                 });
 
-                // Iterar sobre as subcategorias (Comunicação, Direito, etc.)
                 Object.keys(subcategorias).forEach(subcategoria => {
                     const cursos = subcategorias[subcategoria];
 
-                    // Criar um contêiner para a subcategoria
                     const subcategoriaContainer = document.createElement('div');
                     subcategoriaContainer.className = 'subcategoria-container';
 
@@ -41,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     subcategoriaTitle.textContent = subcategoria;
                     subcategoriaContainer.appendChild(subcategoriaTitle);
 
-                    // Adicionar evento de clique para mostrar/ocultar cursos
                     subcategoriaTitle.addEventListener('click', () => {
                         const cursoRows = subcategoriaContainer.querySelectorAll('.curso-row');
                         cursoRows.forEach(cursoRow => {
@@ -49,19 +124,21 @@ document.addEventListener('DOMContentLoaded', function() {
                         });
                     });
 
-                    // Iterar sobre os cursos
                     Object.keys(cursos).forEach(key => {
                         const curso = cursos[key];
 
                         const row = document.createElement('div');
                         row.className = 'curso-row';
-                        row.style.display = 'none'; // Esconder cursos por padrão
+                        row.style.display = 'none';
 
                         const button = document.createElement('a');
-                        // Definir o link com base na categoria ou subcategoria
                         if (categoria === 'Pós Graduação') {
-                            button.href = 'https://wa.me/1234567890'; // Link para WhatsApp
-                        } 
+                            button.href = 'https://wa.me/1234567890';
+                        } else if (categoria === 'Tecnologia') {
+                            button.href = 'https://example.com';
+                        } else {
+                            button.href = '#';
+                        }
                         button.textContent = 'Mais';
                         button.className = 'curso-button';
 
@@ -85,6 +162,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 container.appendChild(categoriaContainer);
             });
-        })
-        .catch(error => console.error('Erro ao carregar o JSON:', error));
+        }
+    }
 });
