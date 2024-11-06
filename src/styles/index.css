@@ -254,6 +254,26 @@ body {
     height: 300px;
 }
 
+.nav-button {
+    background-color: #7FA325;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.nav-button.left {
+    left: 0;
+}
+
+.nav-button.right {
+    right: 0;
+}
+
 /* Top 10 container */
 .top_10 {
     display: flex;
