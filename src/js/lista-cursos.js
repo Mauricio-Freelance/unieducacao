@@ -41,15 +41,27 @@ document.addEventListener('DOMContentLoaded', function() {
                     subcategoriaTitle.textContent = subcategoria;
                     subcategoriaContainer.appendChild(subcategoriaTitle);
 
+                    // Adicionar evento de clique para mostrar/ocultar cursos
+                    subcategoriaTitle.addEventListener('click', () => {
+                        const cursoRows = subcategoriaContainer.querySelectorAll('.curso-row');
+                        cursoRows.forEach(cursoRow => {
+                            cursoRow.style.display = cursoRow.style.display === 'none' ? 'block' : 'none';
+                        });
+                    });
+
                     // Iterar sobre os cursos
                     Object.keys(cursos).forEach(key => {
                         const curso = cursos[key];
 
                         const row = document.createElement('div');
                         row.className = 'curso-row';
+                        row.style.display = 'none'; // Esconder cursos por padrão
 
                         const button = document.createElement('a');
-                        button.href = '#'; // Adicione o link correto aqui se disponível
+                        // Definir o link com base na categoria ou subcategoria
+                        if (categoria === 'Pós Graduação') {
+                            button.href = 'https://wa.me/1234567890'; // Link para WhatsApp
+                        } 
                         button.textContent = 'Mais';
                         button.className = 'curso-button';
 
