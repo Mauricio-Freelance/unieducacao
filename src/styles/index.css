@@ -145,7 +145,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/*Banner*/
+/* Banner */
 .banner {
     position: relative;
     width: 100%;
@@ -163,13 +163,15 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 0; /* Imagem invisível por padrão */
     transition: opacity 1s ease-in-out;
 }
 
 .banner img.active {
-    opacity: 1;
+    opacity: 1; /* Somente a imagem ativa será visível */
+    z-index: 1; /* Garante que a imagem ativa esteja sobre as outras */
 }
+
 
 /*Categorias*/
 /* Categorias section */
@@ -491,7 +493,6 @@ body {
 }
 
 
-
 /*Cursos em alta*/
 .Cursos_em_alta,
 .Cursos_bem_avaliados,
@@ -511,7 +512,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 300px;
+    width: calc(20% - 20px); /* Adjust width to fit 5 cards per row */
     min-height: 250px;
     text-align: center;
     transition: transform 0.3s;

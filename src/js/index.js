@@ -1,14 +1,18 @@
-let currentIndex = 0;
-        const images = document.querySelectorAll('.banner img');
-        const totalImages = images.length;
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIndex = 0;
+    const images = document.querySelectorAll('.banner img');
+    const totalImages = images.length;
 
-        function showNextImage() {
-            images[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % totalImages;
-            images[currentIndex].classList.add('active');
-        }
+    function showNextImage() {
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % totalImages;
+        images[currentIndex].classList.add('active');
+    }
 
-        setInterval(showNextImage, 3000);
+    const banner = document.querySelector('.banner');
+    banner.addEventListener('click', showNextImage);
+});
+
 
 // Rolagem categorias de cursos;
 
@@ -77,26 +81,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-let Index = 0;
-const carrosselItems = document.querySelectorAll('.carrossel-item');
-const totalItems = carrosselItems.length;
+// let Index = 0;
+// const carrosselItems = document.querySelectorAll('.carrossel-item');
+// const totalItems = carrosselItems.length;
 
-function showNextItem() {
-    carrosselItems[Index].classList.remove('active');
-    Index = (Index + 1) % totalItems;
-    carrosselItems[Index].classList.add('active');
-}
+// function showNextItem() {
+//     carrosselItems[Index].classList.remove('active');
+//     Index = (Index + 1) % totalItems;
+//     carrosselItems[Index].classList.add('active');
+// }
 
-setInterval(showNextItem, 3000);
+// setInterval(showNextItem, 3000);
 
-document.addEventListener('DOMContentLoaded', () => {
-    const burger = document.querySelector('.burger');
-    const navLinks = document.querySelector('.nav-links');
+// document.addEventListener('DOMContentLoaded', () => {
+//     const burger = document.querySelector('.burger');
+//     const navLinks = document.querySelector('.nav-links');
 
-    burger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-    });
-});
+//     burger.addEventListener('click', () => {
+//         navLinks.classList.toggle('active');
+//     });
+// });
 
 
 
