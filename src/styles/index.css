@@ -628,6 +628,7 @@ footer {
     border: 0.2px solid #0056b3;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    width: 97%;
 }
 .curso-row:hover {
     background-color: rgb(241, 240, 225);
