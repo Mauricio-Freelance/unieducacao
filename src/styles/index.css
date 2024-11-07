@@ -546,7 +546,7 @@ body {
 
 .card img {
     width: 100%;
-    height: 210px;
+    height: 300px;
 }
 
 .card h3 {
@@ -952,18 +952,55 @@ footer {
         height: auto;
     }
 
-    .about-container {
+    .perfil{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .perfil img {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .about-container, .mission-container, .vision-container, .price-container, .perfil-solange, .perfil-sueli {
         padding-left: 5%;
         padding-right: 5%;
     }
 
     .free-education {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
         flex-direction: column;
-        gap: 10px;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f9f9f9;
+        color: #063c77;
+    }
+
+    .cards-free-education {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        padding: 20px;
+        background-color: #f9f9f9;
     }
 
     .card-free-education {
-        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 300px;
+        min-height: 250px;
+        transition: transform 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .anuncie_aqui {
@@ -994,5 +1031,14 @@ footer {
         display: block;
         object-fit: cover;
     }
+
+    #search-bar {
+        width: 86%;
+    }
+
+    .curso-row{
+        width: 86%;
+    }
+
 
 }
