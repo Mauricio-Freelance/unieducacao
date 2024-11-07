@@ -1,3 +1,12 @@
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    burger.classList.toggle('active'); // Animação do ícone burger
+    navLinks.classList.toggle('active'); // Exibe ou oculta os links de navegação
+});
+
+
 // document.addEventListener('DOMContentLoaded', function() {
 //     let currentIndex = 0;
 //     const images = document.querySelectorAll('.banner img');
