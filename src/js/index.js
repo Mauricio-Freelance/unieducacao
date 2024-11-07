@@ -147,15 +147,3 @@ document.addEventListener('DOMContentLoaded', () => {
 //         top10Slider.scrollLeft = scrollLeftTop10 - walk;
 //     });
 // });
-
-function scrollLeft() {
-    const container = document.getElementById('top-10-container');
-    const scrollAmount = container.clientWidth; // Scroll by the width of the container
-    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-}
-
-function scrollRight() {
-    const container = document.getElementById('top-10-container');
-    const scrollAmount = container.clientWidth; // Scroll by the width of the container
-    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-}

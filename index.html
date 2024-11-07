@@ -431,6 +431,36 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="./src/js/index.js"></script>
     <script src="src/js/banner.js"></script>
+   <!-- Coloque o script JavaScript aqui, antes do fechamento da tag body -->
+<script>
+    const top10Container = document.getElementById('top-10-container');
+    const scrollAmount = top10Container.offsetWidth;
+    console.log("Scroll Amount:", scrollAmount);
+
+    function scrollLeft() {
+        console.log("Scroll Left clicked");
+        top10Container.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        console.log("Scroll Right clicked");
+        top10Container.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    window.addEventListener('resize', () => {
+        scrollAmount = top10Container.offsetWidth;
+    });
+</script>
+</body>
+
 
 
 </body>

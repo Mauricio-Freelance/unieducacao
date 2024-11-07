@@ -256,6 +256,18 @@ body {
     height: 300px;
 }
 
+#top-10-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none; /* Firefox */
+}
+
+#top-10-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+
+
 .nav-button {
     background-color: #7FA325;
     color: white;
@@ -362,7 +374,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 250px;
+    width: 240px;
     min-height: 250px;
     transition: transform 0.3s;
     display: flex;
@@ -616,6 +628,10 @@ footer {
 .categoria-container {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.categoria-container:hover{
+    cursor: pointer;
 }
 
 .categoria-container h2 {
