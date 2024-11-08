@@ -1,25 +1,29 @@
-const top10Container = document.getElementById('top-10-container');
-const scrollAmount = top10Container.offsetWidth;
-console.log("Scroll Amount:", scrollAmount); // Verificar o valor inicial de scrollAmount
+document.addEventListener('DOMContentLoaded', () => {
+    const top10Container = document.getElementById('top-10-container');
+    let scrollAmount = top10Container.offsetWidth;
 
-function scrollLeft() {
-    console.log("Scroll Left clicked"); // Verificação do clique no botão esquerdo
-    top10Container.scrollBy({
-        top: 0,
-        left: -scrollAmount,
-        behavior: 'smooth'
+    function scrollLeft() {
+        top10Container.scrollBy({
+            top: 0,
+            left: -scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    function scrollRight() {
+        top10Container.scrollBy({
+            top: 0,
+            left: scrollAmount,
+            behavior: 'smooth'
+        });
+    }
+
+    // Atualizar o scrollAmount ao redimensionar a janela
+    window.addEventListener('resize', () => {
+        scrollAmount = top10Container.offsetWidth;
     });
-}
 
-function scrollRight() {
-    console.log("Scroll Right clicked"); // Verificação do clique no botão direito
-    top10Container.scrollBy({
-        top: 0,
-        left: scrollAmount,
-        behavior: 'smooth'
-    });
-}
-
-window.addEventListener('resize', () => {
-    scrollAmount = top10Container.offsetWidth; // Recalcular scrollAmount em caso de redimensionamento
+    // Atribuir os manipuladores de clique
+    document.querySelector('.nav-button.left').addEventListener('click', scrollLeft);
+    document.querySelector('.nav-button.right').addEventListener('click', scrollRight);
 });

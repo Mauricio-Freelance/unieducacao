@@ -146,7 +146,7 @@
         <p class="line"></p>
 
         <section class="Top_10">
-            <button class="nav-button left" onclick="scrollLeft()">&#10094;</button>
+            <button class="nav-button left">&#10094;</button>
             <div class="top_10" id="top-10-container">
                 <div class="total_top_10">
                     <div class="top">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <button class="nav-button right" onclick="scrollRight()">&#10095;</button>
+            <button class="nav-button right">&#10095;</button>
         </section>
 
         <!-- <div class="cab">
@@ -432,34 +432,7 @@
     <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <script src="./src/js/index.js"></script>
     <script src="src/js/banner.js"></script>
-   <!-- Coloque o script JavaScript aqui, antes do fechamento da tag body -->
-<script>
-    const top10Container = document.getElementById('top-10-container');
-    const scrollAmount = top10Container.offsetWidth;
-    console.log("Scroll Amount:", scrollAmount);
-
-    function scrollLeft() {
-        console.log("Scroll Left clicked");
-        top10Container.scrollBy({
-            top: 0,
-            left: -scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-
-    function scrollRight() {
-        console.log("Scroll Right clicked");
-        top10Container.scrollBy({
-            top: 0,
-            left: scrollAmount,
-            behavior: 'smooth'
-        });
-    }
-
-    window.addEventListener('resize', () => {
-        scrollAmount = top10Container.offsetWidth;
-    });
-</script>
+    <script src="src/js/passagem.js"></script>
 </body>
 
 

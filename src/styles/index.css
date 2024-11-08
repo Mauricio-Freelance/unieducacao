@@ -265,11 +265,10 @@ body {
 
 #top-10-container {
     display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-    /* Firefox */
+    overflow-x: auto; /* Permite a rolagem horizontal */
+    scroll-behavior: smooth; /* Rola suavemente */
 }
+
 
 #top-10-container::-webkit-scrollbar {
     display: none;
