@@ -1102,7 +1102,7 @@ footer {
     }
 
     .contato{
-        width: 86%;
+        width: 90%;
     }
 
     .contact-container{
@@ -1111,6 +1111,10 @@ footer {
     
     .contact-container form{
         width: 90%;
+    }
+
+    .contact-container form button{
+        width: 100%;
     }
 
 
