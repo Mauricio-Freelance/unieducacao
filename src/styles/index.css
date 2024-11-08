@@ -961,8 +961,8 @@ footer {
 
     .categoria,
     .modalidade {
-        width: 200px;
-        height: 200px;
+        width: 100px;
+        height: 100px;
     }
 
     .informativo {
@@ -1102,7 +1102,7 @@ footer {
     }
 
     .contato{
-        width: 90%;
+        width: 86%;
     }
 
 
