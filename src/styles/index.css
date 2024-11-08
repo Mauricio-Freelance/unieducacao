@@ -1105,5 +1105,13 @@ footer {
         width: 86%;
     }
 
+    .contact-container{
+        width: 90%;
+    }
+    
+    .contact-container form{
+        width: 90%;
+    }
+
 
 }
