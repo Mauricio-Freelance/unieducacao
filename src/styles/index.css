@@ -957,8 +957,6 @@ footer {
     .categorias,
 .modalidades {
     height: auto;
-    scroll-snap-align: start;
-    position: relative;
 }
 
     .categoria,
