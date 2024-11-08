@@ -2,8 +2,22 @@ const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
 burger.addEventListener('click', () => {
-    burger.classList.toggle('active'); // Animação do ícone burger
-    navLinks.classList.toggle('active'); // Exibe ou oculta os links de navegação
+    burger.classList.toggle('active'); 
+    navLinks.classList.toggle('active'); 
+});
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const whatsappNumber = '5519999142836'; 
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=Nome:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMensagem:%20${encodeURIComponent(message)}`;
+
+    window.location.href = whatsappURL;
 });
 
 
