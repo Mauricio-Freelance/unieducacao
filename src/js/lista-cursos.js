@@ -65,10 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         const button = document.createElement('a');
                         if (categoria === 'Pós Graduação') {
                             button.href = 'https://wa.me/1234567890';
-                        } else if (categoria === 'Tecnologia') {
-                            button.href = 'https://example.com';
-                        } else {
-                            button.href = '#';
                         }
                         button.textContent = 'Mais';
                         button.className = 'curso-button';
