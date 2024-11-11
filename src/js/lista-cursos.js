@@ -63,9 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         row.className = 'curso-row';
 
                         const button = document.createElement('a');
-                        if (categoria === 'Pós Graduação') {
-                            button.href = 'https://wa.me/1234567890';
-                        }
+                        button.href = 'https://wa.me/1234567890';
                         button.textContent = 'Mais';
                         button.className = 'curso-button';
 
@@ -128,13 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         row.style.display = 'none';
 
                         const button = document.createElement('a');
-                        if (categoria === 'Pós Graduação') {
-                            button.href = 'https://wa.me/1234567890';
-                        } else if (categoria === 'Tecnologia') {
-                            button.href = 'https://example.com';
-                        } else {
-                            button.href = '#';
-                        }
+                        button.href = 'https://wa.me/1234567890';
                         button.textContent = 'Mais';
                         button.className = 'curso-button';
 
