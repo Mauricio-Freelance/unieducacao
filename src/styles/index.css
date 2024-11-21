@@ -615,7 +615,8 @@ footer {
 .mission-container h2,
 .vision-container h2,
 .price-container h2 {
-    color: darkorange;
+    /*color: darkorange;*/
+    color: #000;
 }
 
 .green {
@@ -656,7 +657,8 @@ footer {
 
 .categoria-container h2 {
     font-size: 1.5rem;
-    color: #7FA325;
+    /*color: #7FA325;*/
+    color: #000;
     margin-bottom: 10px;
     cursor: pointer;
 }

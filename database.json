@@ -1,36 +1,21 @@
 {
-    "Qualificação por Competência":{
+    "Profissionalizante":{
         "EAD":{
-            "1": {
-                "Curso": "ADMINISTRAÇÃO",
-                "Duração": "60 a 180 dias"
-            },
-            "2": {
-                "Curso": "ENFERMAGEM",
-                "Duração": "60 a 180 dias"
-            },
-            "3": {
-                "Curso": "FARMÁCIA",
-                "Duração": "60 a 180 dias"
-            },
-            "4": {
-                "Curso": "MECÂNICA",
-                "Duração": "60 a 180 dias"
-            },
-            "5": {
-                "Curso": "MEIO AMBIENTE",
-                "Duração": "60 a 180 dias"
-            },
-            "6": {
-                "Curso": "SECRETARIA ESCOLAR",
-                "Duração": "60 a 180 dias"
-            },
-            "7": {
-                "Curso": "SEGURANÇA DO TRABALHO",
+            "0":{
+                "Curso": "Teste",
                 "Duração": "60 a 180 dias"
             }
         }
     },
+    "Supletivo":{
+      "EAD":{
+        "0":{
+          "Curso": "Teste",
+          "Duração": "60 a 180 dias"
+        }
+      }  
+    },
+
     "Técnicos":{
         "Tecnicos Regulares": {
             "0": {
@@ -128,6 +113,46 @@
             "23": {
                 "Curso": "Técnico em Inteligência Artificial",
                 "Duração": "06 a 12 meses"
+            }
+        }
+    },
+    "Pós técnico":{
+        "EAD":{
+            "0":{
+                "Curso": "Teste",
+                "Duração": "60 a 180 dias"
+            }
+        }
+    },
+    "Qualificação por Competência":{
+        "EAD":{
+            "1": {
+                "Curso": "ADMINISTRAÇÃO",
+                "Duração": "60 a 180 dias"
+            },
+            "2": {
+                "Curso": "ENFERMAGEM",
+                "Duração": "60 a 180 dias"
+            },
+            "3": {
+                "Curso": "FARMÁCIA",
+                "Duração": "60 a 180 dias"
+            },
+            "4": {
+                "Curso": "MECÂNICA",
+                "Duração": "60 a 180 dias"
+            },
+            "5": {
+                "Curso": "MEIO AMBIENTE",
+                "Duração": "60 a 180 dias"
+            },
+            "6": {
+                "Curso": "SECRETARIA ESCOLAR",
+                "Duração": "60 a 180 dias"
+            },
+            "7": {
+                "Curso": "SEGURANÇA DO TRABALHO",
+                "Duração": "60 a 180 dias"
             }
         }
     },
@@ -2335,5 +2360,21 @@
             }
         }
 
+    },
+    "Mestrado":{
+        "EAD":{
+            "0":{
+                "Curso": "Mestrado Teste",
+                "Duração": "24 Meses"
+            }
+        }
+    },
+    "Doutorado e Pós Doutorado":{
+        "EAD":{
+            "0":{
+                "Curso": "Doutorado Teste",
+                "Duração": "48 Meses"
+            }
+        }
     }
 }
