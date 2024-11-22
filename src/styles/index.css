@@ -382,8 +382,8 @@ body {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 240px;
-    min-height: 250px;
+    width: 220px;
+    min-height: 240px;
     transition: transform 0.3s;
     display: flex;
     flex-direction: column;
@@ -408,7 +408,7 @@ body {
 }
 
 .card-free-education p {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 0 15px 15px;
     color: #666;
 }
@@ -689,19 +689,38 @@ footer {
     animation: slideDown 0.5s ease-in-out;
 }
 
+.subcategoria-container h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
 
-.curso-card {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.cursos-container {
+    display: grid;
     align-items: center;
-    padding: 16px;
-    background-color: rgb(242, 242, 242);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Faz os cartões ocuparem até 250px */
+    gap: 20px; /* Espaçamento entre os cartões */
+    padding: 20px;
+    margin-right: 40px;
+    background-color: #f9f9f9; /* Fundo do container */
+    width: 99%; /* Garante que o container ocupe 100% da largura disponível */
+    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+}
+/* Estilo para os cartões */
+.curso-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
     border-radius: 10px;
-    width: 95%;
-    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 280px;
 }
 
 
@@ -709,11 +728,6 @@ footer {
     background-color: rgb(241, 240, 225);
 }
 
-.subcategoria-container h3 {
-    font-size: 1.2rem;
-    color: #000000;
-    margin-bottom: 10px;
-}
 
 .curso-button {
     display: flex;
@@ -729,6 +743,7 @@ footer {
 }
 
 .curso-titulo {
+    width: 300px;
     font-weight: bold;
     margin-bottom: 8px;
 }

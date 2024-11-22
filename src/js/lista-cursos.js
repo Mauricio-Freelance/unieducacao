@@ -97,56 +97,62 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para renderizar as subcategorias e cursos
     function renderSubcategorias(container, subcategorias) {
         container.innerHTML = ''; // Limpa subcategorias anteriores
-
+    
         Object.keys(subcategorias).forEach(subcategoria => {
             const cursos = subcategorias[subcategoria];
-
+    
+            // Título da subcategoria
             const subcategoriaTitle = document.createElement('h3');
             subcategoriaTitle.textContent = subcategoria;
             subcategoriaTitle.className = 'subcategoria-titulo';
             container.appendChild(subcategoriaTitle);
-
+    
+            // Container dos cursos
             const cursosContainer = document.createElement('div');
-            cursosContainer.className = 'cursos-container';
+            cursosContainer.className = 'cursos-container'; // Certifique-se de que esta classe seja aplicada
             cursosContainer.dataset.subcategoria = subcategoria;
+    
+            // Inicialmente oculto (exceto se for EAD)
             if (subcategoria.toLowerCase() === 'ead') {
-                cursosContainer.style.display = 'block';
+                cursosContainer.style.display = 'grid'; // Mostra em grid
             } else {
-                cursosContainer.style.display = 'none'; 
+                cursosContainer.style.display = 'none';
                 subcategoriaTitle.addEventListener('click', () => {
                     cursosContainer.style.display =
-                        cursosContainer.style.display === 'none' ? 'block' : 'none';
+                        cursosContainer.style.display === 'none' ? 'grid' : 'none'; // Mostra em grid ao abrir
                 });
             }
-
+    
+            // Adiciona os cartões de curso
             Object.keys(cursos).forEach(key => {
                 const curso = cursos[key];
-
+    
                 const card = document.createElement('div');
                 card.className = 'curso-card';
-
+    
                 const button = document.createElement('a');
                 button.href = 'https://wa.me/1234567890';
                 button.textContent = 'Mais';
                 button.className = 'curso-button';
-
+    
                 const title = document.createElement('span');
                 title.textContent = curso.Curso;
                 title.className = 'curso-titulo';
-
+    
                 const cargaHoraria = document.createElement('span');
                 cargaHoraria.textContent = curso.Duração;
                 cargaHoraria.className = 'curso-carga-horaria';
-
+    
                 card.appendChild(title);
                 card.appendChild(cargaHoraria);
                 card.appendChild(button);
                 cursosContainer.appendChild(card);
             });
-
+    
             container.appendChild(cursosContainer);
         });
     }
+    
 
     // Função para renderizar os cursos filtrados
     function renderCursosFiltrados(data) {
