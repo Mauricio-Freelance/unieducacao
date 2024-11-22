@@ -699,15 +699,15 @@ footer {
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Faz os cartões ocuparem até 250px */
-    gap: 20px; /* Espaçamento entre os cartões */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; 
     padding: 20px;
     margin-right: 40px;
-    background-color: #f9f9f9; /* Fundo do container */
-    width: 99%; /* Garante que o container ocupe 100% da largura disponível */
-    box-sizing: border-box; /* Inclui padding e bordas na largura total */
+    background-color: #f9f9f9; 
+    width: 99%; 
+    box-sizing: border-box;
 }
-/* Estilo para os cartões */
+
 .curso-card {
     display: flex;
     flex-direction: column;
