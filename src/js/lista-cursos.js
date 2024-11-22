@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
                 const button = document.createElement('a');
                 button.href = 'https://wa.me/1234567890';
-                button.textContent = 'Mais';
+                button.textContent = 'Saiba Mais';
                 button.className = 'curso-button';
     
                 const title = document.createElement('span');
@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                     const button = document.createElement('a');
                     button.href = 'https://wa.me/1234567890';
-                    button.textContent = 'Mais';
+                    button.textContent = 'Saiba Mais';
                     button.className = 'curso-button';
 
                     const title = document.createElement('span');
