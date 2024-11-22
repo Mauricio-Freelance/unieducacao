@@ -895,9 +895,13 @@ footer {
         justify-content: center;
     }
 
+    .cursos-container{
+        margin-left: -25px;
+        align-items: center;
+    }
+
     .curso-card{
         width: 90%;
-        margin-left: -20px;
     }
 
     .spac{
@@ -1398,4 +1402,247 @@ footer {
     }
 }
 
+
+/* Monitores menores */
+@media (max-width: 600px) {
+    .cab {
+        padding-left: 1rem;
+    }
+
+    .Mais {
+        font-size: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar-container {
+        padding: 1rem 2rem;
+    }
+
+    .logo img {
+        width: 100px;
+        padding: 20px;
+    }
+
+    .nav-links li {
+        font-size: 1.5rem;
+    }
+
+    .nav-links li a {
+        font-size: 1.5rem;
+    }
+
+    .social-icons a {
+        font-size: 2rem;
+    }
+
+    .banner {
+        height: 60vh;
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .categorias,
+    .modalidades {
+        height: 400px;
+    }
+
+    .Top_10 {
+        height: 400px;
+    }
+
+    .total_top_10 {
+        border: 1px solid black;
+        height: 300px;
+        width: 100%;
+    }
+
+    .top {
+        width: 100%;
+        height: 300px;
+    }
+
+    .title h3 {
+        margin-top: 10px;
+        font-size: 2rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .card h3 {
+        font-size: 1.5rem;
+    }
+
+    .categoria,
+    .modalidade {
+        width: 100%;
+        height: 300px;
+    }
+
+    .informativo .video,
+    .informativo .carrossel {
+        width: 100%;
+    }
+
+    .Cursos_em_alta,
+    .Cursos_bem_avaliados,
+    .Planos {
+        gap: 20px;
+    }
+
+    .card {
+        height: 400px;
+        width: 100%;
+    }
+
+    .card button {
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .parceiros {
+        height: 400px;
+    }
+
+    .perfil {
+        margin-left: 0;
+        font-size: 2rem;
+    }
+
+    .perfil img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-container,
+    .mission-container,
+    .vision-container,
+    .price-container,
+    .perfil-solange,
+    .perfil-sueli {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 1.5rem;
+    }
+
+    .free-education,
+    .cards-free-education {
+        gap: 20px;
+        font-size: 1.5rem;
+    }
+
+    .card-free-education {
+        width: 100%;
+        height: 600px;
+    }
+
+    .card-free-education img {
+        height: 300px;
+        object-fit: cover;
+    }
+
+    .anuncie_aqui {
+        height: 400px;
+        gap: 5px;
+    }
+
+    .card-anuncie {
+        width: 100%;
+        height: 700px;
+    }
+
+    .anuncie_aqui img {
+        height: 100%;
+        object-fit: cover;
+    }
+
+    #search-bar {
+        width: 80%;
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .categoria-container h2 {
+        font-size: 2rem;
+    }
+
+    .subcategoria-container h3 {
+        font-size: 1.5rem;
+    }
+
+    .curso-row {
+        padding: 10px;
+        width: 100%;
+    }
+
+    .curso-titulo {
+        font-size: 1.5rem;
+    }
+
+    .curso-carga-horaria {
+        font-size: 1.2rem;
+    }
+
+    .curso-button {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+    }
+
+    .contato,
+    .contact-container,
+    .contact-container form {
+        height: auto;
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    .contact-container p {
+        margin-left: 5%;
+        font-size: 1.5rem;
+    }
+
+    .contact-container h1 {
+        margin-left: 5%;
+    }
+
+    .contact-container form {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+
+    .contact-container form button {
+        width: 90%;
+        font-size: 1.5rem;
+        padding: 10px 20px;
+    }
+
+    .contact-container form input[type="text"], input[type="email"], textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 20px;
+    }
+
+    footer p {
+        font-size: 1.2rem;
+    }
+}
 
