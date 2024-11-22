@@ -30,33 +30,27 @@ document.addEventListener('DOMContentLoaded', function () {
     function filterCursos(data, query) {
         const filteredData = {};
 
-        // Filtra as categorias
         Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
             const filteredSubcategorias = {};
 
-            // Filtra as subcategorias
             Object.keys(subcategorias).forEach(subcategoria => {
                 const cursos = subcategorias[subcategoria];
                 const filteredCursos = {};
 
-                // Filtra os cursos dentro das subcategorias
                 Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
 
-                    // Verifica se o nome do curso contém o texto da pesquisa
                     if (curso.Curso.toLowerCase().includes(query)) {
                         filteredCursos[key] = curso;
                     }
                 });
 
-                // Se algum curso for encontrado para essa subcategoria, adiciona ao resultado
                 if (Object.keys(filteredCursos).length > 0) {
                     filteredSubcategorias[subcategoria] = filteredCursos;
                 }
             });
 
-            // Se alguma subcategoria foi filtrada, adiciona à categoria
             if (Object.keys(filteredSubcategorias).length > 0) {
                 filteredData[categoria] = filteredSubcategorias;
             }
@@ -79,11 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
         subcategoriaContainer.style.display = 'none'; // Inicialmente oculto
         container.appendChild(subcategoriaContainer);
 
-        // Renderiza as categorias
         Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
 
-            // Contêiner para cada categoria
             const categoriaContainer = document.createElement('div');
             categoriaContainer.className = 'categoria-container';
 
@@ -93,9 +85,9 @@ document.addEventListener('DOMContentLoaded', function () {
             categoriaContainer.appendChild(categoriaTitle);
 
             categoriaTitle.addEventListener('click', () => {
-                // Atualiza o contêiner global de subcategorias
                 renderSubcategorias(subcategoriaContainer, subcategorias);
-                subcategoriaContainer.style.display = subcategoriaContainer.style.display === 'none' ? 'block' : 'none';
+                subcategoriaContainer.style.display =
+                    subcategoriaContainer.style.display === 'none' ? 'block' : 'none';
             });
 
             mainContainer.appendChild(categoriaContainer);
@@ -114,15 +106,18 @@ document.addEventListener('DOMContentLoaded', function () {
             subcategoriaTitle.className = 'subcategoria-titulo';
             container.appendChild(subcategoriaTitle);
 
-            subcategoriaTitle.addEventListener('click', () => {
-                const cursosContainer = document.querySelector(`.cursos-container[data-subcategoria="${subcategoria}"]`);
-                cursosContainer.style.display = cursosContainer.style.display === 'none' ? 'block' : 'none';
-            });
-
             const cursosContainer = document.createElement('div');
             cursosContainer.className = 'cursos-container';
             cursosContainer.dataset.subcategoria = subcategoria;
-            cursosContainer.style.display = 'none';
+            if (subcategoria.toLowerCase() === 'ead') {
+                cursosContainer.style.display = 'block';
+            } else {
+                cursosContainer.style.display = 'none'; 
+                subcategoriaTitle.addEventListener('click', () => {
+                    cursosContainer.style.display =
+                        cursosContainer.style.display === 'none' ? 'block' : 'none';
+                });
+            }
 
             Object.keys(cursos).forEach(key => {
                 const curso = cursos[key];
@@ -162,7 +157,6 @@ document.addEventListener('DOMContentLoaded', function () {
         mainContainer.className = 'main-container';
         container.appendChild(mainContainer);
 
-        // Renderiza os cursos filtrados
         Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
 
