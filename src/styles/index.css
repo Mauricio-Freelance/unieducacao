@@ -765,7 +765,8 @@ footer {
 .perfil h2,
 .perfil-solange h2,
 .perfil-sueli h2 {
-    color: darkorange;
+    /*color: darkorange;*/
+    color:#000
 }
 
 .perfil img {
