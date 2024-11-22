@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap');
 
+*{
+    font-family: 'Codec Pro', sans-serif;
+}
 
 
 body {
     overflow-x: hidden;
-    font-family: 'Codec Pro', sans-serif;
 }
 
 .detalhes_span_unieducacao {
@@ -651,6 +653,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 .categoria-container {
@@ -689,6 +693,7 @@ footer {
     padding: 20px;
     overflow-x: hidden;
     animation: slideDown 0.5s ease-in-out;
+    text-transform: uppercase;
 }
 
 .subcategoria-container h3 {
