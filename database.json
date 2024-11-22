@@ -2,8 +2,60 @@
     "Profissionalizante":{
         "EAD":{
             "0":{
-                "Curso": "Teste",
-                "Duração": "60 a 180 dias"
+                "Curso": "Físcal de Loja",
+                "Duração": "10 horas"
+            },
+            "1":{
+                "Curso": "Frentista",
+                "Duração": "40 horas"
+            },
+            "2":{
+                "Curso": "Mediador Escolar",
+                "Duração": "10 horas"
+            },
+            "3":{
+                "Curso": "NR-10",
+                "Duração": "40 horas"
+            },
+            "4":{
+                "Curso": "NR-33",
+                "Duração": "16 horas"
+            },
+            "5":{
+                "Curso": "NR-34",
+                "Duração": "16 horas"
+            },
+            "6":{
+                "Curso": "NR-35",
+                "Duração": "16 horas"
+            },
+            "7":{
+                "Curso": "Pá Carregadeira",
+                "Duração": "25 horas"
+            },
+            "8":{
+                "Curso": "Ponte Rolante",
+                "Duração": "80 horas"
+            },
+            "9":{
+                "Curso": "Retroescavadeira",
+                "Duração": "25 horas"
+            },
+            "10":{
+                "Curso": "Socorrista APH",
+                "Duração": "24 horas"
+            },
+            "11":{
+                "Curso": "Solda MIG/MAG",
+                "Duração": "32 horas"
+            },
+            "12":{
+                "Curso": "Solda TIG",
+                "Duração": "30 horas"
+            },
+            "13":{
+                "Curso": "TBO-Treinamento Básico Operacional",
+                "Duração": "35 horas"
             }
         }
     },
