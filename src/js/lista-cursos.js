@@ -157,14 +157,15 @@ document.addEventListener('DOMContentLoaded', function () {
         mainContainer.className = 'main-container';
         container.appendChild(mainContainer);
 
+        const cursosContainer = document.createElement('div');
+        cursosContainer.className = 'cursos-container';
+        mainContainer.appendChild(cursosContainer);
+
         Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
 
             Object.keys(subcategorias).forEach(subcategoria => {
                 const cursos = subcategorias[subcategoria];
-
-                const cursosContainer = document.createElement('div');
-                cursosContainer.className = 'cursos-container';
 
                 Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
@@ -190,8 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     card.appendChild(button);
                     cursosContainer.appendChild(card);
                 });
-
-                mainContainer.appendChild(cursosContainer);
             });
         });
     }
