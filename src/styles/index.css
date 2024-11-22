@@ -654,6 +654,8 @@ footer {
 }
 
 .categoria-container {
+    margin-right: 20px;
+    text-align: center;
     width: 100%;
     margin-bottom: 20px;
 }
@@ -1571,8 +1573,14 @@ footer {
         font-size: 1.5rem;
     }
 
+    .categoria-container{
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
     .categoria-container h2 {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .subcategoria-container h3 {
