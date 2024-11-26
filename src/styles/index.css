@@ -654,7 +654,7 @@ footer {
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    text-decoration: underline;
+    height: auto;
 }
 
 .categoria-container {
@@ -662,17 +662,35 @@ footer {
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
+    height: auto;
 }
 
 .categoria-container:hover {
     cursor: pointer;
 }
 
-.categoria-container h2 {
+.categoria-titulo{
     font-size: 1rem;
     color: #000;
     margin-bottom: 10px;
     cursor: pointer;
+    position: relative;
+}
+
+.categoria-titulo::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.categoria-titulo:hover::after {
+    width: 100%;
+    left: 0;
 }
 
 @keyframes slideDown {
@@ -728,6 +746,7 @@ footer {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     width: 280px;
+    height: auto;
 }
 
 
