@@ -172,11 +172,11 @@
         "EAD":{
             "1": {
                 "Curso": "Habilitação Profissional Técnica de Nível Médio - Modalidade: EAD",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "2": {
                 "Curso": "Segurança do Trabalho",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "3": {
                 "Curso": "Especialização Técnica em Segurança do Trabalho na Construção Civil",
@@ -184,7 +184,7 @@
             },
             "4": {
                 "Curso": "Enfermagem",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "5": {
                 "Curso": "Especialização Técnica em Centro de Material e Esterilização",
@@ -212,7 +212,7 @@
             },
             "11": {
                 "Curso": "ESTÉTICA",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "12": {
                 "Curso": "Especialização Técnica em Cosmetologia",
@@ -220,7 +220,7 @@
             },
             "13": {
                 "Curso": "T.T.I",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "14": {
                 "Curso": "Especialização Técnica em Comunicação",
@@ -236,7 +236,7 @@
             },
             "17": {
                 "Curso": "Edificações",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "18": {
                 "Curso": "Especialização Técnica em Programas de Qualidade na Construção Civil",
@@ -244,7 +244,7 @@
             },
             "19": {
                 "Curso": "Logística",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "20": {
                 "Curso": "Especialização Técnica em Logística Reversa",
@@ -256,7 +256,7 @@
             },
             "22": {
                 "Curso": "Farmácia",
-                "Duração": "NaN"
+                "Duração": "Indefinida"
             },
             "23": {
                 "Curso": "Especialização Técnica em Controle da Qualidade em Farmácia",

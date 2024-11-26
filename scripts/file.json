@@ -1,11 +1,11 @@
 {
     "1": {
         "CURSOS": "Habilitação Profissional Técnica de Nível Médio - Modalidade: EAD",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "2": {
         "CURSOS": "Segurança do Trabalho",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "3": {
         "CURSOS": "Especialização Técnica em Segurança do Trabalho na Construção Civil",
@@ -13,7 +13,7 @@
     },
     "4": {
         "CURSOS": "Enfermagem",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "5": {
         "CURSOS": "Especialização Técnica em Centro de Material e Esterilização",
@@ -41,7 +41,7 @@
     },
     "11": {
         "CURSOS": "ESTÉTICA",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "12": {
         "CURSOS": "Especialização Técnica em Cosmetologia",
@@ -49,7 +49,7 @@
     },
     "13": {
         "CURSOS": "T.T.I",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "14": {
         "CURSOS": "Especialização Técnica em Comunicação",
@@ -65,7 +65,7 @@
     },
     "17": {
         "CURSOS": "Edificações",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "18": {
         "CURSOS": "Especialização Técnica em Programas de Qualidade na Construção Civil",
@@ -73,7 +73,7 @@
     },
     "19": {
         "CURSOS": "Logística",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "20": {
         "CURSOS": "Especialização Técnica em Logística Reversa",
@@ -85,7 +85,7 @@
     },
     "22": {
         "CURSOS": "Farmácia",
-        "DURAÇÃO": "NaN"
+        "DURAÇÃO": "Indefinida"
     },
     "23": {
         "CURSOS": "Especialização Técnica em Controle da Qualidade em Farmácia",
