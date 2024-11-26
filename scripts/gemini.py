@@ -22,7 +22,7 @@ def use_model(prompt: str, model: genai.GenerativeModel) -> str:
     Dicionario[Gênero] == ["Anime1", "Anime2", "Anime3"]
     """
     
-    prompt = "Corrija o texto a seguir substituido os caracteres com problemas pela palavra correta e o reescreva corretamente seguindo a estrutura do CSV (separando por virgula os itens e por quebra de linha as linhas): " + prompt
+    prompt = "Corrija o texto a seguir substituido os caracteres com problemas pela palavra correta, pegue somente as colunas [CURSOS,DURAÇÃO] e o reescreva corretamente seguindo a estrutura do CSV (separando por virgula os itens e por quebra de linha as linhas): " + prompt
     return  model.generate_content(prompt).text.replace('*','')
                 
                 

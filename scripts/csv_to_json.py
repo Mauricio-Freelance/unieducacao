@@ -13,9 +13,9 @@ from gemini import (
 model = create_model()
 
 
-CSV_FILE = "data/Qualificação por Competencia.csv"
+CSV_FILE = "data/CURSOS PÓS TECNICOS.csv"
 JSON_FILE = "file.json"
-CATEGORY = "Graduação"
+CATEGORY = "Pós-Técnicos"
 COURSES = "CURSOS"
 DURATION = "DURAÇÃO"
 
