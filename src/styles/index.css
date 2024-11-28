@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Codec+Pro&display=swap');
 
-*{
+* {
     font-family: 'Codec Pro', sans-serif;
 }
 
@@ -26,12 +26,12 @@ body {
     text-wrap: 1.25rem;
 }
 
-.cab p{
+.cab p {
     color: #000000;
     font-size: 1.9rem;
 }
 
-.cab span{
+.cab span {
     color: #000000;
     font-weight: 800;
 }
@@ -278,8 +278,10 @@ body {
 
 #top-10-container {
     display: flex;
-    overflow-x: auto; /* Permite a rolagem horizontal */
-    scroll-behavior: smooth; /* Rola suavemente */
+    overflow-x: auto;
+    /* Permite a rolagem horizontal */
+    scroll-behavior: smooth;
+    /* Rola suavemente */
 }
 
 
@@ -680,7 +682,7 @@ footer {
     cursor: pointer;
 }
 
-.categoria-titulo{
+.categoria-titulo {
     font-size: 1rem;
     color: #000;
     margin-bottom: 10px;
@@ -709,6 +711,7 @@ footer {
         opacity: 0;
         transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -735,12 +738,12 @@ footer {
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 20px; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
     padding: 20px;
     margin-right: 40px;
-    background-color: #f9f9f9; 
-    width: 99%; 
+    background-color: #f9f9f9;
+    width: 99%;
     box-sizing: border-box;
 }
 
@@ -801,7 +804,7 @@ footer {
 .perfil-solange h2,
 .perfil-sueli h2 {
     /*color: darkorange;*/
-    color:#000
+    color: #000
 }
 
 .perfil img {
@@ -828,7 +831,7 @@ footer {
 }
 
 /*CONTACT PAGE*/
-.contato{
+.contato {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -837,7 +840,7 @@ footer {
     background-color: #f9f9f9;
 }
 
-.contact-container{
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -847,7 +850,7 @@ footer {
     border-radius: 20px;
 }
 
-.contact-container form{
+.contact-container form {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -860,7 +863,9 @@ footer {
     border: 1px solid black;
 }
 
-.contact-container form input[type="text"], input[type = "email"], textarea{
+.contact-container form input[type="text"],
+input[type="email"],
+textarea {
     width: 100%;
     padding: 10px;
     margin: 10px;
@@ -868,7 +873,7 @@ footer {
     border: 1px solid #ccc;
 }
 
-.contact-container button{
+.contact-container button {
     display: flex;
     margin-right: 10px;
     padding: 10px 20px;
@@ -879,7 +884,7 @@ footer {
     text-decoration: none;
     width: 75px;
     border-radius: 15px;
-    border:none;
+    border: none;
 }
 
 
@@ -889,7 +894,8 @@ footer {
         overflow-x: hidden;
     }
 
-    html, body {
+    html,
+    body {
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -923,6 +929,9 @@ footer {
         width: 70px;
         padding: 20px;
     }
+    .anuncie_aqui_paragarfo{
+        font-size: 0.8rem;
+    }
 
 
     .main-container {
@@ -933,19 +942,19 @@ footer {
         justify-content: center;
     }
 
-    .cursos-container{
+    .cursos-container {
         margin-left: -25px;
         align-items: center;
     }
 
-    .curso-card{
+    .curso-card {
         width: 90%;
     }
 
-    .spac{
+    .spac {
         display: none;
     }
-    
+
 
     /* Estilos do menu burger */
     .burger {
@@ -1026,16 +1035,19 @@ footer {
         transform: scale(1);
     }
 
-    .categorias,
-.modalidades {
-    height: auto;
-}
 
-    .categoria,
+    .modalidade,
+    h1 {
+        font-size: 1rem;
+    }
+
+
     .modalidade {
         width: 100px;
         height: 100px;
+        overflow-y: hidden;
     }
+
 
     .informativo {
         flex-direction: column;
@@ -1085,7 +1097,7 @@ footer {
         height: auto;
     }
 
-    .perfil{
+    .perfil {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -1097,7 +1109,12 @@ footer {
         margin-right: 0;
     }
 
-    .about-container, .mission-container, .vision-container, .price-container, .perfil-solange, .perfil-sueli {
+    .about-container,
+    .mission-container,
+    .vision-container,
+    .price-container,
+    .perfil-solange,
+    .perfil-sueli {
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -1136,6 +1153,27 @@ footer {
         justify-content: space-between;
     }
 
+    /* .anuncie_aqui {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 90%;
+        height: auto;
+        border: 1px solid black;
+    } */
+
+
+    .card-anuncie {
+        overflow: hidden;
+        margin: 10px;
+        max-width: 90%;
+        text-align: center;
+        transition: transform 0.3s ease;
+        height: auto;
+    }
+
     .anuncie_aqui {
         display: flex;
         flex-direction: column;
@@ -1146,46 +1184,27 @@ footer {
         height: auto;
     }
 
-    .card-anuncie {
-        background-color: #fff;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        margin: 10px;
-        max-width: 100%;
-        text-align: center;
-        transition: transform 0.3s ease;
-        height: 500px;
-    }
-
-    .anuncie_aqui img {
-        width: 100%;
-        height: 4%;
-        display: block;
-        object-fit: cover;
-    }
-
     #search-bar {
         width: 86%;
     }
 
-    .curso-row{
+    .curso-row {
         width: 86%;
     }
 
-    .contato{
+    .contato {
         width: 90%;
     }
 
-    .contact-container{
-        width: 90%;
-    }
-    
-    .contact-container form{
+    .contact-container {
         width: 90%;
     }
 
-    .contact-container form button{
+    .contact-container form {
+        width: 90%;
+    }
+
+    .contact-container form button {
         width: 100%;
     }
 
@@ -1242,18 +1261,18 @@ footer {
     }
 
 
-    .Top_10{
+    .Top_10 {
         height: 600px;
 
     }
 
-    .total_top_10{
+    .total_top_10 {
         border: 1px solid black;
         height: 400px;
         width: 800px;
     }
 
-    .top{
+    .top {
         width: 400px;
         height: 400px;
     }
@@ -1263,7 +1282,7 @@ footer {
         font-size: 2.5rem;
     }
 
-    h1{
+    h1 {
         font-size: 3rem;
     }
 
@@ -1293,12 +1312,12 @@ footer {
         width: calc(20% - 20px);
     }
 
-    .card button{
+    .card button {
         font-size: 2rem;
         padding: 20px 40px;
     }
 
-    .card img{
+    .card img {
         width: 100%;
         height: auto;
     }
@@ -1307,7 +1326,7 @@ footer {
         height: auto;
     }
 
-    .perfil{
+    .perfil {
         margin-left: 300px;
         font-size: 2.5rem;
     }
@@ -1342,7 +1361,7 @@ footer {
     .card-free-education img {
         height: 400px;
         object-fit: cover;
-    }   
+    }
 
     .anuncie_aqui {
         height: auto;
@@ -1354,7 +1373,7 @@ footer {
         height: auto;
     }
 
-    .anuncie_aqui img{
+    .anuncie_aqui img {
         height: auto;
         object-fit: cover;
     }
@@ -1365,7 +1384,7 @@ footer {
         font-size: 2rem;
     }
 
-    .categoria-container{
+    .categoria-container {
         align-items: center;
     }
 
@@ -1377,70 +1396,70 @@ footer {
         font-size: 2rem;
     }
 
-   
-.cursos-container {
-    display: grid;
-    align-items: center;
-    justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-    gap: 20px; 
-    padding: 20px;
-    margin-right: 40px;
-    background-color: #f9f9f9; 
-    width: 99%; 
-    box-sizing: border-box;
-    height: auto;
-}
 
-.curso-card {
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    height: 350px;
-    width: 500px;
-}
+    .cursos-container {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-right: 40px;
+        background-color: #f9f9f9;
+        width: 99%;
+        box-sizing: border-box;
+        height: auto;
+    }
 
-
-.curso-card:hover {
-    background-color: rgb(241, 240, 225);
-}
+    .curso-card {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        height: 350px;
+        width: 500px;
+    }
 
 
-.curso-button {
-    display: flex;
-    margin-top: 10px;
-    padding: 20px 40px;
-    background-color: #063c77;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 1.5rem;
-    width: 150px;
-    border-radius: 15px;
-}
+    .curso-card:hover {
+        background-color: rgb(241, 240, 225);
+    }
 
-.curso-titulo {
-    font-size: 1.5rem;
-    width: 300px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
 
-.curso-carga-horaria {
-    font-size: 1.5rem;
-    color: #000000;
-    margin-bottom: 8px;
-}
+    .curso-button {
+        display: flex;
+        margin-top: 10px;
+        padding: 20px 40px;
+        background-color: #063c77;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .curso-titulo {
+        font-size: 1.5rem;
+        width: 300px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .curso-carga-horaria {
+        font-size: 1.5rem;
+        color: #000000;
+        margin-bottom: 8px;
+    }
 
     .contato,
     .contact-container,
@@ -1450,27 +1469,29 @@ footer {
         width: 70%;
     }
 
-    .contact-container p{
+    .contact-container p {
         margin-left: 8%;
         font-size: 2rem;
     }
 
-    .contact-container h1{
+    .contact-container h1 {
         margin-left: 8%;
     }
 
-    .contact-container form{
+    .contact-container form {
         width: 80%;
         font-size: 2rem;
     }
 
-    .contact-container form button{
+    .contact-container form button {
         width: 80%;
         font-size: 2rem;
         padding: 20px 40px;
     }
 
-    .contact-container form input[type="text"], input[type = "email"], textarea{
+    .contact-container form input[type="text"],
+    input[type="email"],
+    textarea {
         width: 80%;
         padding: 20px;
         margin: 20px;
@@ -1479,269 +1500,15 @@ footer {
         font-size: 2rem;
     }
 
-    footer{
+    footer {
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 20px 40px;
     }
 
-    footer p{
-        font-size: 1.8rem;
-    }
-}
-
-
-/* Monitores menores */
-@media (max-width: 600px) {
-    .cab {
-        padding-left: 1rem;
-    }
-
-    .Mais {
-        font-size: 1rem;
-        padding-right: 1rem;
-    }
-
-    .navbar-container {
-        padding: 1rem 2rem;
-    }
-
-    .logo img {
-        width: 100px;
-        padding: 20px;
-    }
-
-    .nav-links li {
-        font-size: 1.5rem;
-    }
-
-    .nav-links li a {
-        font-size: 1.5rem;
-    }
-
-    .social-icons a {
-        font-size: 2rem;
-    }
-
-    .banner {
-        height: 60vh;
-        width: 100%;
-    }
-
-    .banner img {
-        width: 100%;
-    }
-
-    .categorias,
-    .modalidades {
-        height: 400px;
-    }
-
-    .Top_10 {
-        height: 400px;
-    }
-
-    .total_top_10 {
-        border: 1px solid black;
-        height: 300px;
-        width: 100%;
-    }
-
-    .top {
-        width: 100%;
-        height: 300px;
-    }
-
-    .curso-card{
-        height: auto;
-    }
-
-    .title h3 {
-        margin-top: 10px;
-        font-size: 2rem;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    .card h3 {
-        font-size: 1.5rem;
-    }
-
-    .categoria,
-    .modalidade {
-        width: 100%;
-        height: 300px;
-    }
-
-    .informativo .video,
-    .informativo .carrossel {
-        width: 100%;
-    }
-
-    .Cursos_em_alta,
-    .Cursos_bem_avaliados,
-    .Planos {
-        gap: 20px;
-    }
-
-    .card {
-        height: 400px;
-        width: 100%;
-    }
-
-    .card button {
-        font-size: 1.5rem;
-        padding: 10px 20px;
-    }
-
-    .card img {
-        width: 100%;
-        height: 300px;
-    }
-
-    .parceiros {
-        height: 400px;
-    }
-
-    .perfil {
-        margin-left: 0;
-        font-size: 2rem;
-    }
-
-    .perfil img {
-        width: 300px;
-        height: 300px;
-    }
-
-    .about-container,
-    .mission-container,
-    .vision-container,
-    .price-container,
-    .perfil-solange,
-    .perfil-sueli {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 1.5rem;
-    }
-
-    .free-education,
-    .cards-free-education {
-        gap: 20px;
-        font-size: 1.5rem;
-    }
-
-    .card-free-education {
-        width: 100%;
-        height: 600px;
-    }
-
-    .card-free-education img {
-        height: 300px;
-        object-fit: cover;
-    }
-
-    .anuncie_aqui {
-        height: 400px;
-        gap: 5px;
-    }
-
-    .card-anuncie {
-        width: 100%;
-        height: 700px;
-    }
-
-    .anuncie_aqui img {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    #search-bar {
-        width: 80%;
-        padding: 10px;
-        font-size: 1.5rem;
-    }
-
-    .categoria-container{
-        width: 100%;
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .categoria-container h2 {
-        font-size: 1rem;
-    }
-
-    .subcategoria-container h3 {
-        font-size: 1.5rem;
-    }
-
-    .curso-row {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .curso-titulo {
-        font-size: 1.5rem;
-    }
-
-    .curso-carga-horaria {
-        font-size: 1.2rem;
-    }
-
-    .curso-button {
-        font-size: 1.2rem;
-        padding: 10px 20px;
-    }
-
-    .contato,
-    .contact-container,
-    .contact-container form {
-        height: auto;
-        margin-left: 5%;
-        width: 90%;
-    }
-
-    .contact-container p {
-        margin-left: 5%;
-        font-size: 1.5rem;
-    }
-
-    .contact-container h1 {
-        margin-left: 5%;
-    }
-
-    .contact-container form {
-        width: 90%;
-        font-size: 1.5rem;
-    }
-
-    .contact-container form button {
-        width: 90%;
-        font-size: 1.5rem;
-        padding: 10px 20px;
-    }
-
-    .contact-container form input[type="text"], input[type="email"], textarea {
-        width: 90%;
-        padding: 10px;
-        margin: 10px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        font-size: 1.5rem;
-    }
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 20px;
-    }
-
     footer p {
-        font-size: 1.2rem;
+        font-size: 1.8rem;
     }
 }
 
