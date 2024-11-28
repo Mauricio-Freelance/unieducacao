@@ -2496,19 +2496,8 @@
 
     },
     "Mestrado":{
-        "EAD":{
-            "0":{
-                "Curso": "Mestrado Teste",
-                "Duração": "24 Meses"
-            }
-        }
+
     },
     "Doutorado e Pós Doutorado":{
-        "EAD":{
-            "0":{
-                "Curso": "Doutorado Teste",
-                "Duração": "48 Meses"
-            }
-        }
     }
 }
