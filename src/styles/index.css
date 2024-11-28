@@ -16,13 +16,24 @@ body {
 .cab {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
     padding-left: 1rem;
 }
 
 .cab h1 {
     color: #063c77;
     text-wrap: 1.25rem;
+}
+
+.cab p{
+    color: #000000;
+    font-size: 1.9rem;
+}
+
+.cab span{
+    color: #000000;
+    font-weight: 800;
 }
 
 .Mais {

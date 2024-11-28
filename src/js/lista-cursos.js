@@ -85,6 +85,15 @@ document.addEventListener('DOMContentLoaded', function () {
             categoriaContainer.appendChild(categoriaTitle);
 
             categoriaTitle.addEventListener('click', () => {
+
+                // Remove a classe 'active' das subcategorias anteriores
+                document.querySelectorAll('.categoria-titulo').forEach(title => {
+                    title.classList.remove('active');
+                });
+    
+                // Adiciona a classe 'active' ao título de categoria clicado
+                categoriaTitle.classList.add('active');
+
                 renderSubcategorias(subcategoriaContainer, subcategorias);
                 subcategoriaContainer.style.display =
                     subcategoriaContainer.style.display === 'none' ? 'block' : 'none';
