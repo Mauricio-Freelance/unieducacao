@@ -2,7 +2,7 @@
     "Profissionalizante":{
         "EAD":{
             "0":{
-                "Curso": "Físcal de Loja",
+                "Curso": "Fiscal de Loja",
                 "Duração": "10 horas"
             },
             "1":{
@@ -60,12 +60,6 @@
         }
     },
     "Supletivo":{
-      "EAD":{
-        "0":{
-          "Curso": "Teste",
-          "Duração": "60 a 180 dias"
-        }
-      }  
     },
 
     "Técnicos":{

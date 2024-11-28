@@ -95,8 +95,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 categoriaTitle.classList.add('active');
 
                 renderSubcategorias(subcategoriaContainer, subcategorias);
-                subcategoriaContainer.style.display =
-                    subcategoriaContainer.style.display === 'none' ? 'block' : 'none';
+
+            // Exibe ou oculta o container de subcategorias
+                if (subcategoriaContainer.style.display === 'none' || subcategoriaContainer.dataset.categoria !== categoria) {
+                    subcategoriaContainer.style.display = 'block';
+                    subcategoriaContainer.dataset.categoria = categoria;
+                } else {
+                    subcategoriaContainer.style.display = 'none';
+                    subcategoriaContainer.dataset.categoria = '';
+                }
             });
 
             mainContainer.appendChild(categoriaContainer);
