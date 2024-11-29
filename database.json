@@ -535,100 +535,179 @@
         }
     },
     "Pós técnico":{
-        "EAD":{
+        "ADMINISTRAÇÃO": {
+            "0": {
+                "Curso": "Especialização Técnica em Administração de Materiais ",
+                "Duração": "60 a 180 dias "
+            },
             "1": {
-                "Curso": "Habilitação Profissional Técnica de Nível Médio - Modalidade: EAD",
-                "Duração": "Indefinida"
+                "Curso": "Especialização Técnica em Administração de Produção",
+                "Duração": "60 a 180 dias "
             },
             "2": {
-                "Curso": "Segurança do Trabalho",
-                "Duração": "Indefinida"
+                "Curso": "Especialização Técnica em Educação Ambiental ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "EDIFICAÇÕES": {
+            "0": {
+                "Curso": "Especialização Técnica em licitações de Obras Publicas",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em Programas de Qualidade na Construção Civil ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "ELETROMECÂNICA": {
+            "0": {
+                "Curso": "Especialização Técnica em Usinagem ",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em Energia Solar Fotovoltaica",
+                "Duração": "60 a 180 dias "
+            },
+            "2": {
+                "Curso": "Especialização Técnica em Instalação Elétrica Predial de Baixa Tensão ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "ENFERMAGEM": {
+            "0": {
+                "Curso": "Especialização Técnica em Centro de Material e Esterilização",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em Oncologia",
+                "Duração": "60 a 180 dias "
+            },
+            "2": {
+                "Curso": "Especialização Técnica Saúde Publica",
+                "Duração": "60 a 180 dias "
             },
             "3": {
-                "Curso": "Especialização Técnica em Segurança do Trabalho na Construção Civil",
-                "Duração": "DE 60 A 180 DIAS"
+                "Curso": "Especialização Técnica Terapia Intensiva ",
+                "Duração": "60 a 180 dias "
             },
             "4": {
-                "Curso": "Enfermagem",
-                "Duração": "Indefinida"
+                "Curso": "Especialização Técnica Urgência e Emergência / APH",
+                "Duração": "60 a 180 dias "
             },
             "5": {
-                "Curso": "Especialização Técnica em Centro de Material e Esterilização",
-                "Duração": "DE 60 A 180 DIAS"
+                "Curso": "Especialização Técnica em Saúde do Trabalhador",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "ESTÉTICA": {
+            "0": {
+                "Curso": "Especialização Técnica em cosmetologia",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "FARMÁCIA": {
+            "0": {
+                "Curso": "Especialização Técnica em controle da Qualidade em Farmácia ",
+                "Duração": "60 a 180 dias "
             },
-            "6": {
-                "Curso": "Especialização Técnica em Oncologia",
-                "Duração": "DE 60 A 180 DIAS"
+            "1": {
+                "Curso": "Especialização Técnica em Farmácia Hospitalar",
+                "Duração": "60 a 180 dias "
             },
-            "7": {
-                "Curso": "Especialização Técnica em Saúde Pública",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "8": {
-                "Curso": "Especialização Técnica em Terapia Intensiva",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "9": {
-                "Curso": "Especialização Técnica em Urgência e Emergência / APH",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "10": {
-                "Curso": "Especialização Técnica em Saúde do Trabalhador (Segurança do Trabalho)",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "11": {
-                "Curso": "ESTÉTICA",
-                "Duração": "Indefinida"
-            },
-            "12": {
-                "Curso": "Especialização Técnica em Cosmetologia",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "13": {
-                "Curso": "T.T.I",
-                "Duração": "Indefinida"
-            },
-            "14": {
-                "Curso": "Especialização Técnica em Comunicação",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "15": {
-                "Curso": "Especialização Técnica em Redação de Contratos",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "16": {
-                "Curso": "Especialização Técnica em Mídias Digitais",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "17": {
-                "Curso": "Edificações",
-                "Duração": "Indefinida"
-            },
-            "18": {
-                "Curso": "Especialização Técnica em Programas de Qualidade na Construção Civil",
-                "Duração": "DE 60 A 180 DIAS"
-            },
-            "19": {
-                "Curso": "Logística",
-                "Duração": "Indefinida"
-            },
-            "20": {
+            "2": {
+                "Curso": "Especialização Técnica em Manipulação em Laboratório de Farmácia ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "LOGÍSTICA": {
+            "0": {
                 "Curso": "Especialização Técnica em Logística Reversa",
-                "Duração": "DE 60 A 180 DIAS"
+                "Duração": "60 a 180 dias "
             },
-            "21": {
-                "Curso": "Especialização Técnica em Transporte e Distribuição",
-                "Duração": "DE 60 A 180 DIAS"
+            "1": {
+                "Curso": "Especialização Técnica em Transporte e Distribuição ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "RECURSOS HUMANOS": {
+            "0": {
+                "Curso": "Especialização Técnica em Cálculos Trabalhistas ",
+                "Duração": "60 a 180 dias "
             },
-            "22": {
-                "Curso": "Farmácia",
-                "Duração": "Indefinida"
+            "1": {
+                "Curso": "Especialização Técnica em Legislação Trabalhista ",
+                "Duração": "60 a 180 dias "
             },
-            "23": {
-                "Curso": "Especialização Técnica em Controle da Qualidade em Farmácia",
-                "Duração": "DE 60 A 180 DIAS"
+            "2": {
+                "Curso": "Especialização Técnica em Recrutamento e Seleção ",
+                "Duração": "60 a 180 dias "
+            },
+            "3": {
+                "Curso": "Especialização Técnica em Cargos e Salários ",
+                "Duração": "60 a 180 dias "
+            },
+            "4": {
+                "Curso": "Especialização Técnica em Treinamento e Desenvolvimento ",
+                "Duração": "60 a 180 dias "
+            },
+            "5": {
+                "Curso": "Especialização Técnica em Benefícios ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "SECRETARIA ESCOLAR": {
+            "0": {
+                "Curso": "Especialização Técnica em Legislação Educacional ",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em em Informação e Documentação Escolar",
+                "Duração": "60 a 180 dias "
+            },
+            "2": {
+                "Curso": "Especialização Técnica em Tradução e Interpretação em Libras",
+                "Duração": "60 a 180 dias "
+            },
+            "3": {
+                "Curso": "Especialização Técnica em Educação Inclusiva ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "SEGURANÇA DO TRABALHO": {
+            "0": {
+                "Curso": "Especialização Técnica em Segurança do Trabalho na Construção Civil ",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em  Higiene Ocupacional ",
+                "Duração": "60 a 180 dias "
+            },
+            "2": {
+                "Curso": "Especialização Técnica em Ergonomia",
+                "Duração": "60 a 180 dias "
+            },
+            "3": {
+                "Curso": "Especialização Técnica em Prevenção e Combate a Incêndio ",
+                "Duração": "60 a 180 dias "
+            }
+        },
+        "TECNOLOGIA DA INFORMAÇÃO": {
+            "0": {
+                "Curso": "Especialização Técnica em Comunicação ",
+                "Duração": "60 a 180 dias "
+            },
+            "1": {
+                "Curso": "Especialização Técnica em Redação de Contratos ",
+                "Duração": "60 a 180 dias "
+            },
+            "2": {
+                "Curso": "Especialização Técnica em Mídias Digitais ",
+                "Duração": "60 a 180 dias "
             }
         }
+
+
+
     },
     "Qualificação por Competência":{
         "EAD":{
