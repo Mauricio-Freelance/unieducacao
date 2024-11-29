@@ -1,0 +1,20 @@
+{
+    "MODALIDADES": {
+        "0": {
+            "Curso": "Ensino Fundamental",
+            "Duração": "INDEFINIDA"
+        },
+        "1": {
+            "Curso": "Ensino Médio",
+            "Duração": "INDEFINIDA"
+        },
+        "2": {
+            "Curso": "Ensino Fundamental e Médio",
+            "Duração": "INDEFINIDA"
+        },
+        "3": {
+            "Curso": "Ensino Médio com Técnico",
+            "Duração": "INDEFINIDA"
+        }
+    }
+}

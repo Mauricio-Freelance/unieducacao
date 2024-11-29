@@ -1,65 +1,437 @@
 {
     "Profissionalizante":{
-        "EAD":{
-            "0":{
-                "Curso": "Fiscal de Loja",
+        "ADMINISTRATIVO": {
+            "0": {
+                "Curso": "Agente de Portaria",
+                "Duração": "15 horas"
+            },
+            "1": {
+                "Curso": "Almoxarifado",
+                "Duração": "20 horas"
+            },
+            "2": {
+                "Curso": "Conhecimentos Bancários",
+                "Duração": "20 horas"
+            },
+            "3": {
+                "Curso": "Corretor de Imóveis",
+                "Duração": "60 horas"
+            },
+            "4": {
+                "Curso": "Hotelaria e Turismo",
+                "Duração": "30 horas"
+            },
+            "5": {
+                "Curso": "Jornalismo",
+                "Duração": "75 horas"
+            },
+            "6": {
+                "Curso": "Operador de Caixa",
+                "Duração": "30 horas"
+            },
+            "7": {
+                "Curso": "Oratória",
+                "Duração": "30 horas"
+            },
+            "8": {
+                "Curso": "Telemarketing",
+                "Duração": "18 horas"
+            }
+        },
+        "AVANÇADO": {
+            "0": {
+                "Curso": "Administração para Microempresas",
+                "Duração": "120 horas"
+            },
+            "1": {
+                "Curso": "Aromaterapia",
+                "Duração": "60 horas"
+            },
+            "2": {
+                "Curso": "Auditoria em Enfermagem",
+                "Duração": "60 horas"
+            },
+            "3": {
+                "Curso": "Autismo",
+                "Duração": "180 horas"
+            },
+            "4": {
+                "Curso": "Auxiliar Contábil",
+                "Duração": "210 horas"
+            },
+            "5": {
+                "Curso": "Auxiliar de Enfermagem - não tira COREN",
+                "Duração": "560 horas"
+            },
+            "6": {
+                "Curso": "Coaching",
+                "Duração": "170 horas"
+            },
+            "7": {
+                "Curso": "Cuidador de Idosos",
+                "Duração": "130 horas"
+            },
+            "8": {
+                "Curso": "Educação e História Indígenas",
+                "Duração": "140 horas"
+            },
+            "9": {
+                "Curso": "Educação Inclusiva",
+                "Duração": "115 horas"
+            },
+            "10": {
+                "Curso": "Empreender com Sucesso",
+                "Duração": "195 horas"
+            },
+            "11": {
+                "Curso": "Enfermagem do Trabalho",
+                "Duração": "265 horas"
+            },
+            "12": {
+                "Curso": "Estudos Periciais",
+                "Duração": "120 horas"
+            },
+            "13": {
+                "Curso": "Evolução Pessoal e Profissional",
+                "Duração": "180 horas"
+            },
+            "14": {
+                "Curso": "Gerenciamento de Projetos",
+                "Duração": "165 horas"
+            },
+            "15": {
+                "Curso": "Gestão Bancária",
+                "Duração": "170 horas"
+            },
+            "16": {
+                "Curso": "Gestão de Recursos Humanos",
+                "Duração": "180 horas"
+            },
+            "17": {
+                "Curso": "Gestão Financeira",
+                "Duração": "110 horas"
+            },
+            "18": {
+                "Curso": "Gestor de Compras",
+                "Duração": "50 horas"
+            },
+            "19": {
+                "Curso": "História do Brasil",
+                "Duração": "55 horas"
+            },
+            "20": {
+                "Curso": "Inteligência Emocional",
+                "Duração": "60 horas"
+            },
+            "21": {
+                "Curso": "Legislação da Educação e LDB",
+                "Duração": "110 horas"
+            },
+            "22": {
+                "Curso": "Libras",
+                "Duração": "185 horas"
+            },
+            "23": {
+                "Curso": "Líder 4.0",
+                "Duração": "275 horas"
+            },
+            "24": {
+                "Curso": "Logística Avançada",
+                "Duração": "160 horas"
+            },
+            "25": {
+                "Curso": "Marketing",
+                "Duração": "270 horas"
+            },
+            "26": {
+                "Curso": "Marketing Digital",
+                "Duração": "120 horas"
+            },
+            "27": {
+                "Curso": "Massagens Corporais e Faciais",
+                "Duração": "60 horas"
+            },
+            "28": {
+                "Curso": "Matriculador Shark",
+                "Duração": "75 horas"
+            },
+            "29": {
+                "Curso": "Mercado Digital",
+                "Duração": "120 horas"
+            },
+            "30": {
+                "Curso": "Noções de Psicologia",
+                "Duração": "90 horas"
+            },
+            "31": {
+                "Curso": "Nutrição",
+                "Duração": "100 horas"
+            },
+            "32": {
+                "Curso": "Procedimentos Estéticos Avançados",
+                "Duração": "370 horas"
+            },
+            "33": {
+                "Curso": "Psicologia Educacional",
+                "Duração": "140 horas"
+            },
+            "34": {
+                "Curso": "Psicologia Forense",
+                "Duração": "60 horas"
+            },
+            "35": {
+                "Curso": "Reforço Português",
+                "Duração": "115 horas"
+            },
+            "36": {
+                "Curso": "Saúde e Emergências com Crianças",
+                "Duração": "120 horas"
+            },
+            "37": {
+                "Curso": "Segurança do Trabalho",
+                "Duração": "330 horas"
+            },
+            "38": {
+                "Curso": "Terapia para Casais",
+                "Duração": "60 horas"
+            },
+            "39": {
+                "Curso": "Trânsito e Mobilidade Urbana",
+                "Duração": "170 horas"
+            },
+            "40": {
+                "Curso": "Vendedor Sênior",
+                "Duração": "175 horas"
+            }
+        },
+        "DIVERSAS ÁREAS": {
+            "0": {
+                "Curso": "Análises Clínicas",
+                "Duração": "60 horas"
+            },
+            "1": {
+                "Curso": "Atualização em Radiologia",
+                "Duração": "40 horas"
+            },
+            "2": {
+                "Curso": "Auxiliar de Creche",
+                "Duração": "20 horas"
+            },
+            "3": {
+                "Curso": "Auxiliar de Necrópsia",
+                "Duração": "20 horas"
+            },
+            "4": {
+                "Curso": "Auxiliar de Veterinário",
+                "Duração": "80 horas"
+            },
+            "5": {
+                "Curso": "Eletricista",
+                "Duração": "60 horas"
+            },
+            "6": {
+                "Curso": "Energia Solar",
+                "Duração": "80 horas"
+            },
+            "7": {
+                "Curso": "Físcal de Loja",
                 "Duração": "10 horas"
             },
-            "1":{
+            "8": {
                 "Curso": "Frentista",
                 "Duração": "40 horas"
             },
-            "2":{
+            "9": {
                 "Curso": "Mediador Escolar",
                 "Duração": "10 horas"
             },
-            "3":{
+            "10": {
                 "Curso": "NR-10",
                 "Duração": "40 horas"
             },
-            "4":{
+            "11": {
                 "Curso": "NR-33",
                 "Duração": "16 horas"
             },
-            "5":{
+            "12": {
                 "Curso": "NR-34",
                 "Duração": "16 horas"
             },
-            "6":{
+            "13": {
                 "Curso": "NR-35",
                 "Duração": "16 horas"
             },
-            "7":{
+            "14": {
                 "Curso": "Pá Carregadeira",
                 "Duração": "25 horas"
             },
-            "8":{
+            "15": {
                 "Curso": "Ponte Rolante",
                 "Duração": "80 horas"
             },
-            "9":{
+            "16": {
                 "Curso": "Retroescavadeira",
                 "Duração": "25 horas"
             },
-            "10":{
+            "17": {
                 "Curso": "Socorrista APH",
                 "Duração": "24 horas"
             },
-            "11":{
+            "18": {
                 "Curso": "Solda MIG/MAG",
                 "Duração": "32 horas"
             },
-            "12":{
+            "19": {
                 "Curso": "Solda TIG",
                 "Duração": "30 horas"
             },
-            "13":{
+            "20": {
                 "Curso": "TBO-Treinamento Básico Operacional",
                 "Duração": "35 horas"
+            }
+        },
+        "IDIOMAS": {
+            "0": {
+                "Curso": "Espanhol ",
+                "Duração": "110 horas"
+            },
+            "1": {
+                "Curso": "Inglês do Zero a Fluência",
+                "Duração": "100 horas"
+            },
+            "2": {
+                "Curso": "Interactive English",
+                "Duração": "100 horas"
+            }
+        },
+        "INFORMÁTICA": {
+            "0": {
+                "Curso": "3D Studio Max Básico",
+                "Duração": "21 horas"
+            },
+            "1": {
+                "Curso": "Blender 3D",
+                "Duração": "22 horas "
+            },
+            "2": {
+                "Curso": "Canva ",
+                "Duração": "30 horas"
+            },
+            "3": {
+                "Curso": "Criação de Game Profissional",
+                "Duração": "100 horas"
+            },
+            "4": {
+                "Curso": "Digitação Interativa",
+                "Duração": "15 horas"
+            },
+            "5": {
+                "Curso": "Dropshipping",
+                "Duração": "40 horas"
+            },
+            "6": {
+                "Curso": "Manutenção de Celular",
+                "Duração": "50 horas"
+            },
+            "7": {
+                "Curso": "Operador de Podcast",
+                "Duração": "10 horas"
+            },
+            "8": {
+                "Curso": "Robótica",
+                "Duração": "70 horas"
+            },
+            "9": {
+                "Curso": "Windows 11",
+                "Duração": "20 horas"
+            },
+            "10": {
+                "Curso": "Windows 11 Kids",
+                "Duração": "15 horas"
+            },
+            "11": {
+                "Curso": "Word Kids",
+                "Duração": "40 horas"
+            }
+        },
+        "PREPARATÓRIO": {
+            "0": {
+                "Curso": "Artes",
+                "Duração": "30 horas"
+            },
+            "1": {
+                "Curso": "Biologia",
+                "Duração": "40 horas"
+            },
+            "2": {
+                "Curso": "Educação Física",
+                "Duração": "25 horas"
+            },
+            "3": {
+                "Curso": "Filosofia",
+                "Duração": "15 horas"
+            },
+            "4": {
+                "Curso": "Física",
+                "Duração": "45 horas"
+            },
+            "5": {
+                "Curso": "Geografia",
+                "Duração": "70 horas"
+            },
+            "6": {
+                "Curso": "História",
+                "Duração": "80 horas"
+            },
+            "7": {
+                "Curso": "Literatura",
+                "Duração": "35 horas"
+            },
+            "8": {
+                "Curso": "Matemática",
+                "Duração": "110 horas"
+            },
+            "9": {
+                "Curso": "Matemática para Enem",
+                "Duração": "45 horas"
+            },
+            "10": {
+                "Curso": "Português",
+                "Duração": "40 horas"
+            },
+            "11": {
+                "Curso": "Química",
+                "Duração": "55 horas"
+            },
+            "12": {
+                "Curso": "Sociologia",
+                "Duração": "20 horas"
+            },
+            "13": {
+                "Curso": "Técnicas de Redação",
+                "Duração": "30 horas"
             }
         }
     },
     "Supletivo":{
+        "MODALIDADES": {
+            "0": {
+                "Curso": "Ensino Fundamental",
+                "Duração": "INDEFINIDA"
+            },
+            "1": {
+                "Curso": "Ensino Médio",
+                "Duração": "INDEFINIDA"
+            },
+            "2": {
+                "Curso": "Ensino Fundamental e Médio",
+                "Duração": "INDEFINIDA"
+            },
+            "3": {
+                "Curso": "Ensino Médio com Técnico",
+                "Duração": "INDEFINIDA"
+            }
+        }
     },
 
     "Técnicos":{
@@ -69,43 +441,43 @@
                 "Duração": "06 a 12 meses"
             },
             "1": {
-                "Curso": "Técnico em Secretaria Escolar",
+                "Curso": "Técnico em Agenciamento de Viagens",
                 "Duração": "06 a 12 meses"
             },
             "2": {
-                "Curso": "Técnico em Transações Imobiliárias",
+                "Curso": "Técnico em Agricultura",
                 "Duração": "06 a 12 meses"
             },
             "3": {
-                "Curso": "Técnico em Teologia",
+                "Curso": "Técnico em Agropecuária",
                 "Duração": "06 a 12 meses"
             },
             "4": {
-                "Curso": "Técnico em Informática",
+                "Curso": "Técnico em Compliance",
                 "Duração": "06 a 12 meses"
             },
             "5": {
-                "Curso": "Técnico em Eletrotécnica",
+                "Curso": "Técnico em Condomínios",
                 "Duração": "06 a 12 meses"
             },
             "6": {
-                "Curso": "Técnico em Eletromecânica",
+                "Curso": "Técnico em Cuidados de Idosos",
                 "Duração": "06 a 12 meses"
             },
             "7": {
-                "Curso": "Técnico em Mecânica",
-                "Duração": "06 a 12 meses"
-            },
-            "8": {
                 "Curso": "Técnico em Eletroeletrônica",
                 "Duração": "06 a 12 meses"
             },
+            "8": {
+                "Curso": "Técnico em Eletromecânica",
+                "Duração": "06 a 12 meses"
+            },
             "9": {
-                "Curso": "Técnico em Refrigeração & Climatização",
+                "Curso": "Técnico em Eletrotécnica",
                 "Duração": "06 a 12 meses"
             },
             "10": {
-                "Curso": "Técnico em Segurança do Trabalho",
+                "Curso": "Técnico em Estética",
                 "Duração": "06 a 12 meses"
             },
             "11": {
@@ -113,51 +485,51 @@
                 "Duração": "06 a 12 meses"
             },
             "12": {
-                "Curso": "Técnico em Veterinária",
-                "Duração": "06 a 12 meses"
-            },
-            "13": {
-                "Curso": "Técnico em Agricultura",
-                "Duração": "06 a 12 meses"
-            },
-            "14": {
-                "Curso": "Técnico em Agropecuária",
-                "Duração": "06 a 12 meses"
-            },
-            "15": {
-                "Curso": "Técnico em Meio Ambiente",
-                "Duração": "06 a 12 meses"
-            },
-            "16": {
-                "Curso": "Técnico em Estética",
-                "Duração": "06 a 12 meses"
-            },
-            "17": {
-                "Curso": "Técnico em Cuidados de Idosos",
-                "Duração": "06 a 12 meses"
-            },
-            "18": {
-                "Curso": "Técnico em Condomínios",
-                "Duração": "06 a 12 meses"
-            },
-            "19": {
                 "Curso": "Técnico em Finanças",
                 "Duração": "06 a 12 meses"
             },
-            "20": {
+            "13": {
+                "Curso": "Técnico em Informática",
+                "Duração": "06 a 12 meses"
+            },
+            "14": {
+                "Curso": "Técnico em Inteligência Artificial",
+                "Duração": "06 a 12 meses"
+            },
+            "15": {
                 "Curso": "Técnico em Marketing",
                 "Duração": "06 a 12 meses"
             },
+            "16": {
+                "Curso": "Técnico em Mecânica",
+                "Duração": "06 a 12 meses"
+            },
+            "17": {
+                "Curso": "Técnico em Meio Ambiente",
+                "Duração": "06 a 12 meses"
+            },
+            "18": {
+                "Curso": "Técnico em Refrigeração & Climatização",
+                "Duração": "06 a 12 meses"
+            },
+            "19": {
+                "Curso": "Técnico em Secretaria Escolar",
+                "Duração": "06 a 12 meses"
+            },
+            "20": {
+                "Curso": "Técnico em Segurança do Trabalho",
+                "Duração": "06 a 12 meses"
+            },
             "21": {
-                "Curso": "Técnico em Agenciamento de Viagens",
+                "Curso": "Técnico em Teologia",
                 "Duração": "06 a 12 meses"
             },
             "22": {
-                "Curso": "Técnico em Compliance",
+                "Curso": "Técnico em Transações Imobiliárias",
                 "Duração": "06 a 12 meses"
             },
             "23": {
-                "Curso": "Técnico em Inteligência Artificial",
+                "Curso": "Técnico em Veterinária",
                 "Duração": "06 a 12 meses"
             }
         }

@@ -11,6 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(data => {
             cursosData = data;
             renderCategorias(cursosData);
+            // Seleciona a categoria "Profissionalizante" automaticamente
+            const profissionalizanteTitle = Array.from(document.querySelectorAll('.categoria-titulo')).find(title => title.textContent.toLowerCase() === 'profissionalizante');
+            if (profissionalizanteTitle) {
+                profissionalizanteTitle.click();
+            }
         })
         .catch(error => console.error('Erro ao carregar o JSON:', error));
 
@@ -90,13 +95,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.querySelectorAll('.categoria-titulo').forEach(title => {
                     title.classList.remove('active');
                 });
-    
+
                 // Adiciona a classe 'active' ao título de categoria clicado
                 categoriaTitle.classList.add('active');
 
                 renderSubcategorias(subcategoriaContainer, subcategorias);
 
-            // Exibe ou oculta o container de subcategorias
+                // Exibe ou oculta o container de subcategorias
                 if (subcategoriaContainer.style.display === 'none' || subcategoriaContainer.dataset.categoria !== categoria) {
                     subcategoriaContainer.style.display = 'block';
                     subcategoriaContainer.dataset.categoria = categoria;
@@ -113,21 +118,21 @@ document.addEventListener('DOMContentLoaded', function () {
     // Função para renderizar as subcategorias e cursos
     function renderSubcategorias(container, subcategorias) {
         container.innerHTML = ''; // Limpa subcategorias anteriores
-    
+
         Object.keys(subcategorias).forEach(subcategoria => {
             const cursos = subcategorias[subcategoria];
-    
+
             // Título da subcategoria
             const subcategoriaTitle = document.createElement('h3');
             subcategoriaTitle.textContent = subcategoria;
             subcategoriaTitle.className = 'subcategoria-titulo';
             container.appendChild(subcategoriaTitle);
-    
+
             // Container dos cursos
             const cursosContainer = document.createElement('div');
             cursosContainer.className = 'cursos-container'; // Certifique-se de que esta classe seja aplicada
             cursosContainer.dataset.subcategoria = subcategoria;
-    
+
             // Inicialmente oculto (exceto se for EAD)
             if (subcategoria.toLowerCase() === 'ead') {
                 cursosContainer.style.display = 'grid'; // Mostra em grid
@@ -138,37 +143,36 @@ document.addEventListener('DOMContentLoaded', function () {
                         cursosContainer.style.display === 'none' ? 'grid' : 'none'; // Mostra em grid ao abrir
                 });
             }
-    
+
             // Adiciona os cartões de curso
             Object.keys(cursos).forEach(key => {
                 const curso = cursos[key];
-    
+
                 const card = document.createElement('div');
                 card.className = 'curso-card';
-    
+
                 const button = document.createElement('a');
                 button.href = 'https://wa.me/1234567890';
                 button.textContent = 'Saiba Mais';
                 button.className = 'curso-button';
-    
+
                 const title = document.createElement('span');
                 title.textContent = curso.Curso;
                 title.className = 'curso-titulo';
-    
+
                 const cargaHoraria = document.createElement('span');
                 cargaHoraria.textContent = curso.Duração;
                 cargaHoraria.className = 'curso-carga-horaria';
-    
+
                 card.appendChild(title);
                 card.appendChild(cargaHoraria);
                 card.appendChild(button);
                 cursosContainer.appendChild(card);
             });
-    
+
             container.appendChild(cursosContainer);
         });
     }
-    
 
     // Função para renderizar os cursos filtrados
     function renderCursosFiltrados(data) {
