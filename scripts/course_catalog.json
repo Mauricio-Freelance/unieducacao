@@ -1,20 +1,16 @@
 {
-    "MODALIDADES": {
+    "TECNOLOGIA DA INFORMAÇÃO": {
         "0": {
-            "Curso": "Ensino Fundamental",
-            "Duração": "INDEFINIDA"
+            "Curso": "Especialização Técnica em Comunicação ",
+            "Duração": "60 a 180 dias "
         },
         "1": {
-            "Curso": "Ensino Médio",
-            "Duração": "INDEFINIDA"
+            "Curso": "Especialização Técnica em Redação de Contratos ",
+            "Duração": "60 a 180 dias "
         },
         "2": {
-            "Curso": "Ensino Fundamental e Médio",
-            "Duração": "INDEFINIDA"
-        },
-        "3": {
-            "Curso": "Ensino Médio com Técnico",
-            "Duração": "INDEFINIDA"
+            "Curso": "Especialização Técnica em Mídias Digitais ",
+            "Duração": "60 a 180 dias "
         }
     }
 }

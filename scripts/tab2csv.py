@@ -2,9 +2,9 @@ import json
 import pandas as pd
 
 
-df = pd.read_csv("sheet2.csv", sep=",", header=None)
+df = pd.read_csv("sheet2.csv", sep="\t", header=None)
 
-category = "MODALIDADES"
+category = "TECNOLOGIA DA INFORMAÇÃO"
 
 #print(df)
 
