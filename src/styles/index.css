@@ -985,7 +985,7 @@ textarea {
         display: none;
     }
 
-    .banner {
+    /* .banner {
         height: 50vh;
     }
 
@@ -999,6 +999,9 @@ textarea {
 
     .banner img:hover {
         transform: scale(1);
+    } */
+    .banner {
+        display: none;
     }
 
 

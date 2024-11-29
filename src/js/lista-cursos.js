@@ -152,7 +152,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 card.className = 'curso-card';
 
                 const button = document.createElement('a');
-                button.href = 'https://wa.me/1234567890';
+                // Link do WhatsApp do responsável por vender os cursos
+                button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text&type=phone_number&app_absent=0';
                 button.textContent = 'Saiba Mais';
                 button.className = 'curso-button';
 
