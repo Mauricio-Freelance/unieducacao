@@ -1048,16 +1048,22 @@ textarea {
     }
 
     .Cursos_em_alta,
-    .Cursos_bem_avaliados,
     .Planos {
         flex-direction: column;
         overflow-x: auto;
         gap: 10px;
         padding: 10px;
     }
-
+    .Cursos_bem_avaliados{
+        flex-direction: column;
+        overflow-x: auto;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+    }
+/*Quebrado os cards */
     .card {
-        width: 100%;
+        width: 80%; 
         margin: 10px 0;
     }
 
