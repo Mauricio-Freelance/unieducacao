@@ -41,3 +41,106 @@
 .subcategoria-titulo {
     cursor: pointer;
 }
+
+.cursos_nexus_section {
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffffff;
+    overflow-y: auto;
+    height: auto;
+    width: 100%;
+}
+
+#search-bar {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: auto;
+}
+
+.subcategoria-container {
+    display: block;
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 20px;
+    overflow-x: hidden;
+    animation: slideDown 0.5s ease-in-out;
+    text-transform: uppercase;
+}
+
+.subcategoria-container h3 {
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.cursos-container {
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin-right: 40px;
+    background-color: #f9f9f9;
+    width: 99%;
+    box-sizing: border-box;
+}
+
+.curso-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    width: 280px;
+    height: auto;
+}
+
+.curso-card:hover {
+    background-color: rgb(241, 240, 225);
+}
+
+.curso-button {
+    display: flex;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #063c77;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 95px;
+    border-radius: 15px;
+}
+
+.curso-titulo {
+    width: 300px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.curso-carga-horaria {
+    color: #000000;
+    margin-bottom: 8px;
+}

@@ -1,12 +1,14 @@
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
 
-burger.addEventListener('click', () => {
+burger.addEventListener('click', () =>
+{
     burger.classList.toggle('active'); 
     navLinks.classList.toggle('active'); 
 });
 
-document.getElementById('contactForm').addEventListener('submit', function(event) {
+document.getElementById('contactForm').addEventListener('submit', function(event)
+{
     event.preventDefault();
 
     
@@ -50,7 +52,8 @@ document.getElementById('contactForm').addEventListener('submit', function(event
 // Rolagem categorias de cursos;
 
  // Remove the automatic scroll on wheel event
- document.querySelector('.categorias').removeEventListener('wheel', (evt) => {
+document.querySelector('.categorias').removeEventListener('wheel', (evt) =>
+{
     evt.preventDefault();
     document.querySelector('.categorias').scrollLeft += evt.deltaY;
 });
@@ -61,24 +64,28 @@ let scrollLeft;
 
 const slider = document.querySelector('.categorias');
 
-slider.addEventListener('mousedown', (e) => {
+slider.addEventListener('mousedown', (e) =>
+{
     isDown = true;
     slider.classList.add('active');
     startX = e.pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
 });
 
-slider.addEventListener('mouseleave', () => {
+slider.addEventListener('mouseleave', () =>
+{
     isDown = false;
     slider.classList.remove('active');
 });
 
-slider.addEventListener('mouseup', () => {
+slider.addEventListener('mouseup', () =>
+{
     isDown = false;
     slider.classList.remove('active');
 });
 
-slider.addEventListener('mousemove', (e) => {
+slider.addEventListener('mousemove', (e) =>
+{
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
@@ -87,27 +94,33 @@ slider.addEventListener('mousemove', (e) => {
 });
 
 // Add touch event listeners for mobile devices
-slider.addEventListener('touchstart', (e) => {
+slider.addEventListener('touchstart', (e) =>
+{
     isDown = true;
     startX = e.touches[0].pageX - slider.offsetLeft;
     scrollLeft = slider.scrollLeft;
 });
 
-slider.addEventListener('touchend', () => {
+slider.addEventListener('touchend', () =>
+{
     isDown = false;
 });
 
-slider.addEventListener('touchmove', (e) => {
+slider.addEventListener('touchmove', (e) =>
+{
     if (!isDown) return;
     const x = e.touches[0].pageX - slider.offsetLeft;
     const walk = (x - startX) * 3; //scroll-fast
     slider.scrollLeft = scrollLeft - walk;
 });
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () =>
+{
     const navLinks = document.querySelectorAll('.nav-links a');
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', function() {
+    navLinks.forEach(link =>
+    {
+        link.addEventListener('click', function()
+        {
             navLinks.forEach(nav => nav.classList.remove('active'));
             this.classList.add('active');
         });

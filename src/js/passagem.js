@@ -1,17 +1,22 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () =>
+{
     const top10Container = document.getElementById('top-10-container');
     let scrollAmount = top10Container.offsetWidth;
 
-    function scrollLeft() {
-        top10Container.scrollBy({
+    function scrollLeft()
+    {
+        top10Container.scrollBy
+        ({
             top: 0,
             left: -scrollAmount,
             behavior: 'smooth'
         });
     }
 
-    function scrollRight() {
-        top10Container.scrollBy({
+    function scrollRight()
+    {
+        top10Container.scrollBy
+        ({
             top: 0,
             left: scrollAmount,
             behavior: 'smooth'
@@ -19,7 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Atualizar o scrollAmount ao redimensionar a janela
-    window.addEventListener('resize', () => {
+    window.addEventListener('resize', () =>
+    {
         scrollAmount = top10Container.offsetWidth;
     });
 

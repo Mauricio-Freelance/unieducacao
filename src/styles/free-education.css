@@ -1,0 +1,108 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img {
+    background-color: rgba(0, 0, 0, 0.548);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Imagem invisível por padrão */
+    transition: opacity 1s ease-in-out;
+}
+
+.banner img.active {
+    opacity: 1;
+    /* Somente a imagem ativa será visível */
+    z-index: 1;
+    /* Garante que a imagem ativa esteja sobre as outras */
+}
+
+.free-education {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #063c77;
+}
+
+.free-education h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #7FA325;
+}
+
+.cards-free-education {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.card-free-education {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px;
+    min-height: 240px;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-free-education:hover {
+    transform: translateY(-5px);
+}
+
+/* card-free-education image */
+.card-free-education img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-free-education h3 {
+    font-size: 1.3em;
+    margin: 15px 0;
+    color: #333;
+}
+
+.card-free-education p {
+    font-size: 1rem;
+    margin: 0 15px 15px;
+    color: #666;
+}
+
+.card-free-education button {
+    background-color: #063c77;
+    border: none;
+    border-radius: 70px;
+    align-self: center;
+    width: 150px;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.card-free-education button:hover {
+    background-color: #0056b3;
+}

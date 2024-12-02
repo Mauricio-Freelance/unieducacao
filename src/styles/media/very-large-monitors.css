@@ -1,0 +1,293 @@
+@media (min-width: 1600px) {
+    .cab {
+        padding-left: 2rem;
+    }
+
+    .navbar-container {
+        padding: 2rem 4rem;
+    }
+
+    .logo img {
+        width: 150px;
+        padding: 40px;
+    }
+
+    .nav-links li {
+        font-size: 2rem;
+    }
+
+    .nav-links li a {
+        font-size: 2rem;
+    }
+
+    .social-icons a {
+        font-size: 2.5rem;
+    }
+
+    .banner {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .banner img {
+        width: 100%;
+
+    }
+
+    .categorias,
+    .modalidades {
+        height: 600px;
+    }
+
+
+    .Top_10 {
+        height: 600px;
+
+    }
+
+    .total_top_10 {
+        border: 1px solid black;
+        height: 400px;
+        width: 800px;
+    }
+
+    .top {
+        width: 400px;
+        height: 400px;
+    }
+
+    .title h3 {
+        margin-top: 20px;
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .card h3 {
+        font-size: 2rem;
+    }
+
+    .categoria,
+    .modalidade {
+        width: 350px;
+        height: 350px;
+    }
+
+    .informativo .video,
+    .informativo .carrossel {
+        width: 60%;
+    }
+
+    .Cursos_em_alta,
+    .Cursos_bem_avaliados,
+    .Planos {
+        gap: 30px;
+    }
+
+    .card {
+        height: auto;
+        width: calc(20% - 20px);
+    }
+
+    .card button {
+        font-size: 2rem;
+        padding: 20px 40px;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .parceiros {
+        height: auto;
+    }
+
+    .perfil {
+        margin-left: 300px;
+        font-size: 2.5rem;
+    }
+
+    .perfil img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .about-container,
+    .mission-container,
+    .vision-container,
+    .price-container,
+    .perfil-solange,
+    .perfil-sueli {
+        padding-left: 30%;
+        padding-right: 30%;
+        font-size: 1.9rem;
+    }
+
+    .free-education,
+    .cards-free-education {
+        gap: 30px;
+        font-size: 2rem;
+    }
+
+    .card-free-education {
+        width: 450px;
+        height: 760px;
+    }
+
+    .card-free-education img {
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .anuncie_aqui {
+        height: auto;
+        gap: 10px;
+    }
+
+    .card-anuncie {
+        width: 400px;
+        height: auto;
+    }
+
+    .anuncie_aqui img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    #search-bar {
+        width: 30%;
+        padding: 20px;
+        font-size: 2rem;
+    }
+
+    .categoria-container {
+        align-items: center;
+    }
+
+    .categoria-container h2 {
+        font-size: 1.8rem;
+    }
+
+    .subcategoria-container h3 {
+        font-size: 2rem;
+    }
+
+
+    .cursos-container {
+        display: grid;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        margin-right: 40px;
+        background-color: #f9f9f9;
+        width: 99%;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    .curso-card {
+        font-size: 1.2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        height: 350px;
+        width: 500px;
+    }
+
+
+    .curso-card:hover {
+        background-color: rgb(241, 240, 225);
+    }
+
+
+    .curso-button {
+        display: flex;
+        margin-top: 10px;
+        padding: 20px 40px;
+        background-color: #063c77;
+        color: white;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-size: 1.5rem;
+        width: 150px;
+        border-radius: 15px;
+    }
+
+    .curso-titulo {
+        font-size: 1.5rem;
+        width: 300px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+
+    .curso-carga-horaria {
+        font-size: 1.5rem;
+        color: #000000;
+        margin-bottom: 8px;
+    }
+
+    .contato,
+    .contact-container,
+    .contact-container form {
+        height: auto;
+        margin-left: 8%;
+        width: 70%;
+    }
+
+    .contact-container p {
+        margin-left: 8%;
+        font-size: 2rem;
+    }
+
+    .contact-container h1 {
+        margin-left: 8%;
+    }
+
+    .contact-container form {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .contact-container form button {
+        width: 80%;
+        font-size: 2rem;
+        padding: 20px 40px;
+    }
+
+    .contact-container form input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 80%;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 2rem;
+    }
+
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 40px;
+    }
+
+    footer p {
+        font-size: 1.8rem;
+    }
+}
+
