@@ -1,16 +1,24 @@
 {
-    "TECNOLOGIA DA INFORMAÇÃO": {
+    "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica": {
         "0": {
-            "Curso": "Especialização Técnica em Comunicação ",
-            "Duração": "60 a 180 dias "
+            "Curso": "Docência no Ensino Digital: Ensino 4.0",
+            "Duração": "4 a 12 Meses"
         },
         "1": {
-            "Curso": "Especialização Técnica em Redação de Contratos ",
-            "Duração": "60 a 180 dias "
+            "Curso": "Informática e Comunicação na Educação",
+            "Duração": "3 a 10 Meses "
         },
         "2": {
-            "Curso": "Especialização Técnica em Mídias Digitais ",
-            "Duração": "60 a 180 dias "
+            "Curso": "Informática Educativa",
+            "Duração": "3 a 10 Meses "
+        },
+        "3": {
+            "Curso": "Inovação em Tecnologias Educacionais",
+            "Duração": "3 a 10 Meses "
+        },
+        "4": {
+            "Curso": "Inteligência de Mercado com Habilitação em Docência no Ensino Superior",
+            "Duração": "3 a 10 Meses "
         }
     }
 }

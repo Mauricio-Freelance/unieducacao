@@ -4,7 +4,7 @@ import pandas as pd
 
 df = pd.read_csv("sheet2.csv", sep="\t", header=None)
 
-category = "TECNOLOGIA DA INFORMAÇÃO"
+category = "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica"
 
 #print(df)
 
@@ -12,7 +12,14 @@ data = {}
 
 for row in df.iterrows(): 
     id = row[0] 
-    course, duration = row[1]
+
+    if len(row[1]) > 1:
+
+        course, duration = row[1]
+    else:
+
+        course = row[1].values[0]
+        duration = "INDEFINIDO"
 
     #print(f"{id} - {course} - {duration}")
 
@@ -27,3 +34,4 @@ string_json = json.dumps(data, indent=4, ensure_ascii=False)
 
 with open("course_catalog.json", "w", encoding="utf-8") as file:
     file.write(string_json)
+    print("Salvei no arquivo")

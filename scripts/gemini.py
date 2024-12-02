@@ -65,7 +65,7 @@ def use_model_dict(prompt: str, model: genai.GenerativeModel) -> dict:
                 
     return dic
     
-    #pattern = r"(?:^|\n{2})(.*?)(?:\n{2}|\n|$)" # Expresão Regular usada para filtrar as seções dos animes recomendados
+    #pattern = r"(?:^|\n{2})(.*?)(?:\n{2}|\n|$)" # Expressão Regular usada para filtrar as seções dos animes recomendados
     
     #matches = findall(pattern, data)
     

@@ -234,7 +234,7 @@
                 "Duração": "80 horas"
             },
             "7": {
-                "Curso": "Físcal de Loja",
+                "Curso": "Fiscal de Loja",
                 "Duração": "10 horas"
             },
             "8": {
@@ -433,7 +433,6 @@
             }
         }
     },
-
     "Técnicos":{
         "Técnicos Regulares": {
             "0": {
@@ -742,2212 +741,1544 @@
         }
     },
     "Graduação":{
-        "EAD":{
+        "TECNÓLOGOS": {
+            "0": {
+                "Curso": "Analise e Desenvolvimento de Sistemas",
+                "Duração": "INDEFINIDO"
+            },
             "1": {
-                "Curso": "ADMINISTRAÇÃO",
-                "Duração": "4 ANOS"
+                "Curso": "Design Gráfico",
+                "Duração": "INDEFINIDO"
             },
             "2": {
-                "Curso": "CIÊNCIAS CONTÁBEIS",
-                "Duração": "4 ANOS"
+                "Curso": "Estética e Cosmética",
+                "Duração": "INDEFINIDO"
             },
             "3": {
-                "Curso": "ENGENHARIA DA COMPUTAÇÃO",
-                "Duração": "5 ANOS"
+                "Curso": "Gestão Agronegócio",
+                "Duração": "INDEFINIDO "
             },
             "4": {
-                "Curso": "ENGENHARIA ELÉTRICA",
-                "Duração": "5 ANOS"
+                "Curso": "Gestão Ambiental",
+                "Duração": "INDEFINIDO"
             },
             "5": {
-                "Curso": "ENGENHARIA DE PRODUÇÃO",
-                "Duração": "5 ANOS"
+                "Curso": "Gestão Financeira",
+                "Duração": "INDEFINIDO"
             },
             "6": {
-                "Curso": "ENGENHARIA CIVIL",
-                "Duração": "5 ANOS"
+                "Curso": "Gestão Pública",
+                "Duração": "INDEFINIDO"
             },
             "7": {
-                "Curso": "ENGENHARIA AGRONÔMICA",
-                "Duração": "5 ANOS"
+                "Curso": "Logística ",
+                "Duração": "INDEFINIDO"
             },
             "8": {
-                "Curso": "TEOLOGIA",
-                "Duração": "3 a 5 ANOS"
+                "Curso": "Marketing",
+                "Duração": "INDEFINIDO"
             },
             "9": {
-                "Curso": "SERVIÇO SOCIAL",
-                "Duração": "4 ANOS"
+                "Curso": "Negócios Imobiliários ",
+                "Duração": "INDEFINIDO"
             },
             "10": {
-                "Curso": "PEDAGOGIA",
-                "Duração": "4 anos"
+                "Curso": "Processos Gerenciais",
+                "Duração": "INDEFINIDO"
             },
             "11": {
-                "Curso": "LICENCIATURA EM ARTES VISUAIS",
-                "Duração": "4 anos"
+                "Curso": "Recursos Humanos",
+                "Duração": "INDEFINIDO"
             },
             "12": {
-                "Curso": "LICENCIATURA EM CIÊNCIAS SOCIAIS",
-                "Duração": "2 anos"
+                "Curso": "Segurança Publica",
+                "Duração": "INDEFINIDO"
             },
             "13": {
-                "Curso": "LICENCIATURA EM MATEMÁTICA",
-                "Duração": "2 anos"
+                "Curso": "Sistema para Internet",
+                "Duração": "INDEFINIDO"
             },
             "14": {
-                "Curso": "LICENCIATURA EM PEDAGOGIA",
-                "Duração": "2 anos"
+                "Curso": "Tecnologia da Informação ",
+                "Duração": "INDEFINIDO"
             },
             "15": {
-                "Curso": "LICENCIATURA LIBRAS - LÍNGUA PORTUGUESA",
-                "Duração": "2 anos"
+                "Curso": "Serviços Jurídicos",
+                "Duração": "INDEFINIDO"
             },
             "16": {
-                "Curso": "LICENCIATURA EM HISTÓRIA",
-                "Duração": "2 anos"
+                "Curso": "Gestão de Segurança Privada",
+                "Duração": "INDEFINIDO"
+            }
+        },
+        "LICENCIATURA": {
+            "0": {
+                "Curso": "Pedagogia",
+                "Duração": "INDEFINIDO"
+            },
+            "1": {
+                "Curso": "Historia",
+                "Duração": "INDEFINIDO"
+            },
+            "2": {
+                "Curso": "Ciências Sociais",
+                "Duração": "INDEFINIDO"
+            },
+            "3": {
+                "Curso": "Matemática",
+                "Duração": "INDEFINIDO"
+            },
+            "4": {
+                "Curso": "Libras - Lingua Portuguesa",
+                "Duração": "INDEFINIDO"
+            }
+        },
+        "SEGUNDA LICENCIATURA ": {
+            "0": {
+                "Curso": "Artes Visuais",
+                "Duração": "INDEFINIDO"
+            },
+            "1": {
+                "Curso": "Ciência da Religião",
+                "Duração": "INDEFINIDO"
+            },
+            "2": {
+                "Curso": "Ciências Sociais",
+                "Duração": "INDEFINIDO"
+            },
+            "3": {
+                "Curso": "Educação Especial",
+                "Duração": "INDEFINIDO"
+            },
+            "4": {
+                "Curso": "Educação Física",
+                "Duração": "INDEFINIDO"
+            },
+            "5": {
+                "Curso": "Filosofia",
+                "Duração": "INDEFINIDO"
+            },
+            "6": {
+                "Curso": "Geografia",
+                "Duração": "INDEFINIDO"
+            },
+            "7": {
+                "Curso": "Historia ",
+                "Duração": "INDEFINIDO"
+            },
+            "8": {
+                "Curso": "Letras - Lingua Portuguesa e Libras",
+                "Duração": "INDEFINIDO"
+            },
+            "9": {
+                "Curso": "Letras - Português e Espanhol",
+                "Duração": "INDEFINIDO"
+            },
+            "10": {
+                "Curso": "Letras - Português e Ingles",
+                "Duração": "INDEFINIDO"
+            },
+            "11": {
+                "Curso": "Matemática",
+                "Duração": "INDEFINIDO"
+            },
+            "12": {
+                "Curso": "Musica ",
+                "Duração": "INDEFINIDO"
+            },
+            "13": {
+                "Curso": "Pedagogia com Habilitação em Magistério e Gestão Escolar ",
+                "Duração": "INDEFINIDO"
+            },
+            "14": {
+                "Curso": "Pedagogia",
+                "Duração": "INDEFINIDO"
+            },
+            "15": {
+                "Curso": "Sociologia",
+                "Duração": "INDEFINIDO"
+            }
+        },
+        "FORMAÇÃO PEDAGÓGICA": {
+            "0": {
+                "Curso": "Artes Visuais",
+                "Duração": "INDEFINIDO"
+            },
+            "1": {
+                "Curso": "Ciência da Religião",
+                "Duração": "INDEFINIDO"
+            },
+            "2": {
+                "Curso": "Educação Especial",
+                "Duração": "INDEFINIDO"
+            },
+            "3": {
+                "Curso": "Educação Física",
+                "Duração": "INDEFINIDO"
+            },
+            "4": {
+                "Curso": "Filosofia",
+                "Duração": "INDEFINIDO"
+            },
+            "5": {
+                "Curso": "Geografia",
+                "Duração": "INDEFINIDO"
+            },
+            "6": {
+                "Curso": "Historia ",
+                "Duração": "INDEFINIDO"
+            },
+            "7": {
+                "Curso": "Letras - Lingua Portuguesa e Libras",
+                "Duração": "INDEFINIDO"
+            },
+            "8": {
+                "Curso": "Letras - Português e Espanhol",
+                "Duração": "INDEFINIDO"
+            },
+            "9": {
+                "Curso": "Letras - Português e Ingles",
+                "Duração": "INDEFINIDO"
+            },
+            "10": {
+                "Curso": "Matemática",
+                "Duração": "INDEFINIDO"
+            },
+            "11": {
+                "Curso": "Musica ",
+                "Duração": "INDEFINIDO"
+            },
+            "12": {
+                "Curso": "Pedagogia",
+                "Duração": "INDEFINIDO"
+            },
+            "13": {
+                "Curso": "Sociologia",
+                "Duração": "INDEFINIDO"
+            }
+        },
+        "BACHARELADOS": {
+            "0": {
+                "Curso": "Administração ",
+                "Duração": "INDEFINIDO"
+            },
+            "1": {
+                "Curso": "Ciências Contábeis",
+                "Duração": "INDEFINIDO"
+            },
+            "2": {
+                "Curso": "Engenharia Agronômica",
+                "Duração": "INDEFINIDO"
+            },
+            "3": {
+                "Curso": "Engenharia Civil",
+                "Duração": "INDEFINIDO"
+            },
+            "4": {
+                "Curso": "Engenharia da Computação",
+                "Duração": "INDEFINIDO"
+            },
+            "5": {
+                "Curso": "Engenharia de Produção ",
+                "Duração": "INDEFINIDO"
+            },
+            "6": {
+                "Curso": "Engenharia Elétrica",
+                "Duração": "INDEFINIDO"
+            },
+            "7": {
+                "Curso": "Serviço Social",
+                "Duração": "INDEFINIDO"
+            },
+            "8": {
+                "Curso": "Teologia ",
+                "Duração": "INDEFINIDO"
             }
         }
     },
     "Pós Graduação": {
-        "Comunicação": {
-            "1":{
-                "Curso": "Comportamento Organizacional e Gestão de Pessoas com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "2":{
-                "Curso": "Comunicação E Oratória",
-                "Duração": "3 a 6 Meses"
-            },
-            "3":{
-                "Curso": "Comunicação Empresarial e Institucional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "4":{
-                "Curso": "Desenvolvimento Humano em Gestão de Projetos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "5":{
-                "Curso": "Jornalismo",
-                "Duração": "3 a 6 Meses"
-            },
-            "6":{
-                "Curso": "Transtornos Globais do Desenvolvimento e Comunicação Alternativa",
-                "Duração": "3 a 10 Meses"
-            }
-
-        },
-        "Direito": {
-            "1": {
-                "Curso": "Criminologia",
-                "Duração": "3 a 6 Meses"
-            },
-            "2": {
-                "Curso": "Direito Público: Constitucional, Administrativo e Tributário",
-                "Duração": "3 a 6 Meses"
-            },
-            "3": {
-                "Curso": "Direito Administrativo",
-                "Duração": "3 a 6 Meses"
-            },
-            "4": {
-                "Curso": "Direito Administrativo com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "5": {
-                "Curso": "Direito Ambiental",
-                "Duração": "3 a 6 Meses"
-            },
-            "6": {
-                "Curso": "Direito Ambiental com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "7": {
-                "Curso": "Direito Condominial",
-                "Duração": "3 a 10 Meses"
-            },
-            "8": {
-                "Curso": "Direito Condominial com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "9": {
-                "Curso": "Direito Constitucional",
-                "Duração": "3 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Direito Constitucional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "11": {
-                "Curso": "Direito da Família",
-                "Duração": "3 a 6 Meses"
-            },
-            "12": {
-                "Curso": "Direito de Família com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "13": {
-                "Curso": "Direito de Trânsito",
-                "Duração": "3 a 6 Meses"
-            },
-            "14": {
-                "Curso": "Direito do Consumidor",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Direito do Consumidor com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "16": {
-                "Curso": "Direito do Trabalho",
-                "Duração": "3 a 10 Meses"
-            },
-            "17": {
-                "Curso": "Direito do Trabalho com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Direito Educacional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "19": {
-                "Curso": "Direito Eleitoral",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "Direito Eleitoral com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "Direito Empresarial",
-                "Duração": "3 a 6 Meses"
-            },
-            "22": {
-                "Curso": "Direito Empresarial com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Direito Imobiliário",
-                "Duração": "3 a 6 Meses"
-            },
-            "24": {
-                "Curso": "Direito Imobiliário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "25": {
-                "Curso": "Direito Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "Direito Penal e Processo Penal",
-                "Duração": "3 a 10 Meses"
-            },
-            "27": {
-                "Curso": "Direito Penal e Processo Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "28": {
-                "Curso": "Direito Previdenciário",
-                "Duração": "3 a 6 Meses"
-            },
-            "29": {
-                "Curso": "Direito Previdenciário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "Direito Processual Civil",
-                "Duração": "3 a 6 Meses"
-            },
-            "31": {
-                "Curso": "Direito Processual Civil com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "32": {
-                "Curso": "Direito Processual Penal",
-                "Duração": "3 a 10 Meses"
-            },
-            "33": {
-                "Curso": "Direito Processual Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "Direito Público com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "35": {
-                "Curso": "Direito Tributário",
-                "Duração": "3 a 6 Meses"
-            },
-            "36": {
-                "Curso": "Direito Tributário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "37": {
-                "Curso": "Direitos Humanos e Perícia Criminal",
-                "Duração": "3 a 6 Meses"
-            },
-            "38": {
-                "Curso": "Especialização em Direito do Trabalho e Processual Trabalhista",
-                "Duração": "3 a 6 Meses"
-            },
-            "39": {
-                "Curso": "Especialização em Direito Educacional",
-                "Duração": "3 a 6 Meses"
-            }
-        },
-        "Educação": {
-            "1": {
-                "Curso": "Alfabetização, Letramento E Psicopedagogia",
-                "Duração": "3 a 6 Meses"
-            },
-            "2": {
-                "Curso": "Andragogia: Formação De Jovens e Adultos",
-                "Duração": "3 a 6 Meses"
-            },
-            "3": {
-                "Curso": "Arte-Educação",
-                "Duração": "3 a 6 Meses"
-            },
-            "4": {
-                "Curso": "Artes Visuais",
-                "Duração": "4 a 6 Meses"
-            },
-            "5": {
-                "Curso": "Ciência da Religião",
-                "Duração": "3 a 10 Meses"
-            },
-            "6": {
-                "Curso": "Ciência da Religião com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "7": {
-                "Curso": "Educação a Distância",
-                "Duração": "3 a 6 Meses"
-            },
-            "8": {
-                "Curso": "Educação De Jovens e Adultos (Eja)",
-                "Duração": "3 a 6 Meses"
-            },
-            "9": {
-                "Curso": "Educação Física",
-                "Duração": "4 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Educação Física Escolar",
-                "Duração": "3 a 6 Meses"
-            },
-            "11": {
-                "Curso": "Educação Física Escolar e Psicomotricidade",
-                "Duração": "3 a 10 Meses"
-            },
-            "12": {
-                "Curso": "Educação Física Escolar e Treinamento Desportivo",
-                "Duração": "3 a 6 Meses"
-            },
-            "13": {
-                "Curso": "Educação Infantil",
-                "Duração": "3 a 6 Meses"
-            },
-            "14": {
-                "Curso": "Educação Infantil - Anos Iniciais e Psicopedagogia",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Educação Infantil De 0 A 6 Anos",
-                "Duração": "3 a 6 Meses"
-            },
-            "16": {
-                "Curso": "Educação Infantil, Alfabetização E Letramento",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Educação Infantil, Especial e Transtornos Globais",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Educação Musical",
-                "Duração": "3 a 10 Meses"
-            },
-            "19": {
-                "Curso": "Educação Musical com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "20": {
-                "Curso": "Educação, Ludicidade e Desenvolvimento Infantil",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "Ensino Ciências",
-                "Duração": "3 a 6 Meses"
-            },
-            "22": {
-                "Curso": "Ensino Da Geografia",
-                "Duração": "3 a 6 Meses"
-            },
-            "23": {
-                "Curso": "Ensino da História e da Geografia",
-                "Duração": "3 a 6 Meses"
-            },
-            "24": {
-                "Curso": "Ensino Da Matemática",
-                "Duração": "3 a 6 Meses"
-            },
-            "25": {
-                "Curso": "Ensino De Artes",
-                "Duração": "3 a 6 Meses"
-            },
-            "26": {
-                "Curso": "Ensino De História",
-                "Duração": "3 a 6 Meses"
-            },
-            "27": {
-                "Curso": "Ensino de Língua Espanhola",
-                "Duração": "3 a 6 Meses"
-            },
-            "28": {
-                "Curso": "Ensino de Língua Inglesa",
-                "Duração": "3 a 6 Meses"
-            },
-            "29": {
-                "Curso": "Ensino De Língua Portuguesa e Literatura",
-                "Duração": "3 a 6 Meses"
-            },
-            "30": {
-                "Curso": "Ensino Religioso",
-                "Duração": "3 a 6 Meses"
-            },
-            "31": {
-                "Curso": "Games e Gamificação Na Educação",
-                "Duração": "4 a 6 Meses"
-            },
-            "32": {
-                "Curso": "Habilidades Socioemocionais: Neurociência E Formação Docente",
-                "Duração": "4 a 6 Meses"
-            },
-            "33": {
-                "Curso": "História da Arte",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "História e Cultura no Brasil",
-                "Duração": "3 a 10 Meses"
-            },
-            "35": {
-                "Curso": "Inteligência Emocional Aplicada Á Educação",
-                "Duração": "4 a 6 Meses"
-            },
-            "36": {
-                "Curso": "Letras Português E Literatura",
-                "Duração": "3 a 6 Meses"
-            },
-            "37": {
-                "Curso": "Língua Portuguesa - Redação E Oratória",
-                "Duração": "3 a 6 Meses"
-            },
-            "38": {
-                "Curso": "Linguística e Formação de Leitores",
-                "Duração": "3 a 10 Meses"
-            },
-            "39": {
-                "Curso": "Linguística e o Estudo Das Linguagens",
-                "Duração": "3 a 6 Meses"
-            },
-            "40": {
-                "Curso": "Literatura Infantojuvenil",
-                "Duração": "3 a 10 Meses"
-            },
-            "41": {
-                "Curso": "Ludopedagogia",
-                "Duração": "3 a 6 Meses"
-            },
-            "42": {
-                "Curso": "Ludopedagogia e Educação Infantil",
-                "Duração": "3 a 10 Meses"
-            },
-            "43": {
-                "Curso": "Metodologia do Ensino da Educação Física",
-                "Duração": "3 a 6 Meses"
-            },
-            "44": {
-                "Curso": "Metodologia do Ensino da História com Ênfase em História Antiga",
-                "Duração": "3 a 10 Meses"
-            },
-            "45": {
-                "Curso": "Metodologia do Ensino da História com Ênfase em História Medieval",
-                "Duração": "3 a 10 Meses"
-            },
-            "46": {
-                "Curso": "Metodologia do Ensino da História com Ênfase em História Moderna",
-                "Duração": "3 a 10 Meses"
-            },
-            "47": {
-                "Curso": "Metodologia do Ensino da História e da Geografia",
-                "Duração": "3 a 10 Meses"
-            },
-            "48": {
-                "Curso": "Metodologia do Ensino da Língua Portuguesa, Literatura Brasileira e Portuguesa",
-                "Duração": "3 a 10 Meses"
-            },
-            "49": {
-                "Curso": "Metodologia do Ensino da Linguística",
-                "Duração": "3 a 10 Meses"
-            },
-            "50": {
-                "Curso": "Metodologia do Ensino da Literatura Africana e Indígena",
-                "Duração": "3 a 10 Meses"
-            },
-            "51": {
-                "Curso": "Metodologia do Ensino da Literatura Portuguesa e Brasileira",
-                "Duração": "3 a 10 Meses"
-            },
-            "52": {
-                "Curso": "Metodologia do Ensino da Matemática e Física",
-                "Duração": "3 a 6 Meses"
-            },
-            "53": {
-                "Curso": "Metodologia Do Ensino De História",
-                "Duração": "4 a 6 Meses"
-            },
-            "54": {
-                "Curso": "Metodologia Do Ensino De Inglês",
-                "Duração": "3 a 6 Meses"
-            },
-            "55": {
-                "Curso": "Metodologia Do Ensino De Língua Portuguesa",
-                "Duração": "3 a 6 Meses"
-            },
-            "56": {
-                "Curso": "Metodologia Do Ensino Superior Nas Várias Modalidades",
-                "Duração": "3 a 6 Meses"
-            },
-            "57": {
-                "Curso": "Metodologia e Prática em Educação Infantil",
-                "Duração": "3 a 10 Meses"
-            },
-            "58": {
-                "Curso": "Metodologia no Ensino das Artes com Ênfase na Educação Básica",
-                "Duração": "3 a 10 Meses"
-            },
-            "59": {
-                "Curso": "Metodologias Ativas Na Docência Da Educação",
-                "Duração": "4 a 6 Meses"
-            },
-            "60": {
-                "Curso": "Pedagogia do Esporte",
-                "Duração": "4 a 6 Meses"
-            }
-        },
-        "Educação inclusiva": {
-            "1": {
-                "Curso": "A Psicanálise com Ênfase em Autismo",
-                "Duração": "3 a 10 Meses"
-            },
-            "2": {
-                "Curso": "Análise de Comportamento Aplicada ao Autismo - ABA com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "3": {
-                "Curso": "Análise de Comportamento Aplicada ao Autismo (ABA)",
-                "Duração": "3 a 10 Meses"
-            },
-            "4": {
-                "Curso": "Atendimento Educacional Especializado com Ênfase em Autismo",
-                "Duração": "3 a 6 Meses"
-            },
-            "5": {
-                "Curso": "Atuação Profissional Inclusiva",
-                "Duração": "3 a 10 Meses"
-            },
-            "6": {
-                "Curso": "Atuação Profissional Inclusiva com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "7": {
-                "Curso": "Distúrbios da Aprendizagem",
-                "Duração": "3 a 10 Meses"
-            },
-            "8": {
-                "Curso": "Educação Especial com Deficiência Intelectual",
-                "Duração": "3 a 10 Meses"
-            },
-            "9": {
-                "Curso": "Educação Especial com Ênfase em Comunicação",
-                "Duração": "3 a 10 Meses"
-            },
-            "10": {
-                "Curso": "Educação Especial e Gestão de Processos Inclusivos",
-                "Duração": "3 a 10 Meses"
-            },
-            "11": {
-                "Curso": "Educação Especial E Inclusiva",
-                "Duração": "3 a 6 Meses"
-            },
-            "12": {
-                "Curso": "Educação Especial e Inclusiva com Ênfase em Deficiência Motora e Paralisia Cerebral",
-                "Duração": "3 a 10 Meses"
-            },
-            "13": {
-                "Curso": "Educação Especial e Inclusiva com Ênfase em Paralisia Cerebral",
-                "Duração": "3 a 10 Meses"
-            },
-            "14": {
-                "Curso": "Educação Especial Inclusiva",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Educação Especial Inclusiva - Ênfase em Tecnologia Assistiva e Comunicação Alternativa",
-                "Duração": "3 a 10 Meses"
-            },
-            "16": {
-                "Curso": "Educação Especial Inclusiva E Transtorno do Espectro Autista (Tea)",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Intervenção ABA para Autismo e Deficiência Intelectual",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Libras",
-                "Duração": "3 a 6 Meses"
-            },
-            "19": {
-                "Curso": "Neuroeducação",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "Neuroeducação – Como Ensinar Da Forma Que O Cérebro Aprende",
-                "Duração": "4 a 6 Meses"
-            },
-            "21": {
-                "Curso": "O Ensino de LIBRAS na Educação Infantil",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Psicologia da Educação",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Psicologia e Desenvolvimento da Aprendizagem",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "Psicologia Escolar E Educacional",
-                "Duração": "4 a 6 Meses"
-            },
-            "25": {
-                "Curso": "TEA (Transtorno do Espectro Autista)",
-                "Duração": "3 a 6 Meses"
-            },
-            "26": {
-                "Curso": "Transtorno do Espectro Autista",
-                "Duração": "4 a 6 Meses"
-            },
-            "27": {
-                "Curso": "Transtornos E Problemas na Aprendizagem",
-                "Duração": "3 a 6 Meses"
-            }
-
-        },
-        "Engenharia ": {
-            "1": {
-                "Curso": "Engenharia Ambiental",
-                "Duração": "3 a 6 Meses"
-            },
-            "2": {
-                "Curso": "Engenharia Ambiental com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "3": {
-                "Curso": "Engenharia Ambiental e Energias Renováveis",
-                "Duração": "3 a 6 Meses"
-            },
-            "4": {
-                "Curso": "Engenharia Ambiental e Saneamento Básico",
-                "Duração": "3 a 6 Meses"
-            },
-            "5": {
-                "Curso": "Engenharia da Qualidade com Habilitação com Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "6": {
-                "Curso": "Engenharia de Manutenção",
-                "Duração": "3 a 6 Meses"
-            },
-            "7": {
-                "Curso": "Engenharia de Obras",
-                "Duração": "3 a 10 Meses"
-            },
-            "8": {
-                "Curso": "Engenharia de Obras com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "9": {
-                "Curso": "Engenharia de Produção",
-                "Duração": "3 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Engenharia de Produção com Ênfase em Gestão",
-                "Duração": "3 a 10 Meses"
-            },
-            "11": {
-                "Curso": "Engenharia de Produção com Ênfase em Gestão com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "12": {
-                "Curso": "Engenharia de Qualidade",
-                "Duração": "3 a 6 Meses"
-            },
-            "13": {
-                "Curso": "Engenharia de Segurança Contra Incêndio e Pânico",
-                "Duração": "3 a 10 Meses"
-            },
-            "14": {
-                "Curso": "Engenharia de Segurança Contra Incêndio e Pânico com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Engenharia de Segurança do Trabalho",
-                "Duração": "3 a 6 Meses"
-            },
-            "16": {
-                "Curso": "Engenharia de Suprimentos",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Engenharia de Suprimentos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Engenharia e Gerenciamento de Manutenção",
-                "Duração": "3 a 10 Meses"
-            },
-            "19": {
-                "Curso": "Engenharia e Gerenciamento de Manutenção com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "20": {
-                "Curso": "Engenharia Elétrica",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "Engenharia Elétrica com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Engenharia Elétrica: Sistemas de Potência",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Engenharia Elétrica: Sistemas de Potência com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "Especialização em Engenharia Logística",
-                "Duração": "3 a 6 Meses"
-            },
-            "25": {
-                "Curso": "Especialização em Engenharia Sanitária e Ambiental",
-                "Duração": "3 a 6 Meses"
-            },
-            "26": {
-                "Curso": "MBA – Em Gestão Aplicada á Engenharia",
-                "Duração": "3 a 6 Meses"
-            }
-        },
-        "Estetica e Nutrição": {
-            "1": {
-                "Curso": "Biomedicina Estética",
-                "Duração": "3 a 6 Meses"
-            },
-            "2": {
-                "Curso": "Estética Avançada",
-                "Duração": "4 a 6 Meses"
-            },
-            "3": {
-                "Curso": "Estética corporal em Facial",
-                "Duração": "3 a 6 Meses"
-            },
-            "4": {
-                "Curso": "Estética e Cosmetologia",
-                "Duração": "3 a 6 Meses"
-            },
-            "5": {
-                "Curso": "Farmácia Clinica e Hospitalar",
-                "Duração": "3 a 6 Meses"
-            },
-            "6": {
-                "Curso": "Farmácia Clínica e Serviços Farmacêuticos",
-                "Duração": "3 a 10 Meses"
-            },
-            "7": {
-                "Curso": "Farmácia Clínica e Serviços Farmacêuticos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "8": {
-                "Curso": "Farmacologia",
-                "Duração": "4 a 6 Meses"
-            },
-            "9": {
-                "Curso": "Farmacologia Clinica Aplicada a Prescrição Farmacêutica",
-                "Duração": "3 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Fisioterapia Aplicada as Atividades Físicas",
-                "Duração": "3 a 6 Meses"
-            },
-            "11": {
-                "Curso": "MBA – Gestão Drogaria e Farmácia",
-                "Duração": "3 a 6 Meses"
-            },
-            "12": {
-                "Curso": "Microbiologia",
-                "Duração": "3 a 6 Meses"
-            },
-            "13": {
-                "Curso": "Microbiologia Clínica",
-                "Duração": "4 a 6 Meses"
-            },
-            "14": {
-                "Curso": "Microbiologia: Clínica, Ambiental E Alimentos",
-                "Duração": "4 a 6 Meses"
-            },
-            "15": {
-                "Curso": "Neurociências",
-                "Duração": "4 a 6 Meses"
-            },
-            "16": {
-                "Curso": "Nutrição E Estética Funcional",
-                "Duração": "4 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Nutrição Esportiva",
-                "Duração": "3 a 6 Meses"
-            },
-            "18": {
-                "Curso": "Nutrição Esportiva com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "19": {
-                "Curso": "Nutrição Esportiva e Estética com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "20": {
-                "Curso": "Nutrição Estética",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "Nutrição Estética com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Nutrição Hospitalar",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Nutrição Hospitalar com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "Nutrição Humana",
-                "Duração": "3 a 10 Meses"
-            },
-            "25": {
-                "Curso": "Nutrição Humana com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "Obesidade e Saúde",
-                "Duração": "3 a 10 Meses"
-            },
-            "27": {
-                "Curso": "Pedagogia Hospitalar",
-                "Duração": "3 a 10 Meses"
-            },
-            "28": {
-                "Curso": "Saúde Coletiva com Enfoque no Gerenciamento de Serviços",
-                "Duração": "3 a 10 Meses"
-            },
-            "29": {
-                "Curso": "Saúde Coletiva e Comunitária",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "Saúde Coletiva e Comunitária com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            }
-        },
-        "Gestão": {
-            "1": {
+        "GESTÃO - Administração e Gestão Empresarial": {
+            "0": {
                 "Curso": "Administração Aplicada em Gestão Empresarial",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Administração Aplicada em Gestão Empresarial com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "2": {
-                "Curso": "Administração Aplicada em Gestão Empresarial com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Administração Estratégica com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "3": {
-                "Curso": "Administração Estratégica com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Administração Financeira com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "4": {
-                "Curso": "Administração Financeira com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Administração, Finanças e Negócios com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "5": {
-                "Curso": "Administração, Finanças e Negócios com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Comercial com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "6": {
-                "Curso": "Agronegócios",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Gestão de Negócios com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "7": {
-                "Curso": "Análise de Custos",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão de Negócios, Inovação e Empreendedorismo com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "8": {
-                "Curso": "Análise de Custos com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão de Operações, Produtos e Serviços com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "9": {
-                "Curso": "Comércio Exterior com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão de Projetos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "10": {
-                "Curso": "Compliance",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Gestão em Administração e Marketing com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "11": {
-                "Curso": "Gestão Administrativa e Marketing com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão em Administração Financeira e Orçamentária com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "12": {
-                "Curso": "Gestão Ambiental com Ênfase em Auditoria e Perícia e Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Empreendedora com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "13": {
-                "Curso": "Gestão Ambiental com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "14": {
-                "Curso": "Gestão Ambiental e Práticas Pedagógicas com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Gestão Ambiental E Sustentável",
-                "Duração": "3 a 6 Meses"
-            },
-            "16": {
-                "Curso": "Gestão Bancária E Negócios",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Gestão Comercial com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Gestão da Produção com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "19": {
-                "Curso": "Gestão Da Qualidade",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "Gestão da Tecnologia de Informação",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "Gestão da Tecnologia de Informação com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Gestão de Compras e Suprimentos com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Gestão de Custos e Planejamento Estratégico com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "Gestão de Logística e Cadeia de Suprimentos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "25": {
-                "Curso": "Gestão de Negócios com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "Gestão de Negócios, Inovação e Empreendedorismo com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "27": {
-                "Curso": "Gestão de Operações, Produtos e Serviços com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "28": {
-                "Curso": "Gestão de Pessoas com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "29": {
-                "Curso": "Gestão de Pessoas e Educação Corporativa com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "Gestão de Políticas Sociai",
-                "Duração": "3 a 10 Meses"
-            },
-            "31": {
-                "Curso": "Gestão de Políticas Sociais com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "32": {
-                "Curso": "Gestão de Processos com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "33": {
-                "Curso": "Gestão de Projetos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "Gestão de Qualidade e Produtividade com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "35": {
-                "Curso": "Gestão De ReCurso Humanos",
-                "Duração": "3 a 6 Meses"
-            },
-            "36": {
-                "Curso": "Gestão de Riscos Corporativos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "37": {
-                "Curso": "Gestão de Segurança Pública",
-                "Duração": "3 a 10 Meses"
-            },
-            "38": {
-                "Curso": "Gestão de Segurança Pública com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "39": {
-                "Curso": "Gestão e Liderança de Equipes com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "40": {
-                "Curso": "Gestão E Planejamento De Projetos Sociais",
-                "Duração": "3 a 6 Meses"
-            },
-            "41": {
-                "Curso": "Gestão Educacional e Educação Infantil",
-                "Duração": "3 a 10 Meses"
-            },
-            "42": {
-                "Curso": "Gestão em Administração e Marketing com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "43": {
-                "Curso": "Gestão em Administração Financeira e Orçamentária com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "44": {
-                "Curso": "Gestão em Saúde da Família",
-                "Duração": "3 a 10 Meses"
-            },
-            "45": {
-                "Curso": "Gestão Empreendedora com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "46": {
-                "Curso": "Gestão Escolar Integrada com Ênfase em Administração, Supervisão, Orientação e Inspeção Escolar",
-                "Duração": "3 a 10 Meses"
-            },
-            "47": {
-                "Curso": "Gestão Escolar Integrada e Práticas Pedagógicas",
-                "Duração": "3 a 10 Meses"
-            },
-            "48": {
-                "Curso": "Gestão Estratégica de Compras com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "49": {
                 "Curso": "Gestão Estratégica De Pessoas",
                 "Duração": "3 a 6 Meses"
             },
-            "50": {
+            "14": {
                 "Curso": "Gestão Estratégica de Pessoas e Psicologia Organizacional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
             },
-            "51": {
+            "15": {
                 "Curso": "Gestão Estratégica de Pessoas: Desenvolvimento Humano de Gestores com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
             },
-            "52": {
-                "Curso": "Gestão Estratégica de Vendas com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "53": {
-                "Curso": "Gestão Estratégica de Vendas, Negociação e Performance",
-                "Duração": "3 a 10 Meses"
-            },
-            "54": {
+            "16": {
                 "Curso": "Gestão Estratégica e Econômica de Negócios com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "GESTÃO - Finanças, Custos e Logística": {
+            "0": {
+                "Curso": "Análise de Custos",
+                "Duração": "3 a 10 Meses "
             },
-            "55": {
-                "Curso": "Gestão Estratégica, Inovação e Conhecimento com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+            "1": {
+                "Curso": "Análise de Custos com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
-            "56": {
+            "2": {
+                "Curso": "Comércio Exterior com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Compliance",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Gestão Bancária e Negócios",
+                "Duração": "3 a 6 Meses"
+            },
+            "5": {
+                "Curso": "Gestão de Compras e Suprimentos com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "Gestão de Custos e Planejamento Estratégico com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Gestão de Logística e Cadeia de Suprimentos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "Gestão de Riscos Corporativos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "Gestão Estratégica de Compras com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
                 "Curso": "Gestão Fiscal e Tributária com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
             },
-            "57": {
+            "11": {
                 "Curso": "Gestão Operacional e Logística com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "GESTÃO - Pessoas, Educação e Políticas Públicas": {
+            "0": {
+                "Curso": "Gestão de Pessoas com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
-            "58": {
+            "1": {
+                "Curso": "Gestão de Pessoas e Educação Corporativa com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Gestão de Políticas Sociais",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Gestão de Políticas Sociais com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "Gestão de Processos com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "Gestão de Recursos Humanos",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "Gestão de Segurança Pública",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Gestão de Segurança Pública com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "Gestão e Liderança de Equipes com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "Gestão e Planejamento de Projetos Sociais",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "Gestão Educacional e Educação Infantil",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "Gestão em Saúde da Família",
+                "Duração": "3 a 10 Meses "
+            },
+            "12": {
+                "Curso": "Gestão Escolar Integrada com Ênfase em Administração, Supervisão, Orientação e Inspeção Escolar",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "Gestão Escolar Integrada e Práticas Pedagógicas",
+                "Duração": "3 a 10 Meses "
+            },
+            "14": {
                 "Curso": "Gestão Pública com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Duração": "3 a 10 Meses "
             }
         },
-        "Gestão Educacional ": {
+        "GESTÃO - Qualidade, Sustentabilidade e Marketing": {
+            "0": {
+                "Curso": "Agronegócios",
+                "Duração": "3 a 6 Meses"
+            },
             "1": {
-                "Curso": "Biblioteconomia",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Administrativa e Marketing com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "2": {
-                "Curso": "Conciliação e Mediação de Conflito Escolar",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Ambiental com Ênfase em Auditoria e Perícia e Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "3": {
-                "Curso": "Coordenação E Orientação Escolar",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Gestão Ambiental com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "4": {
-                "Curso": "Docência da Educação Ambiental para a Cidadania e Sustentabilidade",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Ambiental e Práticas Pedagógicas com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "5": {
-                "Curso": "Docência do Ensino Superior e Inspeção Escolar",
-                "Duração": "3 a 10 Meses"
-            },
-            "6": {
-                "Curso": "Docência na Educação Infantil e Anos Iniciais",
-                "Duração": "3 a 10 Meses"
-            },
-            "7": {
-                "Curso": "Docência No Ensino Superior",
-                "Duração": "3 a 6 Meses"
-            },
-            "8": {
-                "Curso": "Docência No Ensino Superior Com Enfâse Nas Tecnologias Digitais",
-                "Duração": "4 a 6 Meses"
-            },
-            "9": {
-                "Curso": "Docência No Ensino Superior, Médio e Técnico",
-                "Duração": "3 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Educação 5.0",
-                "Duração": "3 a 6 Meses"
-            },
-            "11": {
-                "Curso": "Educação Ambiental E Sustentabilidade",
-                "Duração": "3 a 6 Meses"
-            },
-            "12": {
-                "Curso": "Educação Ambiental e Sustentabilidade com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "13": {
-                "Curso": "Educação E Novas Tecnologias",
-                "Duração": "4 a 6 Meses"
-            },
-            "14": {
-                "Curso": "Educação em Saúde com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Formação Docente Para Ead",
-                "Duração": "4 a 6 Meses"
-            },
-            "16": {
-                "Curso": "Gestão Educacional com Foco na Inclusão",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Gestão Educacional e Inspeção Escolar",
-                "Duração": "3 a 6 Meses"
-            },
-            "18": {
-                "Curso": "Gestão Escolar e Coordenação Pedagógica",
-                "Duração": "3 a 6 Meses"
-            },
-            "19": {
-                "Curso": "Gestão Escolar Integradora Com Ênfase Em Supervisão, Orientação, Administração",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "Orientação Educacional",
-                "Duração": "3 a 6 Meses"
-            },
-            "21": {
-                "Curso": "Orientação Educacional e Práticas de Supervisão",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Pedagogia Social e Gestão de Projetos Sociais",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "Planejamento Educacional",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "Projetos Pedagógicos",
-                "Duração": "3 a 6 Meses"
-            },
-            "25": {
-                "Curso": "Psicologia nas Organizações com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "Psicomotricidade",
-                "Duração": "4 a 6 Meses"
-            },
-            "27": {
-                "Curso": "Psicopedagogia e Supervisão Escolar",
-                "Duração": "3 a 10 Meses"
-            },
-            "28": {
-                "Curso": "Psicopedagogia Escolar",
-                "Duração": "3 a 6 Meses"
-            },
-            "29": {
-                "Curso": "Serviço Social na Educação",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "Supervisão E Orientação Em Educação Infantil",
-                "Duração": "3 a 6 Meses"
-            },
-            "31": {
-                "Curso": "Supervisão, Orientação E Inspeção Escolar",
-                "Duração": "3 a 6 Meses"
-            },
-            "32": {
-                "Curso": "Tutoria Em Educação A Distância",
-                "Duração": "3 a 6 Meses"
-            }
-        },
-        "Marketing e Finanças": {
-                "1": {
-                    "Curso": "Contabilidade Pública E Responsabilidade Fiscal",
-                    "Duração": "4 a 6 Meses"
-                },
-                "2": {
-                    "Curso": "Contabilidade, Auditoria e Perícia com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "3": {
-                    "Curso": "Controladoria e Finanças com Habilitação em Docência do Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "4": {
-                    "Curso": "Estratégias De Enfrentamento A Violência",
-                    "Duração": "4 a 6 Meses"
-                },
-                "5": {
-                    "Curso": "Finanças e Mercado de Capitais com Habilitação em Docência do Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "6": {
-                    "Curso": "Gestão De Mídias Digitais",
-                    "Duração": "4 a 6 Meses"
-                },
-                "7": {
-                    "Curso": "Liderança E Desenvolvimento De Equipes",
-                    "Duração": "3 a 6 Meses"
-                },
-                "8": {
-                    "Curso": "Liderança nas Organizações com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "9": {
-                    "Curso": "Logística e Supply Chain Management com Habilitação em Docência do Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "10": {
-                    "Curso": "Marketing Digital",
-                    "Duração": "4 a 6 Meses"
-                },
-                "11": {
-                    "Curso": "Marketing Digital e Negócios Interativos com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "12": {
-                    "Curso": "Matemática Financeira E Estatística",
-                    "Duração": "3 a 6 Meses"
-                },
-                "13": {
-                    "Curso": "Matemática Financeira e Estatística com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "14": {
-                    "Curso": "Mba Em Projetos De Arquitetura E Engenharia Na Era Digital",
-                    "Duração": "4 a 6 Meses"
-                },
-                "15": {
-                    "Curso": "Negociação em Vendas com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "16": {
-                    "Curso": "Negócios Internacionais e Comércio Exterior com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                },
-                "17": {
-                    "Curso": "Neurogestão Organizacional – Neurociência E Gestão De Empresa",
-                    "Duração": "4 a 6 Meses"
-                },
-                "18": {
-                    "Curso": "Neuromarketing – Neurociência Do Consumidor",
-                    "Duração": "4 a 6 Meses"
-                },
-                "19": {
-                    "Curso": "Planejamento Estratégico de Marketing no Varejo com Habilitação em Docência no Ensino Superior",
-                    "Duração": "3 a 10 Meses"
-                }
-        },
-        "MBAs": {
-            "1": {
-                "Curso": "MBA em Administração Financeira",
-                "Duração": "3 a 10 Meses"
-            },
-            "2": {
-                "Curso": "Mba em Administração Financeira E Orçamentária",
-                "Duração": "3 a 6 Meses"
-            },
-            "3": {
-                "Curso": "MBA em Administração, Finanças e Negócios",
-                "Duração": "3 a 10 Meses"
-            },
-            "4": {
-                "Curso": "MBA em Arbitragem, Conciliação E Mediação",
-                "Duração": "3 a 6 Meses"
-            },
-            "5": {
-                "Curso": "MBA em ASSESSORIA DE Comunicação",
+                "Curso": "Gestão Ambiental e Sustentável",
                 "Duração": "3 a 6 Meses"
             },
             "6": {
-                "Curso": "MBA em Business Intelligence",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão da Produção com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "7": {
-                "Curso": "Mba em Coaching",
+                "Curso": "Gestão da Qualidade",
                 "Duração": "3 a 6 Meses"
             },
             "8": {
-                "Curso": "MBA em Comércio Exterior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão da Tecnologia de Informação",
+                "Duração": "3 a 10 Meses "
             },
             "9": {
-                "Curso": "MBA em Comércio Exterior com Ênfase em Exportação",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão da Tecnologia de Informação com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "10": {
-                "Curso": "MBA em Comércio Exterior com Ênfase em Importação",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão de Qualidade e Produtividade com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "11": {
-                "Curso": "Mba em Compliance E Gestão De Riscos",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Gestão de Qualidade e Produtividade com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "12": {
-                "Curso": "Mba em Comunicação Eleitoral E Marketing Político",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Gestão Estratégica de Vendas com Habilitação em Docência no Ensino Superior",
+                "Duração": "a 10 Meses "
             },
             "13": {
-                "Curso": "MBA em Comunicação Empresarial e Institucional",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Estratégica de Vendas, Negociação e Performance",
+                "Duração": "3 a 10 Meses "
             },
             "14": {
-                "Curso": "Mba em Contabilidade Gerencial",
-                "Duração": "3 a 6 Meses"
-            },
-            "15": {
-                "Curso": "MBA em Contabilidade, Auditoria e Perícia",
-                "Duração": "3 a 10 Meses"
-            },
-            "16": {
-                "Curso": "Mba em Controladoria E Finanças",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "MBA em Controladoria e Finanças",
-                "Duração": "3 a 10 Meses"
-            },
-            "18": {
-                "Curso": "Mba em E-Commerce",
-                "Duração": "3 a 6 Meses"
-            },
-            "19": {
-                "Curso": "Mba em Educação Financeira",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "MBA em Empreendedorismo e Gestão de Novos Negócios",
-                "Duração": "3 a 10 Meses"
-            },
-            "21": {
-                "Curso": "MBA em Empreendedorismo, Marketing e Finanças",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "MBA em Finanças Corporativas e Mercado Financeiro",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
-                "Curso": "MBA em Finanças e Mercado de Capitais",
-                "Duração": "3 a 10 Meses"
-            },
-            "24": {
-                "Curso": "MBA em Gestão Administrativa e Marketing",
-                "Duração": "3 a 10 Meses"
-            },
-            "25": {
-                "Curso": "MBA em Gestão Ambiental com Ênfase em Auditoria e Perícia",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "MBA em Gestão Bancária",
-                "Duração": "3 a 10 Meses"
-            },
-            "27": {
-                "Curso": "MBA em Gestão Comercial",
-                "Duração": "3 a 10 Meses"
-            },
-            "28": {
-                "Curso": "MBA em Gestão Comercial E Vendas",
-                "Duração": "3 a 6 Meses"
-            },
-            "29": {
-                "Curso": "MBA em Gestão Competitiva no Varejo",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "MBA em Gestão da Produção e Logística",
-                "Duração": "3 a 10 Meses"
-            },
-            "31": {
-                "Curso": "MBA em Gestão da Qualidade e Produtividade",
-                "Duração": "3 a 10 Meses"
-            },
-            "32": {
-                "Curso": "Mba em Gestão de Clínicas E Consultórios Veterinário",
-                "Duração": "3 a 6 Meses"
-            },
-            "33": {
-                "Curso": "MBA em Gestão de Compras e Suprimentos",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "Mba em Gestão de Custo E Finanças",
-                "Duração": "3 a 6 Meses"
-            },
-            "35": {
-                "Curso": "MBA em Gestão de Custos e Planejamento Estratégico",
-                "Duração": "3 a 10 Meses"
-            },
-            "36": {
-                "Curso": "Mba em Gestao De Departamento Pessoal E Relações Trabalhistas",
-                "Duração": "3 a 6 Meses"
-            },
-            "37": {
-                "Curso": "Mba em Gestão de Eventos",
-                "Duração": "3 a 6 Meses"
-            },
-            "38": {
-                "Curso": "Mba em Gestão De Marketing Digital",
-                "Duração": "3 a 6 Meses"
-            },
-            "39": {
-                "Curso": "MBA em Gestão de Negócios com Ênfase em Finanças",
-                "Duração": "3 a 10 Meses"
-            },
-            "40": {
-                "Curso": "MBA em Gestão de Negócios Imobiliários",
-                "Duração": "3 a 6 Meses"
-            },
-            "41": {
-                "Curso": "Mba em Gestão De Obras, Qualidade E Desempenho Das Construções",
-                "Duração": "3 a 6 Meses"
-            },
-            "42": {
-                "Curso": "MBA em Gestão de Operações e da Produção Industrial",
-                "Duração": "3 a 10 Meses"
-            },
-            "43": {
-                "Curso": "MBA em GESTÃO DE PESSOAS E Liderança",
-                "Duração": "3 a 6 Meses"
-            },
-            "44": {
-                "Curso": "MBA em Gestão de Processos",
-                "Duração": "3 a 10 Meses"
-            },
-            "45": {
-                "Curso": "MBA em Gestão de Projetos",
-                "Duração": "3 a 10 Meses"
-            },
-            "46": {
-                "Curso": "MBA em Gestão de ReCurso Humanos",
-                "Duração": "3 a 10 Meses"
-            },
-            "47": {
-                "Curso": "MBA em Gestão de Riscos Corporativos",
-                "Duração": "3 a 10 Meses"
-            },
-            "48": {
-                "Curso": "Mba em Gestão De Seguros E Previdência Privada",
-                "Duração": "3 a 6 Meses"
-            },
-            "49": {
-                "Curso": "Mba em Gestão De Supply Chain",
-                "Duração": "3 a 6 Meses"
-            },
-            "50": {
-                "Curso": "MBA em Gestão do Varejo",
-                "Duração": "3 a 10 Meses"
-            },
-            "51": {
-                "Curso": "MBA em Gestão e Liderança de Equipes",
-                "Duração": "3 a 10 Meses"
-            },
-            "52": {
-                "Curso": "MBA em Gestão em Administração e Marketing",
-                "Duração": "3 a 10 Meses"
-            },
-            "53": {
-                "Curso": "MBA em Gestão em Administração Financeira e Orçamentária",
-                "Duração": "3 a 10 Meses"
-            },
-            "54": {
-                "Curso": "MBA em Gestão Estratégica da Produção e Manutenção",
-                "Duração": "3 a 10 Meses"
-            },
-            "55": {
-                "Curso": "MBA em Gestão Estratégica de Compras",
-                "Duração": "3 a 10 Meses"
-            },
-            "56": {
-                "Curso": "Mba em Gestão Estratégica De Cooperativas",
-                "Duração": "3 a 6 Meses"
-            },
-            "57": {
-                "Curso": "MBA em Gestão Estratégica de Pessoas e Psicologia Organizacional",
-                "Duração": "3 a 10 Meses"
-            },
-            "58": {
-                "Curso": "MBA em Gestão Estratégica de Pessoas: Desenvolvimento Humano de Gestores",
-                "Duração": "3 a 10 Meses"
-            },
-            "59": {
-                "Curso": "MBA em Gestão Estratégica de Vendas",
-                "Duração": "3 a 10 Meses"
-            },
-            "60": {
-                "Curso": "Mba em Gestão Estratégica Em Compras",
-                "Duração": "3 a 6 Meses"
-            },
-            "61": {
-                "Curso": "MBA em Gestão Estratégica, Inovação e Conhecimento",
-                "Duração": "3 a 10 Meses"
-            },
-            "62": {
-                "Curso": "Mba em Gestão Financeira E Controladoria",
-                "Duração": "3 a 6 Meses"
-            },
-            "63": {
-                "Curso": "MBA em Gestão Fiscal e Tributária",
-                "Duração": "3 a 10 Meses"
-            },
-            "64": {
-                "Curso": "Mba Em Gestão Hospitalar",
-                "Duração": "3 a 6 Meses"
-            },
-            "65": {
-                "Curso": "MBA em Gestão Operacional e Logística",
-                "Duração": "3 a 10 Meses"
-            },
-            "66": {
-                "Curso": "MBA em Gestão Profissional de Condomínios",
-                "Duração": "3 a 10 Meses"
-            },
-            "67": {
-                "Curso": "MBA em Inteligência de Mercado",
-                "Duração": "3 a 10 Meses"
-            },
-            "68": {
-                "Curso": "Mba em Jornalismo Digital",
-                "Duração": "3 a 6 Meses"
-            },
-            "69": {
-                "Curso": "MBA em Liderança nas Organizações",
-                "Duração": "3 a 10 Meses"
-            },
-            "70": {
-                "Curso": "MBA em Marketing de Varejo, Gestão, Estratégias E Negócios",
-                "Duração": "3 a 6 Meses"
-            },
-            "71": {
-                "Curso": "Mba em Marketing Digital E Comunicação Online",
-                "Duração": "3 a 6 Meses"
-            },
-            "72": {
-                "Curso": "MBA em Marketing Digital e Negócios Interativos",
-                "Duração": "3 a 10 Meses"
-            },
-            "73": {
-                "Curso": "MBA em Meio Ambiente e Organizações Empresariais e Sociais",
-                "Duração": "3 a 10 Meses"
-            },
-            "74": {
-                "Curso": "MBA em Negociação e Vendas",
-                "Duração": "3 a 10 Meses"
-            },
-            "75": {
-                "Curso": "Mba em Negócios Internacionais E Comercio Exterior",
-                "Duração": "3 a 6 Meses"
-            },
-            "76": {
-                "Curso": "MBA em Planejamento Estratégico de Marketing no Varejo",
-                "Duração": "3 a 10 Meses"
-            },
-            "77": {
-                "Curso": "Mba Em Projetos De Arquitetura E Engenharia Na Era Digital",
-                "Duração": "4 a 6 Meses"
-            },
-            "78": {
-                "Curso": "MBA em Psicologia nas Organizações",
-                "Duração": "3 a 10 Meses"
-            },
-            "79": {
-                "Curso": "MBA em Relacionamento Interpessoal",
-                "Duração": "3 a 10 Meses"
-            },
-            "80": {
-                "Curso": "MBA em Relações Internacionais",
-                "Duração": "3 a 10 Meses"
-            },
-            "81": {
-                "Curso": "Mba em Startups E Inovação",
-                "Duração": "3 a 6 Meses"
-            },
-            "82": {
-                "Curso": "MBA Executivo em Gestão Estratégica e Econômica de Negócios",
-                "Duração": "3 a 10 Meses"
-            },
-            "83": {
-                "Curso": "MBA Finanças e Estatística",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Gestão Estratégica, Inovação e Conhecimento com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             }
         },
-        "Psicologia": {
-        "1": {
-            "Curso": "Arteterapia",
-            "Duração": "3 a 6 Meses"
-        },
-        "2": {
-            "Curso": "Avaliação Psicologia e Psicodiagnóstico",
-            "Duração": "3 a 6 Meses"
-        },
-        "3": {
-            "Curso": "Comportamento Humano e Neurociência",
-            "Duração": "3 a 6 Meses"
-        },
-        "4": {
-            "Curso": "Comportamento Social e Saúde",
-            "Duração": "3 a 10 Meses"
-        },
-        "5": {
-            "Curso": "Comportamento Social e Saúde com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "6": {
-            "Curso": "Diagnostico e Avaliação Psicológica",
-            "Duração": "3 a 6 Meses"
-        },
-        "7": {
-            "Curso": "Neuropsicologia",
-            "Duração": "4 a 6 Meses"
-        },
-        "8": {
-            "Curso": "Neuropsicologia Clínica",
-            "Duração": "3 a 6 Meses"
-        },
-        "9": {
-            "Curso": "Neuropsicopedagogia Clínica",
-            "Duração": "3 a 6 Meses"
-        },
-        "10": {
-            "Curso": "Psicologia Clínica e Institucional",
-            "Duração": "3 a 6 Meses"
-        },
-        "11": {
-            "Curso": "Psicologia da Educação",
-            "Duração": "3 a 6 Meses"
-        },
-        "12": {
-            "Curso": "Psicologia E As Diversas Áreas De Atuação",
-            "Duração": "4 A 6 Meses"
-        },
-        "13": {
-            "Curso": "Psicologia E Comportamento Organizacional",
-            "Duração": "4 A 6 Meses"
-        },
-        "14": {
-            "Curso": "Psicologia e Desenvolvimento da Aprendizagem",
-            "Duração": "3 a 10 Meses"
-        },
-        "15": {
-            "Curso": "Psicologia Hospitalar",
-            "Duração": "3 a 6 Meses"
-        },
-        "16": {
-            "Curso": "Psicologia nas Organizações com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "17": {
-            "Curso": "Psicologia Organizacional E Do Trabalho",
-            "Duração": "4 a 6 Meses"
-        },
-        "18": {
-            "Curso": "Psicomotricidade",
-            "Duração": "3 a 6 Meses"
-        },
-        "19": {
-            "Curso": "Psicomotricidade na Educação Infantil",
-            "Duração": "3 a 6 Meses"
-        },
-        "20": {
-            "Curso": "Psicopedagogia Clínica e Institucional",
-            "Duração": "3 a 6 Meses"
-        },
-        "21": {
-            "Curso": "Terapia Cognitivo Comportamental",
-            "Duração": "4 a 6 Meses"
-        },
-        "22": {
-            "Curso": "Terapia Da Constelação Familiar Sistêmica",
-            "Duração": "3 a 6 Meses"
-        },
-        "23": {
-            "Curso": "Terapia Familiar",
-            "Duração": "3 a 6 Meses"
-        },
-        "24": {
-            "Curso": "Terapias Cognitivos Comportamentais E Suas Aplicações",
-            "Duração": "4 a 6 Meses"
-        },
-        "25": {
-            "Curso": "Transtornos Globais Do Desenvolvimento (Cid F84)",
-            "Duração": "3 a 6 Meses"
-        }
-        },
-        "Saúde": {
+        "MARKETING E FINANÇAS - Gestão, Finanças e Estratégias": {
+            "0": {
+                "Curso": "Contabilidade Pública e Responsabilidade Fiscal",
+                "Duração": "4 a 6 Meses"
+            },
             "1": {
-                "Curso": "Administração Hospitalar",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Contabilidade, Auditoria e Perícia com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "2": {
-                "Curso": "Administração Hospitalar com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Controladoria e Finanças com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "3": {
-                "Curso": "Assistência de Enfermagem Domiciliar",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Finanças e Mercado de Capitais com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "4": {
-                "Curso": "Assistência de Enfermagem Domiciliar com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
+                "Curso": "Logística e Supply Chain Management com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "5": {
-                "Curso": "Assistência Multiprofissional Em Oncologia",
-                "Duração": "3 a 10 Meses"
-            },
-            "6": {
-                "Curso": "Atenção e Cuidados de Idosos",
-                "Duração": "3 a 6 Meses"
-            },
-            "7": {
-                "Curso": "Atividade Física e Bem Estar",
-                "Duração": "3 a 10 Meses"
-            },
-            "8": {
-                "Curso": "Atividade Física e Bem Estar com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "9": {
-                "Curso": "Auditoria em Saúde",
-                "Duração": "3 a 6 Meses"
-            },
-            "10": {
-                "Curso": "Auditoria Médica Hospitalar",
-                "Duração": "3 a 10 Meses"
-            },
-            "11": {
-                "Curso": "Cuidados Paliativos",
-                "Duração": "3 a 6 Meses"
-            },
-            "12": {
-                "Curso": "Docência em Enfermagem",
-                "Duração": "3 a 6 Meses"
-            },
-            "13": {
-                "Curso": "Emergências Respiratórias",
-                "Duração": "4 a 6 Meses"
-            },
-            "14": {
-                "Curso": "Enfermagem Do Trabalho",
-                "Duração": "3 a 10 Meses"
-            },
-            "15": {
-                "Curso": "Enfermagem do Trabalho e Saúde Ocupacional",
-                "Duração": "3 a 10 Meses"
-            },
-            "16": {
-                "Curso": "Enfermagem do Trabalho e Saúde Ocupacional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "17": {
-                "Curso": "Enfermagem em urgência e Emergência",
-                "Duração": "3 a 6 Meses"
-            },
-            "18": {
-                "Curso": "Enfermagem Oncologica",
-                "Duração": "3 a 6 Meses"
-            },
-            "19": {
-                "Curso": "Gerontologia",
-                "Duração": "3 a 10 Meses"
-            },
-            "20": {
-                "Curso": "Gestão Da Qualidade E Acreditação Hospitalar",
-                "Duração": "4 a 6 Meses"
-            },
-            "21": {
-                "Curso": "Gestão Da Saúde Com Enfâse Em Clínicas,Laboratórios, Consultórios E Hospitais",
-                "Duração": "3 a 10 Meses"
-            },
-            "22": {
-                "Curso": "Gestão Pública Da Saúde",
-                "Duração": "4 a 6 Meses"
-            },
-            "23": {
-                "Curso": "Gestão Socioambiental E Saúde",
-                "Duração": "4 a 6 Meses"
-            },
-            "24": {
-                "Curso": "Higiene Laboral",
-                "Duração": "3 a 10 Meses"
-            },
-            "25": {
-                "Curso": "Humanização na Atenção à Saúde",
-                "Duração": "3 a 10 Meses"
-            },
-            "26": {
-                "Curso": "Medicina Veterinária – O Cuidado Na Urgência E Emergência",
-                "Duração": "4 a 6 Meses"
-            },
-            "27": {
-                "Curso": "Neurociência E Física Da Consciência",
-                "Duração": "4 a 6 Meses"
-            },
-            "28": {
-                "Curso": "Patologia Cardiorrespiratória dos Animais Domésticos",
-                "Duração": "3 a 10 Meses"
-            },
-            "29": {
-                "Curso": "Patologia Cardiorrespiratória dos Animais Domésticos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "30": {
-                "Curso": "Práticas Integrativas Complementares",
-                "Duração": "3 a 10 Meses"
-            },
-            "31": {
-                "Curso": "Prevenção E Controles De Infecções Relacionadas À Saúde",
-                "Duração": "3 a 10 Meses"
-            },
-            "32": {
-                "Curso": "Saúde Mental",
-                "Duração": "3 a 10 Meses"
-            },
-            "33": {
-                "Curso": "Saúde Mental com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "Saúde Pública Com Enfâse Em Saúde",
-                "Duração": "3 a 10 Meses"
-            },
-            "35": {
-                "Curso": "Saúde Pública Com Enfâse Em Saúde Da Família - Sanitarista",
-                "Duração": "4 a 6 Meses"
-            },
-            "36": {
-                "Curso": "Saúde Pública com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "37": {
-                "Curso": "Urgência E Emergência Hospitalar",
-                "Duração": "4 a 6 Meses"
-            }
-        },
-        "Segurança": {
-        "1": {
-            "Curso": "Administração Pública",
-            "Duração": "3 a 6 Meses"
-        },
-        "2": {
-            "Curso": "Assistência Social e Saúde Pública",
-            "Duração": "3 a 10 Meses"
-        },
-        "3": {
-            "Curso": "Assistência Social e Saúde Pública com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "4": {
-            "Curso": "Ciências Criminais",
-            "Duração": "3 a 10 Meses"
-        },
-        "5": {
-            "Curso": "Ciências Criminais com Habilitação em Docência do Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "6": {
-            "Curso": "Estatística Aplicada",
-            "Duração": "3 a 6 Meses"
-        },
-        "7": {
-            "Curso": "Gestão Saúde  Pública",
-            "Duração": "3 a 6 Meses"
-        },
-        "8": {
-            "Curso": "Inteligência Policial",
-            "Duração": "3 a 10 Meses"
-        },
-        "9": {
-            "Curso": "Inteligência Policial com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "10": {
-            "Curso": "Perícia e Auditoria Ambiental",
-            "Duração": "3 a 10 Meses"
-        },
-        "11": {
-            "Curso": "Perícia e Auditoria Ambiental com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "12": {
-            "Curso": "Perícia e Auditoria Contábil",
-            "Duração": "3 a 6 Meses"
-        },
-        "13": {
-            "Curso": "Perícia Econômica Financeira",
-            "Duração": "3 a 6 Meses"
-        },
-        "14": {
-            "Curso": "Planejamento E Gestão No Trânsito",
-            "Duração": "3 a 6 Meses"
-        },
-        "15": {
-            "Curso": "Políticas de Segurança Pública",
-            "Duração": "3 a 10 Meses"
-        },
-        "16": {
-            "Curso": "Políticas de Segurança Pública com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "17": {
-            "Curso": "Saúde do Trabalhador",
-            "Duração": "3 a 10 Meses"
-        },
-        "18": {
-            "Curso": "Saúde do Trabalhador com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "19": {
-            "Curso": "Saúde e Segurança do Trabalho com Habilitação em Docência do Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "20": {
-            "Curso": "Saúde e Segurança no Trabalho",
-            "Duração": "3 a 10 Meses"
-        },
-        "21": {
-            "Curso": "Segurança do Trabalho com Ênfase em Ergonomia",
-            "Duração": "3 a 10 Meses"
-        },
-        "22": {
-            "Curso": "Segurança do Trabalho com Ênfase em Ergonomia com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "23": {
-            "Curso": "Segurança do Trabalho, Prevenção e Controle de Riscos",
-            "Duração": "3 a 10 Meses"
-        },
-        "24": {
-            "Curso": "Segurança do Trabalho, Prevenção e Controle de Riscos com Habilitação em Docência no Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        },
-        "25": {
-            "Curso": "Segurança Pública",
-            "Duração": "3 a 6 Meses"
-        },
-        "26": {
-            "Curso": "Segurança Pública E Cidadania",
-            "Duração": "3 a 6 Meses"
-        },
-        "27": {
-            "Curso": "Segurança Pública e Privada",
-            "Duração": "3 a 10 Meses"
-        },
-        "28": {
-            "Curso": "Serviço Social E Convivência Familiar",
-            "Duração": "3 a 6 Meses"
-        },
-        "29": {
-            "Curso": "Serviços Sociais com Habilitação em Docência do Ensino Superior",
-            "Duração": "3 a 10 Meses"
-        }
-        },
-        "TICS": {
-            "1": {
-                "Curso": "Administração de Banco de Dados",
-                "Duração": "3 a 6 Meses"
-            },
-            "2": {
-                "Curso": "Administração De Redes De Computadores",
-                "Duração": "4 a 6 Meses"
-            },
-            "3": {
-                "Curso": "Análise e Desenvolvimento de Sistemas",
-                "Duração": "3 a 10 Meses"
-            },
-            "4": {
-                "Curso": "Análise e Desenvolvimento de Sistemas com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "5": {
-                "Curso": "AO e Teste de Software",
+                "Curso": "Matemática Financeira e Estatística",
                 "Duração": "3 a 6 Meses"
             },
             "6": {
-                "Curso": "Arquitetura de Software",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Matemática Financeira e Estatística com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "7": {
-                "Curso": "Arquitetura de Software em Java",
-                "Duração": "3 a 6 Meses"
+                "Curso": "Negócios Internacionais e Comércio Exterior com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
             "8": {
-                "Curso": "Arquitetura de Soluções   em Plataforma .NET",
-                "Duração": "4 a 12 Meses"
-            },
-            "9": {
-                "Curso": "Business Com Ênfase Em Ti",
+                "Curso": "Planejamento Estratégico de Marketing no Varejo com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "MARKETING E FINANÇAS - Liderança, Marketing e Sociedade": {
+            "0": {
+                "Curso": "Estratégias de Enfrentamento à Violência",
                 "Duração": "4 a 6 Meses"
             },
-            "10": {
-                "Curso": "Business Intelligence com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "11": {
-                "Curso": "Ciências De Dados E A Inteligência Artificial",
+            "1": {
+                "Curso": "Gestão de Mídias Digitais",
                 "Duração": "4 a 6 Meses"
             },
-            "12": {
-                "Curso": "Ciências de Dados e Big Data",
-                "Duração": "3 a 10 Meses"
-            },
-            "13": {
-                "Curso": "Ciências de Dados e Big Data com Ênfase em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "14": {
-                "Curso": "Computação em Nuvem e Aplicativos Moveis",
+            "2": {
+                "Curso": "Liderança e Desenvolvimento de Equipes",
                 "Duração": "3 a 6 Meses"
             },
-            "15": {
-                "Curso": "Computação Forese e Investigação Cibernética",
-                "Duração": "3 a 6 Meses"
+            "3": {
+                "Curso": "Liderança nas Organizações com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
             },
-            "16": {
-                "Curso": "Data Science Aplicada a Gestão e Tecnologia da Informação",
-                "Duração": "3 a 6 Meses"
-            },
-            "17": {
-                "Curso": "Defesa Cibernetica",
-                "Duração": "3 a 6 Meses"
-            },
-            "18": {
-                "Curso": "Desenvolvimento e Produção de Games",
-                "Duração": "4 a 12 Meses"
-            },
-            "19": {
-                "Curso": "Designer Gráfico, Ux e Multimidea",
-                "Duração": "3 a 6 Meses"
-            },
-            "20": {
-                "Curso": "Docência no Ensino Digital : Ensino 4.0",
-                "Duração": "4 a 12 Meses"
-            },
-            "21": {
-                "Curso": "Docência no Ensino Digital : Ensino 4.0",
-                "Duração": "3 a 6 Meses"
-            },
-            "22": {
-                "Curso": "Engenharia de Software com Enfase em Qualidade e Teste",
-                "Duração": "3 a 6 Meses"
-            },
-            "23": {
-                "Curso": "Engenharia e Planejamento DevOps",
-                "Duração": "3 a 6 Meses"
-            },
-            "24": {
-                "Curso": "Ethical Hacking e Cybersecurity",
-                "Duração": "3 a 6 Meses"
-            },
-            "25": {
-                "Curso": "Full Stack Java Developer",
-                "Duração": "3 a 6 Meses"
-            },
-            "26": {
-                "Curso": "Gestão Agil de Projetos (Agile Coach)",
-                "Duração": "3 a 6 Meses"
-            },
-            "27": {
-                "Curso": "Gestão Da Computação",
-                "Duração": "4 a 6 Meses"
-            },
-            "28": {
-                "Curso": "Gestão Da Tecnologia Da Informação",
-                "Duração": "4 a 6 Meses"
-            },
-            "29": {
-                "Curso": "Gestão De Mídias Digitais",
-                "Duração": "4 a 6 Meses"
-            },
-            "30": {
-                "Curso": "Gestão de Riscos e Ciberseguança",
-                "Duração": "3 a 6 Meses"
-            },
-            "31": {
-                "Curso": "Gestão De Software Para Dispositivos Móveis",
-                "Duração": "4 a 6 Meses"
-            },
-            "32": {
-                "Curso": "Informática e Comunicação na Educação",
-                "Duração": "3 a 10 Meses"
-            },
-            "33": {
-                "Curso": "Informática Educativa",
-                "Duração": "3 a 10 Meses"
-            },
-            "34": {
-                "Curso": "Inovação em Tecnologias Educacionais",
-                "Duração": "3 a 10 Meses"
-            },
-            "35": {
-                "Curso": "Inteligencia Artificial, Machine Learning e Data Science",
-                "Duração": "3 a 6 Meses"
-            },
-            "36": {
-                "Curso": "Inteligência de Mercado com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses"
-            },
-            "37": {
-                "Curso": "Internet das Coisas - IOT",
-                "Duração": "3 a 6 Meses"
-            },
-            "38": {
+            "4": {
                 "Curso": "Marketing Digital",
                 "Duração": "4 a 6 Meses"
             },
-            "39": {
-                "Curso": "MBA em Big Data e Inteligencia em Gestão de Dados",
+            "5": {
+                "Curso": "Marketing Digital e Negócios Interativos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "MBA em Projetos de Arquitetura e Engenharia na Era Digital",
+                "Duração": "4 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Negociação em Vendas com Habilitação em Docência no Ensino Superior",
+                "Duração": "4 a 6 Meses"
+            },
+            "8": {
+                "Curso": "Neurogestão Organizacional – Neurociência e Gestão de Empresa",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "Neuromarketing – Neurociência do Consumidor",
+                "Duração": "4 a 6 Meses"
+            }
+        },
+        "MBAs - Gestão Financeira e Controladoria": {
+            "0": {
+                "Curso": "MBA em Administração Financeira",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "MBA em Administração Financeira e Orçamentária",
                 "Duração": "3 a 6 Meses"
             },
-            "40": {
+            "2": {
+                "Curso": "MBA em Administração, Finanças e Negócios",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "MBA em Contabilidade Gerencial",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "MBA em Contabilidade, Auditoria e Perícia",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "MBA em Controladoria e Finanças",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "MBA em Educação Financeira",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "MBA em Finanças Corporativas e Mercado Financeiro",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "MBA em Finanças e Mercado de Capitais",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "MBA em Gestão Bancária",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
+                "Curso": "MBA em Gestão de Custos e Planejamento Estratégico",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "MBA em Gestão de Custo e Finanças",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "MBA em Gestão Estratégica em Compras",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "MBA em Gestão Financeira e Controladoria",
+                "Duração": "3 a 6 Meses"
+            },
+            "14": {
+                "Curso": "MBA em Gestão Fiscal e Tributária",
+                "Duração": "3 a 10 Meses "
+            },
+            "15": {
+                "Curso": "MBA Finanças e Estatística",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "MBAs - Gestão de Negócios, Marketing e Liderança": {
+            "0": {
                 "Curso": "MBA em Business Intelligence",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "MBA em Coaching",
                 "Duração": "3 a 6 Meses"
             },
-            "41": {
-                "Curso": "MBA em Estrutura E Gestão De Redes De Computadores",
-                "Duração": "4 a 6 Meses"
+            "2": {
+                "Curso": "Mba em Compliance e Gestão de Riscos",
+                "Duração": "3 a 6 Meses"
             },
-            "42": {
-                "Curso": "MBA em Gestão de  Segurança da Informação",
+            "3": {
+                "Curso": "MBA em Empreendedorismo e Gestão de Novos Negócios",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "MBA em Empreendedorismo, Marketing e Finanças",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "MBA em Gestão Administrativa e Marketing",
+                "Duração": "INDEFINIDO"
+            },
+            "6": {
+                "Curso": "MBA em Gestão Administrativa e Marketing",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Mba em Gestão de Departamento Pessoal e Relações Trabalhistas",
+                "Duração": "3 a 6 Meses"
+            },
+            "8": {
+                "Curso": "MBA em Gestão de Eventos",
+                "Duração": "3 a 6 Meses"
+            },
+            "9": {
+                "Curso": "MBA em Gestão de Marketing Digital",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "MBA em Gestão de Negócios com Ênfase em Finanças",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "MBA em Gestão de Negócios Imobiliários",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "MBA em GESTÃO DE PESSOAS E Liderança",
+                "Duração": "3 a 6 Meses"
+            },
+            "13": {
+                "Curso": "MBA em Gestão de Processos",
+                "Duração": "3 a 10 Meses "
+            },
+            "14": {
+                "Curso": "MBA em Gestão de Projetos",
+                "Duração": "3 a 10 Meses "
+            },
+            "15": {
+                "Curso": "MBA em Gestão e Liderança de Equipes",
+                "Duração": "3 a 10 Meses "
+            },
+            "16": {
+                "Curso": "MBA em Gestão em Administração e Marketing",
+                "Duração": "3 a 10 Meses "
+            },
+            "17": {
+                "Curso": "MBA em Gestão em Administração Financeira e Orçamentária",
+                "Duração": "3 a 10 Meses "
+            },
+            "18": {
+                "Curso": "Mba em Gestão Estratégica de Cooperativas",
+                "Duração": "3 a 6 Meses"
+            },
+            "19": {
+                "Curso": "MBA em Gestão Estratégica de Pessoas e Psicologia Organizacional",
+                "Duração": "3 a 10 Meses "
+            },
+            "20": {
+                "Curso": "MBA em Gestão Estratégica de Pessoas: Desenvolvimento Humano de Gestores",
+                "Duração": "3 a 10 Meses "
+            },
+            "21": {
+                "Curso": "MBA em Gestão Profissional de Condomínios",
+                "Duração": "3 a 10 Meses "
+            },
+            "22": {
+                "Curso": "MBA em Gestão Profissional de Condomínios",
+                "Duração": "3 a 10 Meses "
+            },
+            "23": {
+                "Curso": "MBA em Inteligência de Mercado",
+                "Duração": "3 a 10 Meses "
+            },
+            "24": {
+                "Curso": "MBA em Liderança nas Organizações",
+                "Duração": "3 a 10 Meses "
+            },
+            "25": {
+                "Curso": "MBA em Marketing de Varejo, Gestão, Estratégias e Negócios",
+                "Duração": "3 a 6 Meses"
+            },
+            "26": {
+                "Curso": "MBA em Marketing Digital e Comunicação Online",
+                "Duração": "3 a 6 Meses"
+            },
+            "27": {
+                "Curso": "MBA em Marketing Digital e Negócios Interativos",
+                "Duração": "3 a 10 Meses "
+            },
+            "28": {
+                "Curso": "MBA em Negociação e Vendas",
+                "Duração": "3 a 10 Meses "
+            },
+            "29": {
+                "Curso": "MBA em Relacionamento Interpessoal",
+                "Duração": "3 a 10 Meses "
+            },
+            "30": {
+                "Curso": "MBA Executivo em Gestão Estratégica e Econômica de Negócios",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "MBAs - Comércio, Logística e Produção": {
+            "0": {
+                "Curso": "MBA em Comércio Exterior",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "MBA em Comércio Exterior com Ênfase em Exportação",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "MBA em Comércio Exterior com Ênfase em Importação",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Mba em E-Commerce",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "MBA em Gestão Comercial",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "MBA em Gestão Comercial e Vendas",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "MBA em Gestão Competitiva no Varejo",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "MBA em Gestão da Produção e Logística",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "MBA em Gestão da Qualidade e Produtividade",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "MBA em Gestão de Compras e Suprimentos",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
+                "Curso": "MBA em Gestão de Operações e da Produção Industrial",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "MBA em Gestão de Supply Chain",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "MBA em Gestão do Varejo",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "MBA em Gestão Estratégica da Produção e Manutenção",
+                "Duração": "3 a 10 Meses "
+            },
+            "14": {
+                "Curso": "MBA em Gestão Estratégica de Compras",
+                "Duração": "3 a 10 Meses "
+            },
+            "15": {
+                "Curso": "MBA em Gestão Estratégica de Vendas",
+                "Duração": "3 a 10 Meses "
+            },
+            "16": {
+                "Curso": "MBA em Gestão Estratégica em Compras",
+                "Duração": "3 a 6 Meses"
+            },
+            "17": {
+                "Curso": "MBA em Gestão Estratégica, Inovação e Conhecimento",
+                "Duração": "3 a 10 Meses "
+            },
+            "18": {
+                "Curso": "MBA em Gestão Operacional e Logística",
+                "Duração": "3 a 10 Meses "
+            },
+            "19": {
+                "Curso": "MBA em Gestão Operacional e Logística",
+                "Duração": "3 a 10 Meses "
+            },
+            "20": {
+                "Curso": "MBA em Negócios Internacionais e Comércio Exterior",
+                "Duração": "3 a 6 Meses"
+            },
+            "21": {
+                "Curso": "MBA em Planejamento Estratégico de Marketing no Varejo",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "MBAs - Áreas Específicas e Setoriais": {
+            "0": {
+                "Curso": "MBA em Arbitragem, Conciliação e Mediação",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "MBA em Assessoria de Comunicação",
+                "Duração": "3 a 6 Meses"
+            },
+            "2": {
+                "Curso": "MBA em Comunicação Eleitoral e Marketing Político",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "MBA em Comunicação Empresarial e Institucional",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "MBA em Gestão Ambiental com Ênfase em Auditoria e Perícia",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "MBA em Gestão de Clínicas e Consultórios Veterinários",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "MBA em Gestão de Obras, Qualidade e Desempenho das Construções",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "MBA em Gestão de Recursos Humanos",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "MBA em Gestão de Riscos Corporativos",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "MBA em Gestão de Seguros e Previdência Privada",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "MBA em Gestão Hospitalar",
+                "Duração": "3 a 6 Meses"
+            },
+            "11": {
+                "Curso": "MBA em Jornalismo Digital",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "MBA em Meio Ambiente e Organizações Empresariais e Sociais",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "MBA em Projetos de Arquitetura e Engenharia na Era Digital",
+                "Duração": "4 a 6 Meses "
+            },
+            "14": {
+                "Curso": "MBA em Psicologia nas Organizações",
+                "Duração": "3 a 10 Meses "
+            },
+            "15": {
+                "Curso": "MBA em Relações Internacionais",
+                "Duração": "3 a 10 Meses "
+            },
+            "16": {
+                "Curso": "MBA em Startups e Inovação",
+                "Duração": "3 a 6 Meses"
+            }
+        },
+        "PSICOLOGIA - Psicologia Clínica, Neurociências e Terapias": {
+            "0": {
+                "Curso": "Arteterapia",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "Avaliação Psicológica e Psicodiagnóstico",
+                "Duração": "3 a 6 Meses"
+            },
+            "2": {
+                "Curso": "Comportamento Humano e Neurociência",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Diagnóstico e Avaliação Psicológica",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Neuropsicologia",
+                "Duração": "4 a 6 Meses "
+            },
+            "5": {
+                "Curso": "Neuropsicologia Clínica",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "Psicologia Clínica e Institucional",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Psicologia Hospitalar",
+                "Duração": "3 a 6 Meses"
+            },
+            "8": {
+                "Curso": "Terapia Cognitivo-Comportamental",
+                "Duração": "4 a 6 Meses "
+            },
+            "9": {
+                "Curso": "Terapia da Constelação Familiar Sistêmica",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "Terapia Familiar",
+                "Duração": "3 a 6 Meses"
+            },
+            "11": {
+                "Curso": "Terapias Cognitivo-Comportamentais e Suas Aplicações",
+                "Duração": "4 a 6 Meses "
+            }
+        },
+        "PSICOLOGIA - Psicologia Educacional, Organizacional e Social": {
+            "0": {
+                "Curso": "Comportamento Social e Saúde",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Comportamento Social e Saúde com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Neuropsicopedagogia Clínica",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Psicologia da Educação",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Psicologia e as Diversas Áreas de Atuação",
+                "Duração": "4 A 6 Meses "
+            },
+            "5": {
+                "Curso": "Psicologia e Comportamento Organizacional",
+                "Duração": "4 A 6 Meses "
+            },
+            "6": {
+                "Curso": "Psicologia e Desenvolvimento da Aprendizagem",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Psicologia nas Organizações com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "Psicologia Organizacional e do Trabalho",
+                "Duração": "4 a 6 Meses "
+            },
+            "9": {
+                "Curso": "Psicomotricidade",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "Psicomotricidade na Educação Infantil",
+                "Duração": "3 a 6 Meses"
+            },
+            "11": {
+                "Curso": "Psicopedagogia Clínica e Institucional",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "Transtornos Globais do Desenvolvimento (CID F84)",
+                "Duração": "3 a 6 Meses"
+            }
+        },
+        "SAÚDE - Gestão em Saúde e Administração Hospitalar": {
+            "0": {
+                "Curso": "Administração Hospitalar",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Administração Hospitalar com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Auditoria em Saúde",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Auditoria Médica Hospitalar",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "Gestão da Qualidade e Acreditação Hospitalar",
+                "Duração": "4 a 6 Meses "
+            },
+            "5": {
+                "Curso": "Gestão da Saúde com Ênfase em Clínicas, Laboratórios, Consultórios e Hospitais",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "Gestão Pública da Saúde",
+                "Duração": "4 a 6 Meses "
+            },
+            "7": {
+                "Curso": "Gestão Socioambiental e Saúde",
+                "Duração": "4 a 6 Meses "
+            }
+        },
+        "SAÚDE - Assistência e Cuidados em Saúde": {
+            "0": {
+                "Curso": "Assistência de Enfermagem Domiciliar",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Assistência de Enfermagem Domiciliar com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Assistência Multiprofissional em Oncologia",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Atenção e Cuidados de Idosos",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Cuidados Paliativos",
+                "Duração": "3 a 6 Meses"
+            },
+            "5": {
+                "Curso": "Enfermagem do Trabalho",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "Enfermagem do Trabalho e Saúde Ocupacional",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Enfermagem do Trabalho e Saúde Ocupacional com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "Enfermagem em Urgência e Emergência",
+                "Duração": "3 a 6 Meses"
+            },
+            "9": {
+                "Curso": "Enfermagem Oncológica",
+                "Duração": "3 a 6 Meses"
+            },
+            "10": {
+                "Curso": "Saúde Pública com Ênfase em Saúde",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "Saúde Pública com Ênfase em Saúde da Família - Sanitarista",
+                "Duração": "4 a 6 Meses "
+            },
+            "12": {
+                "Curso": "Saúde Pública com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "Urgência e Emergência Hospitalar",
+                "Duração": "4 a 6 Meses "
+            }
+        },
+        "SAÚDE - Bem-Estar, Saúde Mental e Ciências Aplicadas": {
+            "0": {
+                "Curso": "Atividade Física e Bem-Estar",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Atividade Física e Bem-Estar com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Docência em Enfermagem",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Emergências Respiratórias",
+                "Duração": "4 a 6 Meses "
+            },
+            "4": {
+                "Curso": "Gerontologia",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "Higiene Laboral",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "Humanização na Atenção à Saúde",
+                "Duração": "3 a 10 Meses "
+            },
+            "7": {
+                "Curso": "Medicina Veterinária – O Cuidado na Urgência e Emergência",
+                "Duração": "4 a 6 Meses "
+            },
+            "8": {
+                "Curso": "Neurociência e Física da Consciência",
+                "Duração": "4 a 6 Meses "
+            },
+            "9": {
+                "Curso": "Patologia Cardiorrespiratória dos Animais Domésticos",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
+                "Curso": "Patologia Cardiorrespiratória dos Animais Domésticos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "Práticas Integrativas Complementares",
+                "Duração": "3 a 10 Meses "
+            },
+            "12": {
+                "Curso": "Prevenção e Controles de Infecções Relacionadas à Saúde",
+                "Duração": "3 a 10 Meses "
+            },
+            "13": {
+                "Curso": "Saúde Mental",
+                "Duração": "3 a 10 Meses "
+            },
+            "14": {
+                "Curso": "Saúde Mental com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "SEGURANÇA - Gestão Pública, Segurança e Saúde": {
+            "0": {
+                "Curso": "Administração Pública",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "Assistência Social e Saúde Pública",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Assistência Social e Saúde Pública com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Ciências Criminais",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "Ciências Criminais com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "Estatística Aplicada",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "Gestão Saúde Pública",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Inteligência Policial",
+                "Duração": "3 a 10 Meses "
+            },
+            "8": {
+                "Curso": "Inteligência Policial com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "9": {
+                "Curso": "Perícia e Auditoria Ambiental",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
+                "Curso": "Perícia e Auditoria Ambiental com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "Perícia e Auditoria Contábil",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "Perícia Econômica Financeira",
+                "Duração": "3 a 6 Meses"
+            },
+            "13": {
+                "Curso": "Planejamento e Gestão no Trânsito",
+                "Duração": "3 a 6 Meses"
+            },
+            "14": {
+                "Curso": "Políticas de Segurança Pública",
+                "Duração": "3 a 10 Meses "
+            },
+            "15": {
+                "Curso": "Políticas de Segurança Pública com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "16": {
+                "Curso": "Saúde do Trabalhador",
+                "Duração": "3 a 10 Meses "
+            },
+            "17": {
+                "Curso": "Saúde do Trabalhador com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "18": {
+                "Curso": "Saúde e Segurança do Trabalho com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "19": {
+                "Curso": "Saúde e Segurança no Trabalho",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "SEGURANÇA - Segurança no Trabalho e Serviço Social": {
+            "0": {
+                "Curso": "Segurança do Trabalho com Ênfase em Ergonomia",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Segurança do Trabalho com Ênfase em Ergonomia com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Segurança do Trabalho, Prevenção e Controle de Riscos",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Segurança do Trabalho, Prevenção e Controle de Riscos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "Segurança Pública e Privada",
+                "Duração": "3 a 10 Meses "
+            },
+            "5": {
+                "Curso": "Serviços Sociais com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "6": {
+                "Curso": "Segurança Pública",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Segurança Pública e Cidadania",
+                "Duração": "3 a 6 Meses"
+            },
+            "8": {
+                "Curso": "Serviço Social e Convivência Familiar",
+                "Duração": "3 a 6 Meses"
+            }
+        },
+        "TICS - Tecnologia da Informação e Comunicação - Tecnologia da Informação e Desenvolvimento de Sistema ": {
+            "0": {
+                "Curso": "Administração de Banco de Dados",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "Administração De Redes De Computadores",
+                "Duração": "4 a 6 Meses "
+            },
+            "2": {
+                "Curso": "Análise e Desenvolvimento de Sistemas",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Análise e Desenvolvimento de Sistemas com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "AO e Teste de Software",
+                "Duração": "3 a 6 Meses"
+            },
+            "5": {
+                "Curso": "Arquitetura de Software",
+                "Duração": "3 a 6 Meses"
+            },
+            "6": {
+                "Curso": "Arquitetura de Software em Java",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Arquitetura de Soluções em Plataforma .NET",
                 "Duração": "4 a 12 Meses"
             },
-            "43": {
-                "Curso": "MBA em Gestão de Projetos em TI",
+            "8": {
+                "Curso": "Ciências de Dados e a Inteligência Artificial",
+                "Duração": "4 a 6 Meses "
+            },
+            "9": {
+                "Curso": "Ciências de Dados e Big Data",
+                "Duração": "3 a 10 Meses "
+            },
+            "10": {
+                "Curso": "Ciências de Dados e Big Data com Ênfase em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "11": {
+                "Curso": "Computação em Nuvem e Aplicativos Móveis",
                 "Duração": "3 a 6 Meses"
             },
-            "44": {
-                "Curso": "MBA em Gestão Estratégia de Negócios em TI",
+            "12": {
+                "Curso": "Computação Forense e Investigação Cibernética",
+                "Duração": "3 a 6 Meses"
+            },
+            "13": {
+                "Curso": "Data Science Aplicada a Gestão e Tecnologia da Informação",
+                "Duração": "3 a 6 Meses"
+            },
+            "14": {
+                "Curso": "Desenvolvimento e Produção de Games",
                 "Duração": "4 a 12 Meses"
             },
-            "45": {
-                "Curso": "MBA em Governança em TI",
-                "Duração": "4 a 12 Meses"
-            },
-            "46": {
-                "Curso": "MBA em Governança em TI",
+            "15": {
+                "Curso": "Designer Gráfico, UX e Multimídia",
                 "Duração": "3 a 6 Meses"
             },
-            "47": {
-                "Curso": "Redes de Computadores e Segurança",
+            "16": {
+                "Curso": "Engenharia de Software com Ênfase em Qualidade e Teste",
                 "Duração": "3 a 6 Meses"
             },
-            "48": {
-                "Curso": "Segurança da Informação",
+            "17": {
+                "Curso": "Engenharia e Planejamento DevOps",
                 "Duração": "3 a 6 Meses"
             },
-            "49": {
-                "Curso": "Segurança Defensiva – Blue Team Operations",
+            "18": {
+                "Curso": "Full Stack Java Developer",
                 "Duração": "3 a 6 Meses"
             },
-            "50": {
-                "Curso": "Segurança e Defesa Cibernética",
-                "Duração": "4 a 6 Meses"
-            },
-            "51": {
-                "Curso": "Segurança Ofensiva e Inteligencia Cibernética",
+            "19": {
+                "Curso": "Inteligência Artificial, Machine Learning e Data Science",
                 "Duração": "3 a 6 Meses"
             },
-            "52": {
+            "20": {
+                "Curso": "Internet das Coisas - IoT",
+                "Duração": "3 a 6 Meses"
+            },
+            "21": {
                 "Curso": "Tecnologia da Informação",
                 "Duração": "3 a 6 Meses"
             },
-            "53": {
-                "Curso": "Tecnologias Disruptivas",
-                "Duração": "3 a 6 Meses"
-            },
-            "54": {
+            "22": {
                 "Curso": "Tecnologias e Desenvolvimento WebMobile",
                 "Duração": "4 a 12 Meses"
             },
-            "55": {
+            "23": {
                 "Curso": "Threat Intelligence and Hunting",
                 "Duração": "3 a 6 Meses"
             }
+        },
+        "TICS - Tecnologia da Informação e Comunicação - Gestão Estratégica em Tecnologia": {
+            "0": {
+                "Curso": "Business com Ênfase em TI",
+                "Duração": "4 a 6 Meses "
+            },
+            "1": {
+                "Curso": "Business Intelligence com Habilitação em Docência do Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Data Science Aplicada a Gestão e Tecnologia da Informação",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Gestão Ágil de Projetos (Agile Coach)",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Gestão da Computação",
+                "Duração": "4 a 6 Meses "
+            },
+            "5": {
+                "Curso": "Gestão da Tecnologia da Informação",
+                "Duração": "4 a 6 Meses "
+            },
+            "6": {
+                "Curso": "Gestão de Mídias Digitais",
+                "Duração": "4 a 6 Meses "
+            },
+            "7": {
+                "Curso": "Gestão de Riscos e Cibersegurança",
+                "Duração": "3 a 6 Meses"
+            },
+            "8": {
+                "Curso": "Gestão de Software para Dispositivos Móveis",
+                "Duração": "4 a 6 Meses "
+            },
+            "9": {
+                "Curso": "Marketing Digital",
+                "Duração": "4 a 6 Meses "
+            },
+            "10": {
+                "Curso": "MBA em Big Data e Inteligência em Gestão de Dados",
+                "Duração": "3 a 6 Meses"
+            },
+            "11": {
+                "Curso": "MBA em Business Intelligence",
+                "Duração": "3 a 6 Meses"
+            },
+            "12": {
+                "Curso": "MBA em Estrutura e Gestão de Redes de Computadores",
+                "Duração": "4 a 6 Meses "
+            },
+            "13": {
+                "Curso": "MBA em Gestão de Projetos em TI",
+                "Duração": "3 a 6 Meses"
+            },
+            "14": {
+                "Curso": "MBA em Gestão de Segurança da Informação",
+                "Duração": "4 a 12 Meses"
+            },
+            "15": {
+                "Curso": "MBA em Gestão Estratégica de Negócios em TI",
+                "Duração": "4 a 12 Meses"
+            },
+            "16": {
+                "Curso": "MBA em Governança em TI",
+                "Duração": "4 a 12 Meses"
+            }
+        },
+        "TICS - Tecnologia da Informação e Comunicação - Segurança Cibernética e Defesa Digital": {
+            "0": {
+                "Curso": "Defesa Cibernética",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "Ethical Hacking e Cybersecurity",
+                "Duração": "3 a 6 Meses"
+            },
+            "2": {
+                "Curso": "Redes de Computadores e Segurança",
+                "Duração": "3 a 6 Meses"
+            },
+            "3": {
+                "Curso": "Segurança da Informação",
+                "Duração": "3 a 6 Meses"
+            },
+            "4": {
+                "Curso": "Segurança Defensiva – Blue Team Operations",
+                "Duração": "3 a 6 Meses"
+            },
+            "5": {
+                "Curso": "Segurança e Defesa Cibernética",
+                "Duração": "4 a 6 Meses "
+            },
+            "6": {
+                "Curso": "Segurança Ofensiva e Inteligência Cibernética",
+                "Duração": "3 a 6 Meses"
+            },
+            "7": {
+                "Curso": "Tecnologias Disruptivas",
+                "Duração": "3 a 6 Meses"
+            }
+        },
+        "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica": {
+            "0": {
+                "Curso": "Docência no Ensino Digital: Ensino 4.0",
+                "Duração": "4 a 12 Meses"
+            },
+            "1": {
+                "Curso": "Informática e Comunicação na Educação",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Informática Educativa",
+                "Duração": "3 a 10 Meses "
+            },
+            "3": {
+                "Curso": "Inovação em Tecnologias Educacionais",
+                "Duração": "3 a 10 Meses "
+            },
+            "4": {
+                "Curso": "Inteligência de Mercado com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            }
         }
+
 
     },
     "Mestrado":{
-
     },
     "Doutorado e Pós Doutorado":{
     }
