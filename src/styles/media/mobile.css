@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 500px) {
     body {
         overflow-x: hidden;
     }
@@ -8,12 +8,83 @@
         max-width: 100%;
         overflow-x: hidden;
     }
+    
+    /* index.css container*/
 
-    .cab {
+    .logo img {
+        width: 100px;
+        padding: 0px;
+    }
+
+    .banner img {
+        object-fit: contain;
+        width: 100%;
+        height: 100%;
+        transform: scale(0.98);
+        transition: transform 0.3s ease-in-out;
+        opacity: 0;
+    }
+    .banner {
+        display: none;
+    }
+
+    .cab h1 {
         text-align: center;
+        justify-content: center;
         justify-content: space-between;
         align-items: flex-start;
-        padding-left: 0.5rem;
+    }
+
+    .Top_10 {
+        display: flex;
+        overflow-x: auto;
+        padding: 10px;
+        scroll-snap-type: x mandatory;
+        position: relative;
+        height: 185px;
+    }
+    
+    #top-10-container {
+        display: flex;
+        overflow-x: auto;
+        /* Permite a rolagem horizontal */
+        scroll-behavior: smooth;
+        /* Rola suavemente */
+    }
+    
+    .top_10 {
+        display: flex;
+        gap: 0.8rem;
+    }
+    
+    .total_top_10 {
+        display: inline-block;
+        scroll-snap-align: start;
+        text-align: center;
+        width: 150px;
+    }
+    
+    .top {
+        text-align: center;
+        flex: 0 0 auto;
+        width: 100px;
+        height: 100px;
+        margin: 0 10px;
+        scroll-snap-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+    
+    .top img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+    
+    .top:hover {
+        transform: scale(1.05);
     }
 
     .navbar-container {
@@ -29,10 +100,6 @@
         margin-left: 0;
     }
 
-    .logo img {
-        width: 70px;
-        padding: 20px;
-    }
     .anuncie_aqui_paragrafo{
         font-size: 0.8rem;
     }
@@ -117,41 +184,61 @@
         display: flex;
     }
 
-
-
     .social-icons {
         display: none;
     }
 
-    /* .banner {
-        height: 50vh;
+    .modalidades {
+        display: flex;
+        overflow-x: auto;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        scroll-snap-type: x mandatory;
+        position: relative;
+        height: 150px;
     }
 
-    .banner img {
-        object-fit: contain;
-        width: 100%;
-        height: 100%;
-        transform: scale(0.98);
-        transition: transform 0.3s ease-in-out;
+    .categoria,
+    .modalidade {
+        flex: 0 0 auto;
+        width: 175px;
+        height: 175px;
+        margin: 0 10px;
+        scroll-snap-align: center;
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease;
     }
-
-    .banner img:hover {
-        transform: scale(1);
-    } */
-    .banner {
-        display: none;
-    }
-
 
     .modalidade,
     h1 {
         font-size: 1rem;
     }
 
+    .total_modalidade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .total_modalidade {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .categoria img,
+    .modalidade img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+    }
 
     .modalidade {
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         overflow-y: hidden;
     }
 
@@ -166,31 +253,6 @@
         height: 300px;
         margin: 10px 0;
         border: none;
-    }
-
-    .carrossel {
-        min-width: 100%;
-        height: 200px;
-        border: none;
-    }
-
-    .carrossel-item img {
-        width: 100%;
-        height: 200px;
-    }
-
-    .video {
-        width: 100%;
-        padding-left: 0;
-        height: auto;
-    }
-
-    .Cursos_em_alta,
-    .Planos {
-        flex-direction: column;
-        overflow-x: auto;
-        gap: 10px;
-        padding: 10px;
     }
     .Cursos_bem_avaliados{
         flex-direction: column;
@@ -320,6 +382,4 @@
     .contact-container form button {
         width: 100%;
     }
-
-
 }

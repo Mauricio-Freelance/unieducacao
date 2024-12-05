@@ -74,18 +74,11 @@
         width: 350px;
         height: 350px;
     }
-
-    .informativo .video,
-    .informativo .carrossel {
-        width: 60%;
-    }
-
-    .Cursos_em_alta,
-    .Cursos_bem_avaliados,
-    .Planos {
+/*  
+    .Cursos_bem_avaliados{
         gap: 30px;
     }
-
+*/
     .card {
         height: auto;
         width: calc(20% - 20px);
