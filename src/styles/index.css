@@ -20,7 +20,7 @@
     font-weight: 800;
 }
 
-.modalidades {
+.Modalidades {
     display: flex;
     overflow-x: auto;
     align-items: center;
@@ -30,6 +30,29 @@
     position: relative;
     height: 200px;
     overflow: hidden;
+}
+.Modalidades::-webkit-scrollbar {
+    display: none;
+}
+
+#modalidades-container {
+    display: flex;
+    overflow-x: auto;
+    /* Permite a rolagem horizontal */
+    scroll-behavior: smooth;
+    /* Rola suavemente */
+    overflow-x: hidden;
+}
+
+#modalidades-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+}
+
+.nav-buton.left, .nav-buton.right {
+    opacity: 0; /* Torna os botões invisíveis */
+    pointer-events: none; /* Evita interação do usuário */
+    transition: opacity 0.3s; /* Suaviza a transição (opcional) */
 }
 
 .categoria,
