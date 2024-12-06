@@ -32,4 +32,4 @@ document.addEventListener('DOMContentLoaded', () =>
     // Atribuir os manipuladores de clique
     document.querySelector('.nav-button.left').addEventListener('click', scrollLeft);
     document.querySelector('.nav-button.right').addEventListener('click', scrollRight);
-});
+});  

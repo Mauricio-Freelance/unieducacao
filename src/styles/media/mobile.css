@@ -49,6 +49,7 @@
         overflow-x: auto;
         /* Permite a rolagem horizontal */
         scroll-behavior: smooth;
+        overflow: hidden;
         /* Rola suavemente */
     }
     
