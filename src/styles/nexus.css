@@ -41,6 +41,9 @@
 .subcategoria-titulo {
     cursor: pointer;
 }
+.subcategoria-titulo.active{
+    color: green; /* Cor do texto ao ser clicado */
+}
 
 .cursos_nexus_section {
     display: block;
@@ -68,7 +71,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     height: auto;
 }
 
@@ -79,7 +82,7 @@
     padding: 20px;
     overflow-x: hidden;
     animation: slideDown 0.5s ease-in-out;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .subcategoria-container h3 {
@@ -93,11 +96,11 @@
     align-items: center;
     justify-content: space-between;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 40px;
     padding: 20px;
     margin-right: 40px;
     background-color: #f9f9f9;
-    width: 99%;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -107,14 +110,14 @@
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    background-color: #fff;
+    background-color: #ECEDEF;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    width: 280px;
-    height: auto;
+    width: 90%;
+    height: 90%;
 }
 
 .curso-card:hover {
@@ -125,8 +128,8 @@
     display: flex;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #063c77;
-    color: white;
+    background-color: #BEF987;
+    color: #000000;
     align-items: center;
     justify-content: center;
     text-decoration: none;

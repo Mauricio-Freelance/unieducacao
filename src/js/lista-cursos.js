@@ -1,24 +1,23 @@
-document.addEventListener('DOMContentLoaded', function ()
-{
+function capitalizeWords(str) {
+    return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
+}
+
+document.addEventListener('DOMContentLoaded', function () {
     let cursosData = {};
 
     fetch('../../database.json')
-        .then(response =>
-        {
-            if (!response.ok)
-            {
+        .then(response => {
+            if (!response.ok) {
                 throw new Error('Erro ao carregar o JSON');
             }
             return response.json();
         })
-        .then(data =>
-        {
+        .then(data => {
             cursosData = data;
             renderCategorias(cursosData);
             // Seleciona a categoria "Profissionalizante" automaticamente
             const profissionalizanteTitle = Array.from(document.querySelectorAll('.categoria-titulo')).find(title => title.textContent.toLowerCase() === 'profissionalizante');
-            if (profissionalizanteTitle)
-            {
+            if (profissionalizanteTitle) {
                 profissionalizanteTitle.click();
             }
         })
@@ -26,52 +25,42 @@ document.addEventListener('DOMContentLoaded', function ()
 
     // Adicionando evento para a barra de pesquisa
     const searchBar = document.getElementById('search-bar');
-    searchBar.addEventListener('input', function ()
-    {
+    searchBar.addEventListener('input', function () {
         const query = searchBar.value.toLowerCase();
-        if (query === '')
-        {
+        if (query === '') {
             renderCategorias(cursosData);
-        } else
-        {
+        } else {
             const filteredData = filterCursos(cursosData, query);
             renderCursosFiltrados(filteredData);
         }
     });
 
     // Função de filtro dos cursos com base no nome do curso
-    function filterCursos(data, query)
-    {
+    function filterCursos(data, query) {
         const filteredData = {};
 
-        Object.keys(data).forEach(categoria =>
-        {
+        Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
             const filteredSubcategorias = {};
 
-            Object.keys(subcategorias).forEach(subcategoria =>
-            {
+            Object.keys(subcategorias).forEach(subcategoria => {
                 const cursos = subcategorias[subcategoria];
                 const filteredCursos = {};
 
-                Object.keys(cursos).forEach(key =>
-                {
+                Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
 
-                    if (curso.Curso.toLowerCase().includes(query))
-                    {
+                    if (curso.Curso.toLowerCase().includes(query)) {
                         filteredCursos[key] = curso;
                     }
                 });
 
-                if (Object.keys(filteredCursos).length > 0)
-                {
+                if (Object.keys(filteredCursos).length > 0) {
                     filteredSubcategorias[subcategoria] = filteredCursos;
                 }
             });
 
-            if (Object.keys(filteredSubcategorias).length > 0)
-            {
+            if (Object.keys(filteredSubcategorias).length > 0) {
                 filteredData[categoria] = filteredSubcategorias;
             }
         });
@@ -80,8 +69,7 @@ document.addEventListener('DOMContentLoaded', function ()
     }
 
     // Função para renderizar as categorias e os cursos
-    function renderCategorias(data)
-    {
+    function renderCategorias(data) {
         const container = document.getElementById('curso-lista');
         container.innerHTML = ''; // Limpa o conteúdo anterior
 
@@ -94,24 +82,21 @@ document.addEventListener('DOMContentLoaded', function ()
         subcategoriaContainer.style.display = 'none'; // Inicialmente oculto
         container.appendChild(subcategoriaContainer);
 
-        Object.keys(data).forEach(categoria =>
-        {
+        Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
 
             const categoriaContainer = document.createElement('div');
             categoriaContainer.className = 'categoria-container';
 
             const categoriaTitle = document.createElement('h2');
-            categoriaTitle.textContent = categoria;
+            categoriaTitle.textContent = capitalizeWords(categoria);
             categoriaTitle.className = 'categoria-titulo';
             categoriaContainer.appendChild(categoriaTitle);
 
-            categoriaTitle.addEventListener('click', () =>
-            {
+            categoriaTitle.addEventListener('click', () => {
 
                 // Remove a classe 'active' das subcategorias anteriores
-                document.querySelectorAll('.categoria-titulo').forEach(title =>
-                {
+                document.querySelectorAll('.categoria-titulo').forEach(title => {
                     title.classList.remove('active');
                 });
 
@@ -121,12 +106,10 @@ document.addEventListener('DOMContentLoaded', function ()
                 renderSubcategorias(subcategoriaContainer, subcategorias);
 
                 // Exibe ou oculta o container de subcategorias
-                if (subcategoriaContainer.style.display === 'none' || subcategoriaContainer.dataset.categoria !== categoria)
-                {
+                if (subcategoriaContainer.style.display === 'none' || subcategoriaContainer.dataset.categoria !== categoria) {
                     subcategoriaContainer.style.display = 'block';
                     subcategoriaContainer.dataset.categoria = categoria;
-                } else
-                {
+                } else {
                     subcategoriaContainer.style.display = 'none';
                     subcategoriaContainer.dataset.categoria = '';
                 }
@@ -136,18 +119,23 @@ document.addEventListener('DOMContentLoaded', function ()
         });
     }
 
+    // Função para ocultar todas as subcategorias
+    function hideAllSubcategorias() {
+        document.querySelectorAll('.cursos-container').forEach(container => {
+            container.style.display = 'none';
+        });
+    }
+
     // Função para renderizar as subcategorias e cursos
-    function renderSubcategorias(container, subcategorias)
-    {
+    function renderSubcategorias(container, subcategorias) {
         container.innerHTML = ''; // Limpa subcategorias anteriores
 
-        Object.keys(subcategorias).forEach(subcategoria =>
-        {
+        Object.keys(subcategorias).forEach(subcategoria => {
             const cursos = subcategorias[subcategoria];
 
             // Título da subcategoria
             const subcategoriaTitle = document.createElement('h3');
-            subcategoriaTitle.textContent = subcategoria;
+            subcategoriaTitle.textContent = capitalizeWords(subcategoria);
             subcategoriaTitle.className = 'subcategoria-titulo';
             container.appendChild(subcategoriaTitle);
 
@@ -157,23 +145,27 @@ document.addEventListener('DOMContentLoaded', function ()
             cursosContainer.dataset.subcategoria = subcategoria;
 
             // Inicialmente oculto (exceto se for EAD)
-            if (subcategoria.toLowerCase() === 'ead')
-            {
+            if (subcategoria.toLowerCase() === 'ead') {
                 cursosContainer.style.display = 'grid'; // Mostra em grid
-            }
-            else
-            {
+            } else {
                 cursosContainer.style.display = 'none';
-                subcategoriaTitle.addEventListener('click', () =>
-                {
-                    cursosContainer.style.display =
-                        cursosContainer.style.display === 'none' ? 'grid' : 'none'; // Mostra em grid ao abrir
+                subcategoriaTitle.addEventListener('click', () => {
+                    hideAllSubcategorias(); // Oculta todas as subcategorias
+
+                    // Remove a classe 'active' das subcategorias anteriores
+                    document.querySelectorAll('.subcategoria-titulo').forEach(title => {
+                        title.classList.remove('active');
+                    });
+
+                    // Adiciona a classe 'active' ao título de subcategoria clicado
+                    subcategoriaTitle.classList.add('active');
+
+                    cursosContainer.style.display = 'grid'; // Mostra a subcategoria clicada
                 });
             }
 
             // Adiciona os cartões de curso
-            Object.keys(cursos).forEach(key =>
-            {
+            Object.keys(cursos).forEach(key => {
                 const curso = cursos[key];
 
                 const card = document.createElement('div');
@@ -186,11 +178,11 @@ document.addEventListener('DOMContentLoaded', function ()
                 button.className = 'curso-button';
 
                 const title = document.createElement('span');
-                title.textContent = curso.Curso;
+                title.textContent = capitalizeWords(curso.Curso);
                 title.className = 'curso-titulo';
 
                 const cargaHoraria = document.createElement('span');
-                cargaHoraria.textContent = curso.Duração;
+                cargaHoraria.textContent = capitalizeWords(curso.Duração);
                 cargaHoraria.className = 'curso-carga-horaria';
 
                 card.appendChild(title);
@@ -204,8 +196,7 @@ document.addEventListener('DOMContentLoaded', function ()
     }
 
     // Função para renderizar os cursos filtrados
-    function renderCursosFiltrados(data)
-    {
+    function renderCursosFiltrados(data) {
         const container = document.getElementById('curso-lista');
         container.innerHTML = ''; // Limpa o conteúdo anterior
 
@@ -217,16 +208,13 @@ document.addEventListener('DOMContentLoaded', function ()
         cursosContainer.className = 'cursos-container';
         mainContainer.appendChild(cursosContainer);
 
-        Object.keys(data).forEach(categoria =>
-        {
+        Object.keys(data).forEach(categoria => {
             const subcategorias = data[categoria];
 
-            Object.keys(subcategorias).forEach(subcategoria =>
-            {
+            Object.keys(subcategorias).forEach(subcategoria => {
                 const cursos = subcategorias[subcategoria];
 
-                Object.keys(cursos).forEach(key =>
-                {
+                Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
 
                     const card = document.createElement('div');
@@ -238,11 +226,11 @@ document.addEventListener('DOMContentLoaded', function ()
                     button.className = 'curso-button';
 
                     const title = document.createElement('span');
-                    title.textContent = curso.Curso;
+                    title.textContent = capitalizeWords(curso.Curso);
                     title.className = 'curso-titulo';
 
                     const cargaHoraria = document.createElement('span');
-                    cargaHoraria.textContent = curso.Duração;
+                    cargaHoraria.textContent = capitalizeWords(curso.Duração);
                     cargaHoraria.className = 'curso-carga-horaria';
 
                     card.appendChild(title);
