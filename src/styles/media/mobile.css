@@ -1,4 +1,4 @@
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     body {
         overflow-x: hidden;
     }
@@ -55,7 +55,7 @@
     
     .top_10 {
         display: flex;
-        gap: 0.8rem;
+        gap: 0.6rem;
     }
     
     .total_top_10 {
@@ -211,7 +211,7 @@
         scroll-behavior: smooth;
         /* Rola suavemente */
         overflow-x: hidden;
-        gap: 5px;
+        gap: 0px;
     }
     
     #modalidades-container::-webkit-scrollbar {
@@ -243,7 +243,7 @@
         font-size: 1rem;
     }
     .title h3 {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         text-align: center;
     }
 

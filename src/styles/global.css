@@ -24,13 +24,10 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    /* Imagem invisível por padrão */
     transition: opacity 1s ease-in-out;
 }
 
 .banner img.active {
-    opacity: 1;
-    /* Somente a imagem ativa será visível */
     z-index: 1;
     /* Garante que a imagem ativa esteja sobre as outras */
 }
