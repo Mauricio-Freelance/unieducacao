@@ -4,7 +4,7 @@ import pandas as pd
 
 df = pd.read_csv("sheet2.csv", sep="\t", header=None)
 
-category = "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica"
+category = "DIREITO  - Direitos Específicos e Interdisciplinaridades"
 
 #print(df)
 

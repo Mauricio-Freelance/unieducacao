@@ -1,24 +1,44 @@
 {
-    "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica": {
+    "DIREITO  - Direitos Específicos e Interdisciplinaridades": {
         "0": {
-            "Curso": "Docência no Ensino Digital: Ensino 4.0",
-            "Duração": "4 a 12 Meses"
+            "Curso": "Direito de Trânsito",
+            "Duração": "3 a 6 Meses"
         },
         "1": {
-            "Curso": "Informática e Comunicação na Educação",
+            "Curso": "Direito do Consumidor",
             "Duração": "3 a 10 Meses "
         },
         "2": {
-            "Curso": "Informática Educativa",
+            "Curso": "Direito do Consumidor com Habilitação em Docência no Ensino Superior",
             "Duração": "3 a 10 Meses "
         },
         "3": {
-            "Curso": "Inovação em Tecnologias Educacionais",
+            "Curso": "Direito do Trabalho",
             "Duração": "3 a 10 Meses "
         },
         "4": {
-            "Curso": "Inteligência de Mercado com Habilitação em Docência no Ensino Superior",
+            "Curso": "Direito do Trabalho com Habilitação em Docência no Ensino Superior",
             "Duração": "3 a 10 Meses "
+        },
+        "5": {
+            "Curso": "Direito Educacional com Habilitação em Docência no Ensino Superior",
+            "Duração": "3 a 10 Meses "
+        },
+        "6": {
+            "Curso": "Direito Processual Civil",
+            "Duração": "3 a 6 Meses"
+        },
+        "7": {
+            "Curso": "Direito Processual Civil com Habilitação em Docência no Ensino Superior",
+            "Duração": "3 a 10 Meses "
+        },
+        "8": {
+            "Curso": "Especialização em Direito do Trabalho e Processual Trabalhista",
+            "Duração": "3 a 6 Meses"
+        },
+        "9": {
+            "Curso": "Especialização em Direito Educacional",
+            "Duração": "3 a 6 Meses"
         }
     }
 }
