@@ -281,7 +281,33 @@
     }
 
     .card-free-education p {
-        font-size: 1.4rem;
+        font-size: 1.7rem;
+    }
+
+    .free-education-text h2 {
+        font-size: 2.3em;
+    }
+
+    .free-education-text p {
+        margin-top: 40px;
+        font-size: 1.2em;
+    }
+
+    .card-free-education button {
+        background-color: #063c77;
+        border-radius: 100px;
+        align-self: center;
+        width: 250px;
+        color: white;
+        cursor: pointer;
+        font-size: 1em;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        transition: background-color 0.3s;
+    }
+    
+    .card-free-education button:hover {
+        background-color: #0056b3;
     }
 
     .anuncie_aqui {
