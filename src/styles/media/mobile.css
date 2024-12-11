@@ -37,7 +37,6 @@
     
     #top-10-container {
         display: flex;
-        overflow-x: auto;
         /* Permite a rolagem horizontal */
         scroll-behavior: smooth;
         overflow: hidden;

@@ -52,7 +52,6 @@
 .nav-buton.left, .nav-buton.right {
     opacity: 0; /* Torna os botões invisíveis */
     pointer-events: none; /* Evita interação do usuário */
-    transition: opacity 0.3s; /* Suaviza a transição (opcional) */
 }
 
 .categoria,
@@ -108,9 +107,9 @@
 
 #top-10-container {
     display: flex;
-    overflow-x: auto;
     /* Permite a rolagem horizontal */
     scroll-behavior: smooth;
+    overflow: hidden;
     /* Rola suavemente */
     overflow-x: hidden;
 }

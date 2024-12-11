@@ -72,11 +72,10 @@
     
     #modalidades-container {
         display: flex;
-        overflow-x: auto;
         /* Permite a rolagem horizontal */
         scroll-behavior: smooth;
         /* Rola suavemente */
-        overflow-x: hidden;
+        overflow: hidden;
     }
     
     #modalidades-container::-webkit-scrollbar {
@@ -96,8 +95,6 @@
     .nav-button.left, .nav-button.right {
         opacity: 1;
         pointer-events: auto;
-        justify-content: center;
-        display: flex;
         transition: opacity 0.3s;
         color: white;
         background-color: green;
@@ -158,11 +155,10 @@
     
     #top-10-container {
         display: flex;
-        overflow-x: auto;
         /* Permite a rolagem horizontal */
         scroll-behavior: smooth;
         /* Rola suavemente */
-        overflow-x: hidden;
+        overflow: hidden;
     }
     
     #top-10-container::-webkit-scrollbar {
@@ -269,23 +265,33 @@
 
     .free-education,
     .cards-free-education {
+        display: flex;
+        flex-wrap: wrap;
         gap: 30px;
         font-size: 2rem;
     }
 
     .card-free-education {
-        width: 450px;
-        height: 760px;
+        width: calc((100% - 90px) / 3);
+        height: 760px;;
     }
 
     .card-free-education img {
         height: 400px;
-        object-fit: cover;
+    }
+
+    .card-free-education p {
+        font-size: 1.4rem;
     }
 
     .anuncie_aqui {
+        display: flex;
+        flex-direction: row;
         height: auto;
-        gap: 10px;
+        gap: 0px;
+    }
+    .anuncie_aqui_paragrafo {
+        font-size: 1.8rem;
     }
 
     .card-anuncie {

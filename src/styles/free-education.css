@@ -16,7 +16,7 @@
 
 .cards-free-education {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     padding: 20px;
@@ -29,7 +29,7 @@
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 220px;
+    width: calc((100% - 90px) / 3);
     min-height: 240px;
     transition: transform 0.3s;
     display: flex;
@@ -77,3 +77,4 @@
 .card-free-education button:hover {
     background-color: #0056b3;
 }
+

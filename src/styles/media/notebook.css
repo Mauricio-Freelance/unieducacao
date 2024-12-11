@@ -1,11 +1,10 @@
-@media (min-width: 1201px), (max-width: 1320px) {
+@media (min-width: 1201px) and (max-width: 1320px) {
     .banner {
         display: none;
     }
     
     #top-10-container {
         display: flex;
-        overflow-x: auto;
         /* Permite a rolagem horizontal */
         scroll-behavior: smooth;
         overflow: hidden;
@@ -16,7 +15,7 @@
         display: flex;
         gap: 2rem;
     }
-    
+
     .nav-buton.left, .nav-buton.right {
         opacity: 1;
         pointer-events: auto;
@@ -26,6 +25,7 @@
         height: 50px;
         width: 25;
     }
+    
     .nav-button.left, .nav-button.right {
         opacity: 1;
         pointer-events: auto;
