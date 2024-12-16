@@ -1,0 +1,42 @@
+.categoria h1 {
+    font-size: 1.2em;
+    cursor: pointer;
+    color: green;
+}
+.subcategoria h1 {
+    font-size: 1.1em;
+}
+.marketing h1 {
+    font-size: 1em;
+}
+.subcategoria {
+    opacity: 0;
+    max-height: 0;
+}
+.gestao {
+    opacity: 0;
+    display: none;
+    max-height: 0;
+}
+.marketing {
+    opacity: 0;
+    display: none;
+    max-height: 0;
+}
+
+.subcategoria.active {
+    opacity: 1;
+    margin-top: 25px;
+    margin-left: 30px;
+}
+.gestao.active {
+    opacity: 1;
+    display: flex;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+.marketing.active {
+    opacity: 1;
+    margin-top: 50px;
+    display: flex;
+}
