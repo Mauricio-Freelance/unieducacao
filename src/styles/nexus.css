@@ -38,6 +38,39 @@
     color: green; /* Cor do texto ao ser clicado */
 }
 
+.subSubCategoryTitle {
+    font-size: 0.8rem;
+    margin-left: 50px;
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+footer {
+    display: inline-block;
+    margin-left: 35%;
+}
+.subCategoryTitle {
+    font-size: 1rem;
+    align-self: top;
+    margin-left: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.subCategoryTitle::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
 .subcategoria-titulo {
     cursor: pointer;
 }
@@ -53,8 +86,9 @@
 
 #subCategoryDiv.active {
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    margin-bottom: 10%;
+    align-self: left;
     cursor: pointer;
 }
 
@@ -65,8 +99,8 @@
 
 #subSubCategoryDiv.active {
     overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
+    align-self: center;
     cursor: pointer;
 }
 
