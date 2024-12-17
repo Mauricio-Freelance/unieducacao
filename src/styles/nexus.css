@@ -44,6 +44,9 @@
 .subcategoria-titulo.active{
     color: green; /* Cor do texto ao ser clicado */
 }
+#subCategoryDiv {
+    color:red;
+}
 
 .cursos_nexus_section {
     display: block;
