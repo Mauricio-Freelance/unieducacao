@@ -1,0 +1,25 @@
+Object { "DIREITO ": {…}, "EDUCAÇÃO INCLUSIVA ": {…}, ENGENHARIA: {…}, "ESTÉTICA E NUTRIÇÃO": {…}, "GESTÃO EDUCACIONAL": {…}, "GESTÃO": {…}, "MARKETING E FINANÇAS": {…}, MBAs: {…}, PSICOLOGIA: {…}, "SAÚDE": {…}, … }
+​
+"DIREITO ": Object { "Direito Público e Constitucional": {…}, "Direito Privado e Relações Familiares e Empresariais": {…}, "Processos e Direito Penal": {…}, … }
+​
+"EDUCAÇÃO INCLUSIVA ": Object { "Educação Especial e Inclusiva": {…}, "Psicologia, Neurociências e Intervenções em Autismo": {…}, "Educação Básica e Infantojuvenil": {…}, … }
+​
+ENGENHARIA: Object { "Engenharia Ambiental e Sustentabilidade": {…}, "Engenharia Industrial e de Infraestrutura": {…} }
+​
+"ESTÉTICA E NUTRIÇÃO": Object { "Saúde Estética e Bem-Estar": {…}, "Saúde Clínica e Coletiva": {…} }
+​
+"GESTÃO": Object { "Administração e Gestão Empresarial": {…}, "Finanças, Custos e Logística": {…}, "Pessoas, Educação e Políticas Públicas": {…}, … }
+​
+"GESTÃO EDUCACIONAL": Object { "Gestão Educacional e Formação de Educadores": {…}, "Docência, Pedagogia e Projetos Sociais": {…} }
+​
+"MARKETING E FINANÇAS": Object { "Gestão, Finanças e Estratégias": {…}, "Liderança, Marketing e Sociedade": {…} }
+​
+MBAs: Object { "Gestão Financeira e Controladoria": {…}, "Gestão de Negócios, Marketing e Liderança": {…}, "Comércio, Logística e Produção": {…}, … }
+​
+PSICOLOGIA: Object { "Psicologia Clínica, Neurociências e Terapias": {…}, "Psicologia Educacional, Organizacional e Social": {…} }
+​
+"SAÚDE": Object { "Gestão em Saúde e Administração Hospitalar": {…}, "Assistência e Cuidados em Saúde": {…}, "Bem-Estar, Saúde Mental e Ciências Aplicadas": {…} }
+​
+"SEGURANÇA": Object { "Gestão Pública, Segurança e Saúde": {…}, "Segurança no Trabalho e Serviço Social": {…} }
+​
+TICS: Object { "Tecnologia da Informação e Comunicação": {…} }

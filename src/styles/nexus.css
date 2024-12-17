@@ -41,11 +41,33 @@
 .subcategoria-titulo {
     cursor: pointer;
 }
+
 .subcategoria-titulo.active{
     color: green; /* Cor do texto ao ser clicado */
 }
+
 #subCategoryDiv {
-    color:red;
+    overflow: hidden;
+    display: none;
+}
+
+#subCategoryDiv.active {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+#subSubCategoryDiv {
+    overflow: hidden;
+    display: none;
+}
+
+#subSubCategoryDiv.active {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .cursos_nexus_section {

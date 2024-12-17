@@ -1,4 +1,4 @@
-/*
+
 const categoria = document.querySelector('.categoria');
 const subcategoria = document.querySelector('.subcategoria');
 
@@ -14,7 +14,7 @@ categoria.addEventListener('click', () => {
     gestao.classList.remove('active');
     marketing.classList.toggle('active');
 });
-*/
+
 
 const json = {
     "Direito": {

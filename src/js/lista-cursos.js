@@ -3,8 +3,8 @@ function capitalizeWords(str) {
 }
 
 
-function getSubSubCategories(data, key = "Pós Graduação") {
-    const posGraduacao = data[key];
+function getSubSubCategories(data) {
+    const posGraduacao = data;
 
     const subCategory = [];
     const subSubCategory = [];
@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function ()
 
                 const type = categoriaTitle.textContent === capitalizeWords("Pós Graduação") ? "subsubcategory" : "subcategory";
 
-                console.log("Linha 163: ", type)
+                //console.log("Linha 163: ", type)
 
                 renderSubcategorias(subcategoriaContainer, subcategorias, type);
 
@@ -195,43 +195,46 @@ document.addEventListener('DOMContentLoaded', function ()
     function renderSubcategorias(container, subcategorias, subCategoryType = "subcategory")
     {
         container.innerHTML = ''; // Limpa subcategorias anteriores
-        console.log("Linha 198: ", subCategoryType)
+        //console.log("Linha 198: ", subCategoryType)
 
         Object.keys(subcategorias).forEach(subcategoria =>
         {
             const cursos = subcategorias[subcategoria];
             //console.log(subcategoria)
             if (subCategoryType != "subcategory") {
-                console.log("Entrei na 198")
-                console.log(subcategorias)
-                console.log(subcategoria)
+                //console.log("Entrei na 198")
+                //console.log(subcategorias)
+                //console.log(subcategoria)
                 const subSubData = getSubSubCategories(subcategorias, subcategoria)
 
                 console.log("Linha 201: \n", subSubData)
 
                 Object.keys(subSubData).forEach(function(key) {
                     const sub = subSubData[key]  // Direito
-                    console.log("Linha 205: \n", key)
-                    console.log("Linha 206: \n", sub)
-                    
+                    //console.log("Linha 205: \n", key)
+                    //console.log("Linha 206: \n", sub)
                     const subCategoryDiv = document.createElement('div');
                     subCategoryDiv.id = 'subCategoryDiv';
+                    subCategoryDiv.classList.toggle('active');
                     document.body.appendChild(subCategoryDiv); // Adiciona a div ao DOM para que possa ser acessada
-
                     const subCategoryContainer = document.getElementById('subCategoryDiv'); // Agora pode acessar pelo ID
                     const subCategorySpan = document.createElement('span');
-                    
-                    subCategorySpan.textContent = capitalizeWords(key);
 
+                    subCategorySpan.textContent = capitalizeWords(key);
                     subCategoryContainer.appendChild(subCategorySpan); // Adiciona o span dentro da div
-                    
-                   
+
+                 
                     Object.keys(sub).forEach(function(keyItem){
                         const item = sub[keyItem]; // Direito Penal
+        
+                        subCategoryContainer.addEventListener('click', () =>
+                        {
+                            subSubCategoryContainer.classList.toggle('active');
+                        });
                         
-                        console.log("Linha 223: \n", item)
-                        console.log("Linha 224",keyItem); // Exibe o nome do curso
-                        
+                        //console.log("Linha 223: \n", item)
+                        //console.log("Linha 224",keyItem); // Exibe o nome do curso
+
                         const subSubCategoryDiv = document.createElement('div');
                         subSubCategoryDiv.id = 'subSubCategoryDiv';
                         document.body.appendChild(subSubCategoryDiv); // Adiciona a div ao DOM para que possa ser acessada
@@ -243,12 +246,12 @@ document.addEventListener('DOMContentLoaded', function ()
                         subSubCategorySpan.textContent = capitalizeWords(keyItem); // Tabnine que recomendou
 
                         subSubCategoryContainer.appendChild(subSubCategorySpan); // Adiciona o span dentro da div
-
+                        subCategoryContainer.appendChild(subSubCategoryContainer);
 
                         Object.keys(item).forEach(function(keyID){
                             const row = item[keyID]; // ID "0"
-                            console.log(row["Curso"]); // Exibe o nome do curso
-                            console.log(row["Duração"]); // Exibe a duração do curso
+                            //console.log(row["Curso"]); // Exibe o nome do curso
+                            //console.log(row["Duração"]); // Exibe a duração do curso
                         })
                   
                     });
