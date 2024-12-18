@@ -40,35 +40,23 @@
 
 .subSubCategoryTitle {
     font-size: 0.8rem;
-    margin-left: 50px;
+    margin-left: 70px;
     color: #000;
     margin-bottom: 10px;
     cursor: pointer;
+    /* se trocar position para absolute ele se posicionara na parte superior ao footer */
     position: relative;
-}
-footer {
-    display: inline-block;
-    margin-left: 35%;
+    bottom: 20%;
 }
 .subCategoryTitle {
     font-size: 1rem;
-    align-self: top;
-    margin-left: 20px;
+    margin-left: 50px;
     color: #000;
-    margin-bottom: 10px;
     cursor: pointer;
+    /* se trocar position para absolute ele se posicionara na parte superior ao footer */
     position: relative;
-}
-
-.subCategoryTitle::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    width: 0;
-    height: 2px;
-    background-color: #000000;
-    transition: width 0.3s ease, left 0.3s ease;
+    bottom: 30%;
+    left: 0;
 }
 
 .subcategoria-titulo {
@@ -77,19 +65,6 @@ footer {
 
 .subcategoria-titulo.active{
     color: green; /* Cor do texto ao ser clicado */
-}
-
-#subCategoryDiv {
-    overflow: hidden;
-    display: none;
-}
-
-#subCategoryDiv.active {
-    overflow: hidden;
-    display: inline-block;
-    margin-bottom: 10%;
-    align-self: left;
-    cursor: pointer;
 }
 
 #subSubCategoryDiv {
