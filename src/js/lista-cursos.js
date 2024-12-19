@@ -231,12 +231,23 @@ document.addEventListener('DOMContentLoaded', function ()
                             subSubCategoryTitle.className = 'subSubCategoryTitle';
                             subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
                             
-                            subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
-                            subCategoryContainer.appendChild(subSubCategoryContainer);
+                            subSubCategoryDiv.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
+                            subCategoryContainer.appendChild(subSubCategoryDiv);
+                            
                             subCategoryContainer.addEventListener('click', () =>
                                 {
-                                    subSubCategoryContainer.classList.toggle('active');
+                                    subSubCategoryDiv.classList.toggle('active');
                                 });
+
+                            /*
+                            quero colocar um if para verificar a subcategoria clicada e retornar sua respectiva subSubcategoria.
+                            apenas um exemplo:
+
+                            if (subcategory.clicked === subcategory) {
+                                return subcategory.clicked[key]
+                            };
+
+                            */
 
                             Object.keys(item).forEach(function(keyID){
                                 const row = item[keyID]; // ID "0"
@@ -249,11 +260,12 @@ document.addEventListener('DOMContentLoaded', function ()
                                     course.classList.toggle('active');
                                 });
                                 */
-                               /*
+
+                                /*
                                 const courseAndDuraction = document.createElement('div')
-                                courseAndDuraction.textContent = [keyItem]
+                                courseAndDuraction.textContent = capitalizeWords[keyID]
                                 
-                                courseAndDuraction.classID = 'course'
+                                courseAndDuraction.id = 'course'
                                 const courseContainer = document.createElement('div')
                                 courseContainer = getElementById = ('course')
                                 subSubCategoryContainer.appendChild('courseContainer')

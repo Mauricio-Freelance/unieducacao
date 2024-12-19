@@ -37,21 +37,18 @@
 .categoria-titulo.active {
     color: green; /* Cor do texto ao ser clicado */
 }
+
 .subSubCategoryTitle {
     font-size: 1rem;
-    margin-left: 70px;
+    margin-left: 30px;
     color: #000;
-    margin-bottom: 10px;
     cursor: pointer;
-    /* se trocar position para absolute ele se posicionara na parte superior ao footer */
     position: relative;
-    bottom: 20%;
 }
 .subCategoryTitle {
     font-size: 1.3rem;
     color: #000;
     cursor: pointer;
-    /* se trocar position para absolute ele se posicionara na parte superior ao footer */
     position: relative;
     bottom: 30%;
     left: 0;
@@ -72,7 +69,8 @@
 
 #subSubCategoryDiv.active {
     overflow: hidden;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     align-self: center;
     cursor: pointer;
 }
