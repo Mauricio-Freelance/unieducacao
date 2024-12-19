@@ -231,8 +231,6 @@ document.addEventListener('DOMContentLoaded', function ()
                             subSubCategoryTitle.className = 'subSubCategoryTitle';
                             subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
                             
-
-
                             subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
                             subCategoryContainer.appendChild(subSubCategoryContainer);
                             subCategoryContainer.addEventListener('click', () =>
@@ -249,6 +247,19 @@ document.addEventListener('DOMContentLoaded', function ()
                                 subSubCategoriaContainer.appendChild(course);
                                 subSubCategoryContainer.addEventListener('click', () => {
                                     course.classList.toggle('active');
+                                });
+                                */
+                               /*
+                                const courseAndDuraction = document.createElement('div')
+                                courseAndDuraction.textContent = [keyItem]
+                                
+                                courseAndDuraction.classID = 'course'
+                                const courseContainer = document.createElement('div')
+                                courseContainer = getElementById = ('course')
+                                subSubCategoryContainer.appendChild('courseContainer')
+                                
+                                subSubCategoryContainer.addEventListener('click', () => {
+                                    courseContainer.toggle('active')
                                 });
                                 */
                                 
