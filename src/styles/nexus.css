@@ -37,7 +37,6 @@
 .categoria-titulo.active {
     color: green; /* Cor do texto ao ser clicado */
 }
-
 .subSubCategoryTitle {
     font-size: 0.8rem;
     margin-left: 70px;
@@ -49,8 +48,7 @@
     bottom: 20%;
 }
 .subCategoryTitle {
-    font-size: 1rem;
-    margin-left: 50px;
+    font-size: 1.3rem;
     color: #000;
     cursor: pointer;
     /* se trocar position para absolute ele se posicionara na parte superior ao footer */
