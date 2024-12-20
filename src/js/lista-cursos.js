@@ -181,93 +181,93 @@ document.addEventListener('DOMContentLoaded', function ()
 
     function renderSubcategorias(container, subcategorias, subCategoryType = "subcategory") {
         container.innerHTML = '';
-
+    
         Object.keys(subcategorias).forEach(subcategoria => {
             const cursos = subcategorias[subcategoria];
-
+    
             if (subCategoryType !== "subcategory") {
                 const subSubData = getSubSubCategories(subcategorias);
-
+    
                 Object.keys(subSubData).forEach(mainCategory => {
                     const sub = subSubData[mainCategory];
                     const subCategoryDiv = document.createElement('div');
                     subCategoryDiv.className = 'subCategoryDiv';
-
+    
                     const subCategoryTitle = document.createElement('h2');
                     subCategoryTitle.textContent = capitalizeWords(mainCategory);
                     subCategoryTitle.className = 'subCategoryTitle';
                     subCategoryDiv.appendChild(subCategoryTitle);
-
+    
                     subCategoryTitle.addEventListener('click', () => {
                         // Fecha todas as subSubContainers antes de exibir o novo
                         document.querySelectorAll('.subSubContainer').forEach(container => {
                             container.style.display = 'none';
                         });
-
+    
                         document.querySelectorAll('.subCategoryTitle').forEach(title => {
                             title.classList.remove('active');
                         });
-
-                        subCategoryTitle.classList.add('active');
-
+    
+                        subCategoryTitle.classList.toggle('active');
+    
                         const subSubContainer = document.createElement('div');
                         subSubContainer.className = 'subSubContainer';
                         subCategoryDiv.appendChild(subSubContainer);
-
+    
                         Object.keys(sub).forEach(subSubCategory => {
                             const subSubCategoryDiv = document.createElement('div');
                             subSubCategoryDiv.className = 'subSubCategoryDiv';
-
+    
                             const subSubCategoryTitle = document.createElement('h6');
                             subSubCategoryTitle.textContent = capitalizeWords(subSubCategory);
                             subSubCategoryTitle.className = 'subSubCategoryTitle';
                             subSubCategoryDiv.appendChild(subSubCategoryTitle);
-
+    
                             const cursosContainer = document.createElement('div');
                             cursosContainer.className = 'cursos-container';
                             cursosContainer.style.display = 'none';
                             subSubCategoryDiv.appendChild(cursosContainer);
-
+    
                             const subSubCursos = sub[subSubCategory];
                             Object.keys(subSubCursos).forEach(key => {
                                 const curso = subSubCursos[key];
-
+    
                                 const card = document.createElement('div');
                                 card.className = 'curso-card';
-
+    
                                 const button = document.createElement('a');
                                 button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
                                 button.textContent = 'Saiba Mais';
                                 button.className = 'curso-button';
-
+    
                                 const title = document.createElement('span');
                                 title.textContent = capitalizeWords(curso.Curso);
                                 title.className = 'curso-titulo';
-
+    
                                 const cargaHoraria = document.createElement('span');
                                 cargaHoraria.textContent = capitalizeWords(curso.Duração);
                                 cargaHoraria.className = 'curso-carga-horaria';
-
+    
                                 card.appendChild(title);
                                 card.appendChild(cargaHoraria);
                                 card.appendChild(button);
                                 cursosContainer.appendChild(card);
                             });
-
+    
                             subSubCategoryTitle.addEventListener('click', () => {
                                 // Fecha todas as sub-subcategorias antes de abrir a clicada
                                 document.querySelectorAll('.cursos-container').forEach(container => {
                                     container.style.display = 'none';
                                 });
-
+    
                                 // Alterna a visibilidade da subcategoria clicada
                                 cursosContainer.style.display =
                                     cursosContainer.style.display === 'none' ? 'grid' : 'none';
                             });
-
+    
                             subSubContainer.appendChild(subSubCategoryDiv);
                         });
-
+    
                         if (subSubContainer.style.display === 'none' || subSubContainer.dataset.mainCategory !== mainCategory) {
                             document.querySelectorAll('.subSubContainer').forEach(container => {
                                 container.style.display = 'none';
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', function ()
                             subSubContainer.dataset.mainCategory = '';
                         }
                     });
-
+    
                     container.appendChild(subCategoryDiv);
                 });
             } else {
@@ -287,55 +287,53 @@ document.addEventListener('DOMContentLoaded', function ()
                 subcategoriaTitle.textContent = capitalizeWords(subcategoria);
                 subcategoriaTitle.className = 'subcategoria-titulo';
                 container.appendChild(subcategoriaTitle);
-
+    
                 const cursosContainer = document.createElement('div');
                 cursosContainer.className = 'cursos-container';
                 cursosContainer.dataset.subcategoria = subcategoria;
-
+    
                 if (subcategoria.toLowerCase() === 'ead') {
                     cursosContainer.style.display = 'grid';
                 } else {
                     cursosContainer.style.display = 'none';
                     subcategoriaTitle.addEventListener('click', () => {
-                        hideAllSubcategorias();
-                        document.querySelectorAll('.subcategoria-titulo').forEach(title => {
-                            title.classList.remove('active');
-                        });
-
-                        subcategoriaTitle.classList.add('active');
-                        cursosContainer.style.display = 'grid';
+                        // Alterna a visibilidade da subcategoria clicada
+                        cursosContainer.style.display =
+                            cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                        subcategoriaTitle.classList.toggle('active');
                     });
                 }
-
+    
                 Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
-
+    
                     const card = document.createElement('div');
                     card.className = 'curso-card';
-
+    
                     const button = document.createElement('a');
                     button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
                     button.textContent = 'Saiba Mais';
                     button.className = 'curso-button';
-
+    
                     const title = document.createElement('span');
                     title.textContent = capitalizeWords(curso.Curso);
                     title.className = 'curso-titulo';
-
+    
                     const cargaHoraria = document.createElement('span');
                     cargaHoraria.textContent = capitalizeWords(curso.Duração);
                     cargaHoraria.className = 'curso-carga-horaria';
-
+    
                     card.appendChild(title);
                     card.appendChild(cargaHoraria);
                     card.appendChild(button);
                     cursosContainer.appendChild(card);
                 });
-
+    
                 container.appendChild(cursosContainer);
             }
         });
-    }    
+    }
+     
 
     // Função para ocultar todas as subcategorias
     function hideAllSubcategorias()
