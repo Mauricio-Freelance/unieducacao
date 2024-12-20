@@ -205,6 +205,7 @@ document.addEventListener('DOMContentLoaded', function ()
                         const subCategoryDiv = document.createElement('div');
                         subCategoryDiv.id = 'subCategoryDiv';
                         subCategoryDiv.classList.toggle('active');
+                    
                         document.body.appendChild(subCategoryDiv); // Adiciona a div ao DOM para que possa ser acessada
                         const subCategoryContainer = document.getElementById('subCategoryDiv'); // Agora pode acessar pelo ID
                         
@@ -213,7 +214,6 @@ document.addEventListener('DOMContentLoaded', function ()
                         subCategoryTitle.className = 'subCategoryTitle';
                         subCategoryContainer.appendChild(subCategoryTitle); // Adiciona o span dentro da div
                         container.appendChild(subCategoryContainer);
-
                     
                         Object.keys(sub).forEach(function(keyItem){
                             const item = sub[keyItem]; // Direito Penal
@@ -238,6 +238,29 @@ document.addEventListener('DOMContentLoaded', function ()
                                 {
                                     subSubCategoryDiv.classList.toggle('active');
                                 });
+                                // subSubCategoryDiv.forEach(subCategoryContainer => {
+                                //     if (subSubCategoryDiv.classList.contains('active')) {
+                                //         // subSubCategoryDiv.classList.remove('active');
+                                //         subSubCategoryDiv.style.display = 'none';
+                                //     }
+                                // });
+
+
+
+
+
+                                // O erro ta bem aqui!
+
+
+
+                                // const activeSubSubCategoryDiv = subSubCategoryDiv.querySelector('.active');
+
+                                // if (activeSubSubCategoryDiv) {
+                                //     activeSubSubCategoryDiv.classList.remove('active');
+                                //     activeSubSubCategoryDiv.style.display = 'none';
+                                // }
+                                
+                                
 
                             /*
                             quero colocar um if para verificar a subcategoria clicada e retornar sua respectiva subSubcategoria.
