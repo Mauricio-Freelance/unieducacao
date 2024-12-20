@@ -255,14 +255,10 @@ document.addEventListener('DOMContentLoaded', function ()
                             });
     
                             subSubCategoryTitle.addEventListener('click', () => {
-                                // Fecha todas as sub-subcategorias antes de abrir a clicada
-                                document.querySelectorAll('.cursos-container').forEach(container => {
-                                    container.style.display = 'none';
-                                });
-    
-                                // Alterna a visibilidade da subcategoria clicada
+                                // Alterna a visibilidade da sub-subcategoria clicada
                                 cursosContainer.style.display =
                                     cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                                subSubCategoryTitle.classList.toggle('active');
                             });
     
                             subSubContainer.appendChild(subSubCategoryDiv);
