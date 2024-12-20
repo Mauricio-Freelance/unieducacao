@@ -2,7 +2,6 @@ function capitalizeWords(str) {
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 }
 
-
 function getSubSubCategories(data) {
     const posGraduacao = data;
 
@@ -31,9 +30,7 @@ function getSubSubCategories(data) {
     }
 
     return subCategoryJson;
-
 }
-
 
 document.addEventListener('DOMContentLoaded', function ()
 {
@@ -180,257 +177,144 @@ document.addEventListener('DOMContentLoaded', function ()
             });
             mainContainer.appendChild(categoriaContainer);
         });
-        function renderSubcategorias(container, subcategorias, subCategoryType = "subcategory")
-        {
-            container.innerHTML = ''; // Limpa subcategorias anteriores
-            //console.log("Linha 198: ", subCategoryType)
+    }
 
-            Object.keys(subcategorias).forEach(subcategoria =>
-            {
-                const cursos = subcategorias[subcategoria];
-                //console.log(subcategoria)
-                if (subCategoryType != "subcategory") {
-                    //console.log("Entrei na 198")
-                    //console.log(subcategorias)
-                    //console.log(subcategoria)
-                    const subSubData = getSubSubCategories(subcategorias, subcategoria)
+    function renderSubcategorias(container, subcategorias, subCategoryType = "subcategory") {
+        container.innerHTML = '';
 
-                    console.log("Linha 201: \n", subSubData)
+        Object.keys(subcategorias).forEach(subcategoria => {
+            const cursos = subcategorias[subcategoria];
 
-                    Object.keys(subSubData).forEach(function(key) {
+            if (subCategoryType !== "subcategory") {
+                const subSubData = getSubSubCategories(subcategorias);
 
-                        const sub = subSubData[key]  // Direito
-                        //console.log("Linha 205: \n", key)
-                        //console.log("Linha 206: \n", sub)
-                        const subCategoryDiv = document.createElement('div');
-                        subCategoryDiv.id = 'subCategoryDiv';
-                        subCategoryDiv.classList.toggle('active');
-                    
-                        document.body.appendChild(subCategoryDiv); // Adiciona a div ao DOM para que possa ser acessada
-                        const subCategoryContainer = document.getElementById('subCategoryDiv'); // Agora pode acessar pelo ID
-                        
-                        const subCategoryTitle = document.createElement('h2');
-                        subCategoryTitle.textContent = capitalizeWords(key);
-                        subCategoryTitle.className = 'subCategoryTitle';
-                        subCategoryContainer.appendChild(subCategoryTitle); // Adiciona o span dentro da div
-                        container.appendChild(subCategoryContainer);
-                    
-                        Object.keys(sub).forEach(function(keyItem){
-                            const item = sub[keyItem]; // Direito Penal
-                            
-                            //console.log("Linha 223: \n", item)
-                            //console.log("Linha 224",keyItem); // Exibe o nome do curso
+                Object.keys(subSubData).forEach(mainCategory => {
+                    const sub = subSubData[mainCategory];
+                    const subCategoryDiv = document.createElement('div');
+                    subCategoryDiv.className = 'subCategoryDiv';
 
+                    const subCategoryTitle = document.createElement('h2');
+                    subCategoryTitle.textContent = capitalizeWords(mainCategory);
+                    subCategoryTitle.className = 'subCategoryTitle';
+                    subCategoryDiv.appendChild(subCategoryTitle);
+
+                    subCategoryTitle.addEventListener('click', () => {
+                        // Fecha todas as subSubContainers antes de exibir o novo
+                        document.querySelectorAll('.subSubContainer').forEach(container => {
+                            container.style.display = 'none';
+                        });
+
+                        document.querySelectorAll('.subCategoryTitle').forEach(title => {
+                            title.classList.remove('active');
+                        });
+
+                        subCategoryTitle.classList.add('active');
+
+                        const subSubContainer = document.createElement('div');
+                        subSubContainer.className = 'subSubContainer';
+                        subCategoryDiv.appendChild(subSubContainer);
+
+                        Object.keys(sub).forEach(subSubCategory => {
                             const subSubCategoryDiv = document.createElement('div');
-                            subSubCategoryDiv.id = 'subSubCategoryDiv';
-                            container.appendChild(subSubCategoryDiv); // Adiciona a div ao DOM para que possa ser acessada
+                            subSubCategoryDiv.className = 'subSubCategoryDiv';
 
-                            const subSubCategoryContainer = document.getElementById('subSubCategoryDiv'); // Agora pode acessar pelo ID
                             const subSubCategoryTitle = document.createElement('h6');
-                            subSubCategoryTitle.textContent = capitalizeWords(keyItem);
+                            subSubCategoryTitle.textContent = capitalizeWords(subSubCategory);
                             subSubCategoryTitle.className = 'subSubCategoryTitle';
-                            subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
-                            
-                            subSubCategoryDiv.appendChild(subSubCategoryTitle); // Adiciona o span dentro da div
-                            subCategoryContainer.appendChild(subSubCategoryDiv);
-                            
-                            subCategoryContainer.addEventListener('click', () =>
-                                {
-                                    subSubCategoryDiv.classList.toggle('active');
+                            subSubCategoryDiv.appendChild(subSubCategoryTitle);
+
+                            const cursosContainer = document.createElement('div');
+                            cursosContainer.className = 'cursos-container';
+                            cursosContainer.style.display = 'none';
+                            subSubCategoryDiv.appendChild(cursosContainer);
+
+                            const subSubCursos = sub[subSubCategory];
+                            Object.keys(subSubCursos).forEach(key => {
+                                const curso = subSubCursos[key];
+
+                                const card = document.createElement('div');
+                                card.className = 'curso-card';
+
+                                const button = document.createElement('a');
+                                button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
+                                button.textContent = 'Saiba Mais';
+                                button.className = 'curso-button';
+
+                                const title = document.createElement('span');
+                                title.textContent = capitalizeWords(curso.Curso);
+                                title.className = 'curso-titulo';
+
+                                const cargaHoraria = document.createElement('span');
+                                cargaHoraria.textContent = capitalizeWords(curso.Duração);
+                                cargaHoraria.className = 'curso-carga-horaria';
+
+                                card.appendChild(title);
+                                card.appendChild(cargaHoraria);
+                                card.appendChild(button);
+                                cursosContainer.appendChild(card);
+                            });
+
+                            subSubCategoryTitle.addEventListener('click', () => {
+                                // Fecha todas as sub-subcategorias antes de abrir a clicada
+                                document.querySelectorAll('.cursos-container').forEach(container => {
+                                    container.style.display = 'none';
                                 });
-                                // subSubCategoryDiv.forEach(subCategoryContainer => {
-                                //     if (subSubCategoryDiv.classList.contains('active')) {
-                                //         // subSubCategoryDiv.classList.remove('active');
-                                //         subSubCategoryDiv.style.display = 'none';
-                                //     }
-                                // });
 
+                                // Alterna a visibilidade da subcategoria clicada
+                                cursosContainer.style.display =
+                                    cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                            });
 
-
-
-
-                                // O erro ta bem aqui!
-
-
-
-                                // const activeSubSubCategoryDiv = subSubCategoryDiv.querySelector('.active');
-
-                                // if (activeSubSubCategoryDiv) {
-                                //     activeSubSubCategoryDiv.classList.remove('active');
-                                //     activeSubSubCategoryDiv.style.display = 'none';
-                                // }
-                                
-                                
-
-                            /*
-                            quero colocar um if para verificar a subcategoria clicada e retornar sua respectiva subSubcategoria.
-                            apenas um exemplo:
-
-                            if (subcategory.clicked === subcategory) {
-                                return subcategory.clicked[key]
-                            };
-
-                            */
-
-                            Object.keys(item).forEach(function(keyID){
-                                const row = item[keyID]; // ID "0"
-                                /*
-                                const course = document.createElement('div');
-                                course.appendChild(row);
-
-                                subSubCategoriaContainer.appendChild(course);
-                                subSubCategoryContainer.addEventListener('click', () => {
-                                    course.classList.toggle('active');
-                                });
-                                */
-
-                                /*
-                                const courseAndDuraction = document.createElement('div')
-                                courseAndDuraction.textContent = capitalizeWords[keyID]
-                                
-                                courseAndDuraction.id = 'course'
-                                const courseContainer = document.createElement('div')
-                                courseContainer = getElementById = ('course')
-                                subSubCategoryContainer.appendChild('courseContainer')
-                                
-                                subSubCategoryContainer.addEventListener('click', () => {
-                                    courseContainer.toggle('active')
-                                });
-                                */
-                                
-                                //console.log(row["Curso"]); // Exibe o nome do curso
-                                //console.log(row["Duração"]); // Exibe a duração do curso
-                            })
-                    
+                            subSubContainer.appendChild(subSubCategoryDiv);
                         });
-                    });
-        
-                    // Container das sub-subcategorias
-                    const subSubCategoriaContainer = document.createElement('div');
-                    subSubCategoriaContainer.className = 'subsubcategoria-container';
-                    subSubCategoriaContainer.style.display = 'none'; // Inicialmente oculto
-                    container.appendChild(subSubCategoriaContainer);
-        
-                    // Adiciona eventos para mostrar/ocultar as sub-subcategorias
-                    subcategoriaTitle.addEventListener('click', () =>
-                    {
-                        if (subSubCategoriaContainer.style.display === 'none')
-                        {
-                            subSubCategoriaContainer.style.display = 'block';
-                        }
-                        else
-                        {
-                            subSubCategoriaContainer.style.display = 'none';
+
+                        if (subSubContainer.style.display === 'none' || subSubContainer.dataset.mainCategory !== mainCategory) {
+                            document.querySelectorAll('.subSubContainer').forEach(container => {
+                                container.style.display = 'none';
+                            });
+                            subSubContainer.style.display = 'block';
+                            subSubContainer.dataset.mainCategory = mainCategory;
+                        } else {
+                            subSubContainer.style.display = 'none';
+                            subSubContainer.dataset.mainCategory = '';
                         }
                     });
-        
-                    // Renderiza as sub-subcategorias
-                    Object.keys(cursos).forEach(subSubCategoria =>
-                    {
-                        const subSubCursos = cursos[subSubCategoria];
-        
-                        // Título da sub-subcategoria
-                        const subSubTitle = document.createElement('h4');
-                        subSubTitle.textContent = capitalizeWords(subSubCategoria);
-                        subSubTitle.className = 'subsubcategoria-titulo';
-                        subSubCategoriaContainer.appendChild(subSubTitle);
-        
-                        // Container dos cursos da sub-subcategoria
-                        const subSubCursosContainer = document.createElement('div');
-                        subSubCursosContainer.className = 'subsub-cursos-container';
-                        subSubCursosContainer.style.display = 'none'; // Inicialmente oculto
-                        subSubCategoriaContainer.appendChild(subSubCursosContainer);
-        
-                        // Adiciona evento para expandir os cursos da sub-subcategoria
-                        subSubTitle.addEventListener('click', () =>
-                        {
-                            if (subSubCursosContainer.style.display === 'none')
-                            {
-                                subSubCursosContainer.style.display = 'grid';
-                            }
-                            else
-                            {
-                                subSubCursosContainer.style.display = 'none';
-                            }
-                        });
-        
-                        // Adiciona os cursos dentro de cada sub-subcategoria
-                        Object.keys(subSubCursos).forEach(key =>
-                        {
-                            const curso = subSubCursos[key];
-        
-                            const card = document.createElement('div');
-                            card.className = 'curso-card';
-        
-                            const button = document.createElement('a');
-                            button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text&type=phone_number&app_absent=0';
-                            button.textContent = 'Saiba Mais';
-                            button.className = 'curso-button';
-        
-                            const title = document.createElement('span');
-                            title.textContent = capitalizeWords(curso.Curso);
-                            title.className = 'curso-titulo';
-        
-                            const cargaHoraria = document.createElement('span');
-                            cargaHoraria.textContent = capitalizeWords(curso.Duração);
-                            cargaHoraria.className = 'curso-carga-horaria';
-        
-                            card.appendChild(title);
-                            card.appendChild(cargaHoraria);
-                            card.appendChild(button);
-                            subSubCursosContainer.appendChild(card);
-                        });
-                    });
-                }
-                // Título da subcategoria
+
+                    container.appendChild(subCategoryDiv);
+                });
+            } else {
                 const subcategoriaTitle = document.createElement('h3');
                 subcategoriaTitle.textContent = capitalizeWords(subcategoria);
                 subcategoriaTitle.className = 'subcategoria-titulo';
                 container.appendChild(subcategoriaTitle);
 
-                // Container dos cursos
                 const cursosContainer = document.createElement('div');
-                cursosContainer.className = 'cursos-container'; // Certifique-se de que esta classe seja aplicada
+                cursosContainer.className = 'cursos-container';
                 cursosContainer.dataset.subcategoria = subcategoria;
 
-                // Inicialmente oculto (exceto se for EAD)
-
-                if (subcategoria.toLowerCase() === 'ead')
-                {
-                    cursosContainer.style.display = 'grid'; // Mostra em grid
-                }
-
-                else
-                {
+                if (subcategoria.toLowerCase() === 'ead') {
+                    cursosContainer.style.display = 'grid';
+                } else {
                     cursosContainer.style.display = 'none';
-                    subcategoriaTitle.addEventListener('click', () =>
-                    {
-                        hideAllSubcategorias(); // Oculta todas as subcategorias
-
-                        // Remove a classe 'active' das subcategorias anteriores
-                        document.querySelectorAll('.subcategoria-titulo').forEach(title =>
-                        {
+                    subcategoriaTitle.addEventListener('click', () => {
+                        hideAllSubcategorias();
+                        document.querySelectorAll('.subcategoria-titulo').forEach(title => {
                             title.classList.remove('active');
                         });
 
-                        // Adiciona a classe 'active' ao título de subcategoria clicado
                         subcategoriaTitle.classList.add('active');
-
-                        cursosContainer.style.display = 'grid'; // Mostra a subcategoria clicada
+                        cursosContainer.style.display = 'grid';
                     });
                 }
 
-                // Adiciona os cartões de curso
-                Object.keys(cursos).forEach(key =>
-                {
+                Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
 
                     const card = document.createElement('div');
                     card.className = 'curso-card';
 
                     const button = document.createElement('a');
-                    // Link do WhatsApp do responsável por vender os cursos
-                    button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text&type=phone_number&app_absent=0';
+                    button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
                     button.textContent = 'Saiba Mais';
                     button.className = 'curso-button';
 
@@ -449,9 +333,9 @@ document.addEventListener('DOMContentLoaded', function ()
                 });
 
                 container.appendChild(cursosContainer);
-            });
-        }
-    }
+            }
+        });
+    }    
 
     // Função para ocultar todas as subcategorias
     function hideAllSubcategorias()
@@ -461,9 +345,6 @@ document.addEventListener('DOMContentLoaded', function ()
             container.style.display = 'none';
         });
     }
-
-    // Função para renderizar as subcategorias e cursos
-    
 
     // Função para renderizar os cursos filtrados
     function renderCursosFiltrados(data)
