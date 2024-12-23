@@ -125,7 +125,7 @@
     display: grid;
     align-items: center;
     justify-content: space-between;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 40px;
     padding: 20px;
     margin-right: 40px;
