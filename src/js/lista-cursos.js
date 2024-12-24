@@ -2,6 +2,27 @@ function capitalizeWords(str) {
     return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
 }
 
+const getImage = (category, subcategoria, subsubcategory='', courseName) => {
+    let path = './assets/grade-curso'
+    const defaultPath = `${path}/default.png`
+
+    if (subsubcategory) {
+        path = `${path}/${category}/${subcategoria}/${subsubcategory}/${courseName}.png`
+    } else {
+        path = `${path}/${category}/${subcategoria}/${courseName}.png`
+    }
+
+    return fetch(path, { method: 'HEAD' })
+        .then(response => {
+            if (response.ok) {
+                return path;
+            } else {
+                return defaultPath;
+            }
+        })
+        .catch(() => defaultPath);
+}
+
 function getSubSubCategories(data) {
     const posGraduacao = data;
 
@@ -181,9 +202,11 @@ document.addEventListener('DOMContentLoaded', function ()
 
     function renderSubcategorias(container, subcategorias, subCategoryType = "subcategory") {
         container.innerHTML = '';
-    
+        
+        let count = 0;
         Object.keys(subcategorias).forEach(subcategoria => {
             const cursos = subcategorias[subcategoria];
+            count +=  1;
     
             if (subCategoryType !== "subcategory") {
                 const subSubData = getSubSubCategories(subcategorias);
@@ -236,7 +259,11 @@ document.addEventListener('DOMContentLoaded', function ()
                                 card.className = 'curso-card';
     
                                 const img = document.createElement('img');
-                                img.src = `path/to/images/${curso.Curso}.jpg`;
+                                img.src = "../../assets/grade-curso/default.png"
+                                //img.src = `path/to/images/${curso.Curso}.jpg`;
+                                //path = getImage(mainCategory, subcategoria, subSubCategory, curso.Curso);
+                                //console.log(path);
+                                img.src = path
                                 img.alt = curso.Curso;
                                 img.className = 'curso-imagem';
     
@@ -294,17 +321,22 @@ document.addEventListener('DOMContentLoaded', function ()
                 cursosContainer.className = 'cursos-container';
                 cursosContainer.dataset.subcategoria = subcategoria;
     
-                if (subcategoria.toLowerCase() === 'ead') {
+                if (subcategoria.toLowerCase() === 'ead' || count === 1) {
                     cursosContainer.style.display = 'grid';
                 } else {
                     cursosContainer.style.display = 'none';
-                    subcategoriaTitle.addEventListener('click', () => {
-                        // Alterna a visibilidade da subcategoria clicada
-                        cursosContainer.style.display =
-                            cursosContainer.style.display === 'none' ? 'grid' : 'none';
-                        subcategoriaTitle.classList.toggle('active');
-                    });
+                    // subcategoriaTitle.addEventListener('click', () => {
+                    //     // Alterna a visibilidade da subcategoria clicada
+                    //     cursosContainer.style.display =
+                    //         cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                    //     subcategoriaTitle.classList.toggle('active');
+                    // });
                 }
+                subcategoriaTitle.addEventListener('click', () => {
+                // Alterna a visibilidade da subcategoria clicada
+                cursosContainer.style.display = cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                subcategoriaTitle.classList.toggle('active');
+                });
     
                 Object.keys(cursos).forEach(key => {
                     const curso = cursos[key];
@@ -313,7 +345,11 @@ document.addEventListener('DOMContentLoaded', function ()
                     card.className = 'curso-card';
     
                     const img = document.createElement('img');
-                    img.src = `path/to/images/${curso.Curso}.jpg`; // Ajuste o caminho conforme necessário
+                    img.src = "../../assets/grade-curso/default.png"
+                    //img.src = `path/to/images/${curso.Curso}.jpg`; // Ajuste o caminho conforme necessário
+                    // path = getImage(mainCategory, subcategoria, '', curso.Curso);
+                    // console.log(path);
+                    // img.src = path;
                     img.alt = curso.Curso;
                     img.className = 'curso-imagem';
     

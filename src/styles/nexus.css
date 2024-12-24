@@ -11,7 +11,7 @@
 }
 
 .categoria-titulo {
-    font-size: 1rem;
+    font-size: 1.6rem;
     color: #000;
     margin-bottom: 10px;
     cursor: pointer;
@@ -169,7 +169,7 @@
 
 .curso-titulo {
     width: 300px;
-    font-weight: bold;
+    font-size: 200px;
     margin-bottom: 8px;
 }
 
