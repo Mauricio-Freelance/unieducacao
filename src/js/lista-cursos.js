@@ -299,9 +299,19 @@ document.addEventListener('DOMContentLoaded', function () {
     
                             subSubCategoryTitle.addEventListener('click', () => {
                                 // Alterna a visibilidade da sub-subcategoria clicada
-                                cursosContainer.style.display =
-                                    cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                                console.log("Linha 302: Situação do display:", cursosContainer.style.display)
+                                if (cursosContainer.style.display && cursosContainer.style.display === 'none'){
+                                    cursosContainer.style.display = 'grid';
+                                    cursosContainer.style.gridTemplateColumns == 'repeat(3, 1fr)';
+                                }
+                                else{
+                                    cursosContainer.style.display = 'none';
+                                }
                                 subSubCategoryTitle.classList.toggle('active');
+
+                                // cursosContainer.style.display =
+                                //     cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                                // subSubCategoryTitle.classList.toggle('active');
                             });
     
                             subSubContainer.appendChild(subSubCategoryDiv);
@@ -330,9 +340,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 const cursosContainer = document.createElement('div');
                 cursosContainer.className = 'cursos-container';
                 cursosContainer.dataset.subcategoria = subcategoria;
-    
+                console.log("Linha 343: Situação do display:", cursosContainer.style.display)
                 if (subcategoria.toLowerCase() === 'ead' || count === 1) {
+                    //cursosContainer.style.display = 'grid';
                     cursosContainer.style.display = 'grid';
+                    cursosContainer.style.gridTemplateColumns = 'repeat(3, 1fr)';
                 } else {
                     cursosContainer.style.display = 'none';
                     // subcategoriaTitle.addEventListener('click', () => {
@@ -344,6 +356,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
                 subcategoriaTitle.addEventListener('click', () => {
                 // Alterna a visibilidade da subcategoria clicada
+                console.log("Linha 357: Situação do display:", cursosContainer.style.display)
                 cursosContainer.style.display = cursosContainer.style.display === 'none' ? 'grid' : 'none';
                 subcategoriaTitle.classList.toggle('active');
                 });
