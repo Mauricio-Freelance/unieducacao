@@ -72,13 +72,25 @@ document.addEventListener('DOMContentLoaded', async () => {
         return subCategoryJson;
     }
 
-    function generateCard(course){
+    function clearAllActive() {
+        const subCategoryDiv = document.getElementById("sub-categories")
+        subCategoryDiv.innerHTML = "";
+        const coursesDiv = document.getElementById("courses")
+        coursesDiv.innerHTML = "";
+    }
+
+    function cleanCoursesActives() {
+        const coursesDiv = document.getElementById("courses")
+        coursesDiv.innerHTML = "";
+    }
+
+    function generateCard(course, categoryName, subCategoryName, subSubCategoryName = ''){
         const card = document.createElement('div');
         card.className = 'course-card';
         const img = document.createElement('img');
         img.src = "../../assets/grade-curso/default.png"
-        //img.src = `path/to/images/${course.Curso}.jpg`;
-        //path = getImage(mainCategory, subcategoria, subSubCategory, course.Curso);
+        //img.src = getImage(categoryName, subCategoryName, subSubCategoryName, course["Curso"]);
+        //console.log()
         //console.log(path);
         //img.src = path
         img.alt = course["Curso"];
@@ -105,7 +117,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
 
-    function generateSubCategory(subCategory, subCategoryDatabase){
+    function generateSubCategory(subCategory, subCategoryDatabase, CategoryName){
         const subCategoryContainer = document.createElement("div");
         const subCategoryTitle = document.createElement("h3");
         subCategoryTitle.textContent = capitalizeWords(subCategory);
@@ -113,13 +125,14 @@ document.addEventListener('DOMContentLoaded', async () => {
         subCategoryTitle.addEventListener("click", () => {
             if (subCategoryTitle.classList.contains("active")) {
                 subCategoryTitle.classList.remove("active");
+                cleanCoursesActives();
             } else {
                 document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
                 subCategoryTitle.classList.add('active');
+                cleanCoursesActives()
                 const coursesDiv = document.getElementById("courses");
-                coursesDiv.innerHTML = "";
                 Object.keys(subCategoryDatabase[subCategory]).forEach(course => {
-                    const courseElement = generateCard(subCategoryDatabase[subCategory][course]);
+                    const courseElement = generateCard(subCategoryDatabase[subCategory][course], CategoryName,subCategory, '');
                     coursesDiv.appendChild(courseElement);
                 });
 
@@ -139,20 +152,24 @@ document.addEventListener('DOMContentLoaded', async () => {
         categoryTitle.addEventListener('click', () => {
             if (categoryTitle.classList.contains('active')) { // Quando ativa e clicada, fica desativada
                 categoryTitle.classList.remove('active');
-                const subCategoryDiv = document.getElementById("sub-categories")
-                subCategoryDiv.innerHTML = "";
+
+                clearAllActive();
             } 
             else {
                 document.querySelectorAll('.category').forEach(category => category.classList.remove('active')); // Quando clicada e desativada, fica ativa e desativa as outras
                 categoryTitle.classList.add('active');
+
+                clearAllActive();
+
+        
                 const categoryName = categoryTitle.innerText
                 const subCategoriesData = database[categoryName];
-                console.log(subCategoriesData)
+
                 const subCategoryDiv = document.getElementById("sub-categories")
-                subCategoryDiv.innerHTML = "";
+
                 Object.keys(subCategoriesData).forEach(subCategory => {
                     console.log("Linha 154: ", database[categoryName])
-                    const subCategoryElement = generateSubCategory(subCategory, database[categoryName]);
+                    const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
                     subCategoryDiv.appendChild(subCategoryElement);
                 });
             }
