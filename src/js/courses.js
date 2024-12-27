@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     
         return subCategoryJson;
     }
-
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Create Categories
 
@@ -80,16 +80,53 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     const categoriesContainer = window.document.getElementById("categories")
 
+    let count = 0;
     Object.keys(data).forEach(async (category) => {
+        count += 1;
         const categoryTitle = document.createElement('h2')
         categoryTitle.textContent = capitalizeWords(category)
+        if(count === 1){
+            categoryTitle.classList.add('active')
+            
+            // categoryTitle.classList.add('active')
+            // categoryTitle.addEventListener('click', () => {
+            //     categoryTitle.classList.toggle('active')
+            //     const subcategories = categoryTitle.nextElementSibling
+            //     subcategories.classList.toggle('active')
+            //     if(subcategories.style.display === 'none'){
+            //         subcategories.style.display = 'grid'
+            //     } else {
+            //         subcategories.style.display = 'none'
+            //     }
+            //     Object.keys(data[category]).forEach(async (subCategory) => {
+            //         const subcategoryTitle = document.createElement('h3')
+            //         subcategoryTitle.textContent = capitalizeWords(subCategory)
+            //         subcategories.appendChild(subcategoryTitle)
+            //         const subcategoriesContainer = document.createElement('div')
+            //         subcategoriesContainer.classList.add('subcategories')
+            //         subcategories.appendChild(subcategoriesContainer)
+            //         const subcategories = data[category][subCategory]
+            //         Object.keys(subcategories).forEach(async (course) => {
+            //             const courseName = document.createElement('h4')
+            //             courseName.textContent = capitalizeWords(course)
+            //             subcategoriesContainer.appendChild(courseName)
+            //             const courseData = subcategories[course]
+            //             const courseImage = document.createElement('img')
+            //             courseImage.src = await getImage(category, subCategory, courseData.subsubcategory, course)
+            //             courseImage.alt = course
+            //             subcategoriesContainer.appendChild(courseImage)
+            //         })
+            //     })
+            // })
+        }
+
         categoriesContainer.appendChild(categoryTitle)
 
         // const subcategoriesContainer = document.createElement('div')
         // subcategoriesContainer.classList.add('subcategories')
         // categoriesContainer.appendChild(subcategoriesContainer)
 
-        const subcategories = data[category]
+        // const subcategories = data[category]
     })
     
 });
