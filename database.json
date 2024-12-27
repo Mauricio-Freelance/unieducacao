@@ -533,7 +533,7 @@
             }
         }
     },
-    "Pós técnico":{
+    "Pós Técnico":{
         "ADMINISTRAÇÃO": {
             "0": {
                 "Curso": "Especialização Técnica em Administração de Materiais ",
@@ -708,7 +708,7 @@
 
 
     },
-    "Qualificação por Competência":{
+    "Qualificação Por Competência":{
         "EAD":{
             "1": {
                 "Curso": "ADMINISTRAÇÃO",
@@ -3194,7 +3194,7 @@
             }
         }
     },
-    "Doutorado e Pós Doutorado":{
+    "Doutorado E Pós Doutorado":{
         "EAD":{
             "0":{ 
                 "Curso": "Ciências da Administração",

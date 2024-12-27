@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
     
     const getImage = (category, subCategory, subsubcategory='', courseName) => {
-        let path = './assets/grade-curso'
+        let path = './assets/grade-course'
         const defaultPath = `${path}/default.png`
     
         if (subsubcategory) {
@@ -71,6 +71,96 @@ document.addEventListener('DOMContentLoaded', async () => {
     
         return subCategoryJson;
     }
+
+    function generateCard(course){
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        const img = document.createElement('img');
+        img.src = "../../assets/grade-curso/default.png"
+        //img.src = `path/to/images/${course.Curso}.jpg`;
+        //path = getImage(mainCategory, subcategoria, subSubCategory, course.Curso);
+        //console.log(path);
+        //img.src = path
+        img.alt = course["Curso"];
+        img.className = 'course-image';
+
+        const button = document.createElement('a');
+        button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
+        button.textContent = 'Saiba Mais';
+        button.className = 'course-button';
+
+        const title = document.createElement('span');
+        title.textContent = capitalizeWords(course["Curso"]);
+        title.className = 'course-title';
+
+        const duration = document.createElement('span');
+        duration.textContent = capitalizeWords(course["Duração"]);
+        duration.className = 'course-duration';
+
+        card.appendChild(img);
+        card.appendChild(title);
+        card.appendChild(duration);
+        card.appendChild(button);
+        return card;
+    }
+
+
+    function generateSubCategory(subCategory, subCategoryDatabase){
+        const subCategoryContainer = document.createElement("div");
+        const subCategoryTitle = document.createElement("h3");
+        subCategoryTitle.textContent = capitalizeWords(subCategory);
+        subCategoryTitle.classList.add('subCategory');
+        subCategoryTitle.addEventListener("click", () => {
+            if (subCategoryTitle.classList.contains("active")) {
+                subCategoryTitle.classList.remove("active");
+            } else {
+                document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
+                subCategoryTitle.classList.add('active');
+                const coursesDiv = document.getElementById("courses");
+                coursesDiv.innerHTML = "";
+                Object.keys(subCategoryDatabase[subCategory]).forEach(course => {
+                    const courseElement = generateCard(subCategoryDatabase[subCategory][course]);
+                    coursesDiv.appendChild(courseElement);
+                });
+
+            }
+        })
+        subCategoryContainer.appendChild(subCategoryTitle);
+        return subCategoryContainer;
+    };
+
+    function generateCategory(category, database) {
+        /*
+        Gera a categoria que fica no topo da pagina
+        */
+        const categoryTitle = document.createElement('h2');
+        categoryTitle.textContent = capitalizeWords(category);
+        categoryTitle.classList.add('category');
+        categoryTitle.addEventListener('click', () => {
+            if (categoryTitle.classList.contains('active')) { // Quando ativa e clicada, fica desativada
+                categoryTitle.classList.remove('active');
+                const subCategoryDiv = document.getElementById("sub-categories")
+                subCategoryDiv.innerHTML = "";
+            } 
+            else {
+                document.querySelectorAll('.category').forEach(category => category.classList.remove('active')); // Quando clicada e desativada, fica ativa e desativa as outras
+                categoryTitle.classList.add('active');
+                const categoryName = categoryTitle.innerText
+                const subCategoriesData = database[categoryName];
+                console.log(subCategoriesData)
+                const subCategoryDiv = document.getElementById("sub-categories")
+                subCategoryDiv.innerHTML = "";
+                Object.keys(subCategoriesData).forEach(subCategory => {
+                    console.log("Linha 154: ", database[categoryName])
+                    const subCategoryElement = generateSubCategory(subCategory, database[categoryName]);
+                    subCategoryDiv.appendChild(subCategoryElement);
+                });
+            }
+        });
+        return categoryTitle;
+    }
+
+
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     // Create Categories
@@ -81,52 +171,17 @@ document.addEventListener('DOMContentLoaded', async () => {
     const categoriesContainer = window.document.getElementById("categories")
 
     let count = 0;
-    Object.keys(data).forEach(async (category) => {
-        count += 1;
-        const categoryTitle = document.createElement('h2')
-        categoryTitle.textContent = capitalizeWords(category)
-        if(count === 1){
-            categoryTitle.classList.add('active')
-            
-            // categoryTitle.classList.add('active')
-            // categoryTitle.addEventListener('click', () => {
-            //     categoryTitle.classList.toggle('active')
-            //     const subcategories = categoryTitle.nextElementSibling
-            //     subcategories.classList.toggle('active')
-            //     if(subcategories.style.display === 'none'){
-            //         subcategories.style.display = 'grid'
-            //     } else {
-            //         subcategories.style.display = 'none'
-            //     }
-            //     Object.keys(data[category]).forEach(async (subCategory) => {
-            //         const subcategoryTitle = document.createElement('h3')
-            //         subcategoryTitle.textContent = capitalizeWords(subCategory)
-            //         subcategories.appendChild(subcategoryTitle)
-            //         const subcategoriesContainer = document.createElement('div')
-            //         subcategoriesContainer.classList.add('subcategories')
-            //         subcategories.appendChild(subcategoriesContainer)
-            //         const subcategories = data[category][subCategory]
-            //         Object.keys(subcategories).forEach(async (course) => {
-            //             const courseName = document.createElement('h4')
-            //             courseName.textContent = capitalizeWords(course)
-            //             subcategoriesContainer.appendChild(courseName)
-            //             const courseData = subcategories[course]
-            //             const courseImage = document.createElement('img')
-            //             courseImage.src = await getImage(category, subCategory, courseData.subsubcategory, course)
-            //             courseImage.alt = course
-            //             subcategoriesContainer.appendChild(courseImage)
-            //         })
-            //     })
-            // })
-        }
+    Object.keys(data).forEach(category => {
+        const categoryElement = generateCategory(category, data);
+        categoriesContainer.appendChild(categoryElement);
+    });
 
-        categoriesContainer.appendChild(categoryTitle)
 
-        // const subcategoriesContainer = document.createElement('div')
-        // subcategoriesContainer.classList.add('subcategories')
-        // categoriesContainer.appendChild(subcategoriesContainer)
-
-        // const subcategories = data[category]
-    })
     
 });
+
+
+        // Adiciona a classe 'active' apenas à categoria clicada
+        // categoryTitle.classList.add('active');
+            //console.log(categoryTitle.nextElementSibling) //Pega o elemento da direita do clicado, caso não tenha, retorna null
+            //console.log(categoryTitle.innerText) // Acessa o nome do elemento clicado
