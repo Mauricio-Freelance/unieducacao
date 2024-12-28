@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 clearAllActive();
             } 
             else {
-                document.querySelectorAll('.category').forEach(category => category.classList.remove('active')); // Quando clicada e desativada, fica ativa e desativa as outras
+                document.querySelectorAll('.category').forEach(category => category.classList.remove('active')); // Quando clicada e estiver desativada, fica ativa e desativa as outras
                 categoryTitle.classList.add('active');
 
                 clearAllActive();
@@ -167,9 +167,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                 const subCategoryDiv = document.getElementById("sub-categories")
 
+                let count = 0;
                 Object.keys(subCategoriesData).forEach(subCategory => {
-                    console.log("Linha 154: ", database[categoryName])
+                    count += 1;
                     const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
+                    if (count === 1){
+                        subCategoryElement.click();
+                    }
                     subCategoryDiv.appendChild(subCategoryElement);
                 });
             }
@@ -189,7 +193,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     let count = 0;
     Object.keys(data).forEach(category => {
+        count += 1;
         const categoryElement = generateCategory(category, data);
+        if (count === 1){
+            categoryElement.classList.remove('active');
+            categoryElement.click();
+        }
         categoriesContainer.appendChild(categoryElement);
     });
 
