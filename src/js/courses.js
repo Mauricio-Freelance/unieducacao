@@ -170,7 +170,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
         else
         {
-            const subData = getSubSubCategories(subCategoryDatabase)
             /*
             Direito:
                 Direito Institucional:
@@ -179,89 +178,62 @@ document.addEventListener('DOMContentLoaded', async () => {
                         -   Duração
                     - Curso 2
             */
-            Object.keys(subData).forEach(fakeCategory => { // Direito
-                
-                // Adicionando uma div as SubCategorias de Direito e Um texto clicavel para direito
-                subCategoryTitle.textContent = capitalizeWords(fakeCategory);
-                const subSubCategoryContainer = document.createElement("div");
-                subSubCategoryContainer.classList.add('subSubCategories');
-                subCategoryContainer.appendChild(subCategoryTitle);
-                subCategoryContainer.appendChild(subSubCategoryContainer)
-                
-                subCategoryTitle.addEventListener("click", () => {
-                    if (subCategoryTitle.classList.contains("active")) {
-                        subCategoryTitle.classList.remove("active");
-                        cleanCoursesActives();
-                    } 
-                    else {
-                        document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
+            subCategoryTitle.textContent = capitalizeWords(subCategory);// Direito
 
-                        subCategoryTitle.classList.add('active');
+            const subSubCategoryContainer = document.createElement("div"); // Div para guardar as filhas de Direito
+            subSubCategoryContainer.classList.add('subSubCategories'); // Classe da Div que ira guardar as subsub Categorias de Direito
 
-                        cleanCoursesActives()
-                        // Gera as subcategorias de Direito
-                        Object.keys(subData[fakeCategory]).forEach(fakeSubCategory => {
 
-                            const subSubCategoryTitle = document.createElement("h4");
-                            subSubCategoryTitle.textContent = capitalizeWords(fakeSubCategory);
-                            subSubCategoryTitle.classList.add('subSubCategory');
-                            // Cada filha pode ser clicada para abrir seus respectivos cursos
-                            subSubCategoryContainer.appendChild(subSubCategoryTitle);
-                            //TODO: Voltar aqui e corrigir
-                            subSubCategoryTitle.addEventListener("click", () => {
-                                if (subSubCategoryTitle.classList.contains("active")) {
-                                    subSubCategoryTitle.classList.remove("active");
-                                    cleanCoursesActives();
-                                } 
-                                else {
-                                    document.querySelectorAll('.subSubCategory').forEach(subSubCategoryTitle => subSubCategoryTitle.classList.remove('active'));
+            subCategoryContainer.appendChild(subCategoryTitle);
+            subCategoryContainer.appendChild(subSubCategoryContainer)
 
-                                    subSubCategoryTitle.classList.add('active');
+            subCategoryTitle.addEventListener("click", () => {
+                if (subCategoryTitle.classList.contains("active")) {
+                    subCategoryTitle.classList.remove("active");
+                    cleanCoursesActives();
+                } 
+                else {
+                    document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
+                    subCategoryTitle.classList.add('active');
 
-                                    cleanCoursesActives()
+                    cleanCoursesActives()
 
-                                    const coursesDiv = document.getElementById("courses");
+                    Object.keys(subCategoryDatabase).forEach(subSubCategory => { // Pega todas as chaves dentro da subcategoria direito
+                        const subSubCategoryTitle = document.createElement("h4"); // Cria um elemento h4 para cada subsubcategoria
+        
+                        subSubCategoryTitle.textContent = capitalizeWords(subSubCategory); // Coloca o nome da subsubcategoria no h4
+                        subSubCategoryTitle.classList.add('subSubCategory'); // Adiciona a classe subSubCategory ao h4
+        
+                        subSubCategoryContainer.appendChild(subSubCategoryTitle); // Adiciona o h4 à Div subSubCategoryContainer
+                        //subSubCategoryContainer.style.display = "none"; // Inicialmente, as subsubcategorias ficam escondidas
+        
+                        subSubCategoryTitle.addEventListener("click", () => { // Adiciona um evento de clique ao h4
+                            if (subSubCategoryTitle.classList.contains("active")) { // Se a subsubcategoria estiver ativa, ela é desativada
+                                subSubCategoryTitle.classList.remove('active');
+                                cleanCoursesActives();
+                            }
+                            else {
+                                document.querySelectorAll('.subSubCategory').forEach(subSubCategory => subSubCategory.classList.remove('active')); // Desativa todas as subsubcategorias
+                                subSubCategoryTitle.classList.add('active'); // Ativa a subsubcategoria clicada
+        
+                                cleanCoursesActives();
+        
+                                const coursesDiv = document.getElementById("courses"); // Pega a div que guarda os cursos
+        
+                                Object.keys(subCategoryDatabase[subSubCategory]).forEach(course => { // Para cada curso dentro da subsubcategoria
+                                    const courseElement = generateCard(subCategoryDatabase[subSubCategory][course], CategoryName, subCategory, subSubCategory); // Gera um card com as informações do curso
+                                    coursesDiv.appendChild(courseElement); // Adiciona o card à div que guarda os cursos
+                                });
+                            }
+                        }) 
+        
+                    });
+        
 
-                                    Object.keys(subData[fakeCategory][fakeSubCategory]).forEach(course => {
-
-                                        const courseElement = generateCard(subData[fakeCategory][fakeSubCategory][course], CategoryName, fakeCategory, fakeSubCategory);
-
-                                        coursesDiv.appendChild(courseElement);
-
-                                    });
-                                }
-                            })
-                            
-                            
-                            const coursesDiv = document.getElementById("courses");
-
-                            Object.keys(subData[fakeCategory][fakeSubCategory]).forEach(course => {
-                                console.log("Linha 239: ",subData[fakeCategory][fakeSubCategory][course]);
-                                const courseElement = generateCard(
-                                    subData[fakeCategory][fakeSubCategory][course],
-                                    CategoryName,
-                                    fakeCategory,
-                                    fakeSubCategory,
-                                );
-
-                                coursesDiv.appendChild(courseElement);
-
-                            });
-                        })
+                }    
+            });
 
                         
-
-                        Object.keys(subData).forEach(course => {
-
-                            const courseElement = generateCard(subData[course], CategoryName,subCategory, '');
-
-                            coursesDiv.appendChild(courseElement);
-
-                        });
-                    }
-                })
-            });
-            
 
         }
 
@@ -294,14 +266,29 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const subCategoryDiv = document.getElementById("sub-categories")
 
                 let count = 0;
-                Object.keys(subCategoriesData).forEach(subCategory => {
-                    count += 1;
-                    const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
-                    if (count === 1){
-                        subCategoryElement.click();
-                    }
-                    subCategoryDiv.appendChild(subCategoryElement);
-                });
+                if (categoryName !== "Pós Graduação"){
+                    Object.keys(subCategoriesData).forEach(subCategory => {
+                        console.log("299: ", subCategory)
+                        count += 1;
+                        const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
+                        if (count === 1){
+                            subCategoryElement.click();
+                        }
+                        subCategoryDiv.appendChild(subCategoryElement);
+                    });
+                }
+                else{
+                    // Quando for subcategorias de Pós Graduação, iremos gerar a subcategorias de Pós Graduação todas de uma vez, pois os dados devem ser processados separadamente
+                    const subData = getSubSubCategories(database[categoryName]);
+                    console.log("237: ", subData)
+                    Object.keys(subData).forEach(fakeCategory => {
+                        // subCategory, subCategoryDatabase, CategoryName
+                        console.log("240: ", fakeCategory)
+                        const subCategoryElement = generateSubCategory(fakeCategory, subData[fakeCategory], categoryName);
+                        subCategoryDiv.appendChild(subCategoryElement);
+                    });
+                    
+                }
             }
         });
         return categoryTitle;
