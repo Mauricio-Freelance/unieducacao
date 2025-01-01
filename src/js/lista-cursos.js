@@ -3,7 +3,7 @@ function capitalizeWords(str) {
 }
 
 const getImage = (category, subcategoria, subsubcategory='', courseName) => {
-    let path = './assets/grade-curso'
+    let path = '../../assets/grade-curso'
     const defaultPath = `${path}/default.png`
 
     if (subsubcategory) {
@@ -24,12 +24,14 @@ const getImage = (category, subcategoria, subsubcategory='', courseName) => {
 }
 
 function getSubSubCategories(data) {
-    const posGraduacao = data;
+    /*
+    Busca as subsubcategory de uma sub categoria e refeita a estrutura para o formato categoria e subcategoria, onde a subsubcategory vira a sub categoria e a subcategoria vira a categoria
+    */
 
     const subCategory = [];
     const subSubCategory = [];
 
-    for (const course in posGraduacao) {
+    for (const course in data) {
         const [mainCategory, subCategoryPart] = course.split(" - ");
         subCategory.push(mainCategory);
         subSubCategory.push(subCategoryPart);
@@ -45,16 +47,58 @@ function getSubSubCategories(data) {
         }
     }
 
-    for (const course in posGraduacao) {
+    for (const course in data) {
         const [mainCategory, subCategoryPart] = course.split(" - ");
-        subCategoryJson[mainCategory][subCategoryPart] = posGraduacao[course];
+        subCategoryJson[mainCategory][subCategoryPart] = data[course];
     }
 
     return subCategoryJson;
 }
 
-document.addEventListener('DOMContentLoaded', function ()
+// Função de filtro dos cursos com base no nome do curso
+function filterCursos(data, query)
 {
+    const filteredData = {};
+
+    Object.keys(data).forEach(categoria =>
+    {
+        const subcategorias = data[categoria];
+        const filteredSubcategorias = {};
+
+        Object.keys(subcategorias).forEach(subcategoria =>
+        {
+            const cursos = subcategorias[subcategoria];
+            const filteredCursos = {};
+
+            Object.keys(cursos).forEach(key =>
+            {
+                const curso = cursos[key];
+
+                if (curso.Curso.toLowerCase().includes(query))
+                {
+                    filteredCursos[key] = curso;
+                }
+            });
+
+            if (Object.keys(filteredCursos).length > 0)
+            {
+                filteredSubcategorias[subcategoria] = filteredCursos;
+            }
+        });
+
+        if (Object.keys(filteredSubcategorias).length > 0)
+        {
+            filteredData[categoria] = filteredSubcategorias;
+        }
+    });
+
+    return filteredData;
+}
+
+/////////////////////////////////////////////////////////////////////////// MAIN A BAIXO
+
+
+document.addEventListener('DOMContentLoaded', function () {
     let cursosData = {};
 
     fetch('../../database.json')
@@ -80,6 +124,7 @@ document.addEventListener('DOMContentLoaded', function ()
 
     // Adicionando evento para a barra de pesquisa
     const searchBar = document.getElementById('search-bar');
+
     searchBar.addEventListener('input', function ()
     {
         const query = searchBar.value.toLowerCase();
@@ -95,55 +140,20 @@ document.addEventListener('DOMContentLoaded', function ()
         }
     });
 
-    // Função de filtro dos cursos com base no nome do curso
-    function filterCursos(data, query)
-    {
-        const filteredData = {};
-
-        Object.keys(data).forEach(categoria =>
-        {
-            const subcategorias = data[categoria];
-            const filteredSubcategorias = {};
-
-            Object.keys(subcategorias).forEach(subcategoria =>
-            {
-                const cursos = subcategorias[subcategoria];
-                const filteredCursos = {};
-
-                Object.keys(cursos).forEach(key =>
-                {
-                    const curso = cursos[key];
-
-                    if (curso.Curso.toLowerCase().includes(query))
-                    {
-                        filteredCursos[key] = curso;
-                    }
-                });
-
-                if (Object.keys(filteredCursos).length > 0)
-                {
-                    filteredSubcategorias[subcategoria] = filteredCursos;
-                }
-            });
-
-            if (Object.keys(filteredSubcategorias).length > 0)
-            {
-                filteredData[categoria] = filteredSubcategorias;
-            }
-        });
-
-        return filteredData;
-    }
-
     // Função para renderizar as categorias e os cursos
     function renderCategorias(data)
     {
+        // DIV a Baixo do menu de busca (), onde ela contem toda a parte dinâmica do JS
         const container = document.getElementById('curso-lista');
+        //container.style.background = "black";
+
         container.innerHTML = ''; // Limpa o conteúdo anterior
 
-        const mainContainer = document.createElement('div');
-        mainContainer.className = 'main-container';
-        container.appendChild(mainContainer);
+        // Categorias Container
+        const categoriesContainer = document.createElement('div');
+        //categoriesContainer.style.background = 'black';
+        categoriesContainer.className = 'categories-container';
+        container.appendChild(categoriesContainer);
 
         const subcategoriaContainer = document.createElement('div');
         subcategoriaContainer.className = 'subcategoria-container';
@@ -196,7 +206,7 @@ document.addEventListener('DOMContentLoaded', function ()
                     subcategoriaContainer.dataset.categoria = '';
                 }
             });
-            mainContainer.appendChild(categoriaContainer);
+            categoriesContainer.appendChild(categoriaContainer);
         });
     }
 
@@ -289,8 +299,14 @@ document.addEventListener('DOMContentLoaded', function ()
     
                             subSubCategoryTitle.addEventListener('click', () => {
                                 // Alterna a visibilidade da sub-subcategoria clicada
-                                cursosContainer.style.display =
-                                    cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                                console.log("Linha 302: Situação do display:", cursosContainer.style.display)
+                                if (cursosContainer.style.display && cursosContainer.style.display === 'none'){
+                                    cursosContainer.style.display = 'grid';
+                                    cursosContainer.style.gridTemplateColumns == 'repeat(3, 1fr)';
+                                }
+                                else{
+                                    cursosContainer.style.display = 'none';
+                                }
                                 subSubCategoryTitle.classList.toggle('active');
                             });
     
@@ -320,21 +336,27 @@ document.addEventListener('DOMContentLoaded', function ()
                 const cursosContainer = document.createElement('div');
                 cursosContainer.className = 'cursos-container';
                 cursosContainer.dataset.subcategoria = subcategoria;
-    
+                console.log("Linha 343: Situação do display:", cursosContainer.style.display)
                 if (subcategoria.toLowerCase() === 'ead' || count === 1) {
+                    //cursosContainer.style.display = 'grid';
                     cursosContainer.style.display = 'grid';
+                    cursosContainer.style.gridTemplateColumns = 'repeat(3, 1fr)';
                 } else {
                     cursosContainer.style.display = 'none';
-                    // subcategoriaTitle.addEventListener('click', () => {
-                    //     // Alterna a visibilidade da subcategoria clicada
-                    //     cursosContainer.style.display =
-                    //         cursosContainer.style.display === 'none' ? 'grid' : 'none';
-                    //     subcategoriaTitle.classList.toggle('active');
-                    // });
                 }
+                subcategoriaTitle.classList.toggle('active');
+
                 subcategoriaTitle.addEventListener('click', () => {
                 // Alterna a visibilidade da subcategoria clicada
-                cursosContainer.style.display = cursosContainer.style.display === 'none' ? 'grid' : 'none';
+                console.log("Linha 357: Situação do display:", cursosContainer.style.display)
+                if (cursosContainer.style.display && cursosContainer.style.display === 'none'){
+                    cursosContainer.style.display = 'grid';
+                    cursosContainer.style.gridTemplateColumns == 'repeat(3, 1fr)';
+                }
+                else{
+                    cursosContainer.style.display = 'none';
+                }
+                subSubCategoryTitle.classList.toggle('active');
                 subcategoriaTitle.classList.toggle('active');
                 });
     
@@ -394,13 +416,13 @@ document.addEventListener('DOMContentLoaded', function ()
         const container = document.getElementById('curso-lista');
         container.innerHTML = ''; // Limpa o conteúdo anterior
 
-        const mainContainer = document.createElement('div');
-        mainContainer.className = 'main-container';
-        container.appendChild(mainContainer);
+        const categoriesContainer = document.createElement('div');
+        categoriesContainer.className = 'categories-container';
+        container.appendChild(categoriesContainer);
 
         const cursosContainer = document.createElement('div');
         cursosContainer.className = 'cursos-container';
-        mainContainer.appendChild(cursosContainer);
+        categoriesContainer.appendChild(cursosContainer);
 
         Object.keys(data).forEach(categoria =>
         {
