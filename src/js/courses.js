@@ -275,7 +275,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                         count += 1;
                         const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
                         if (count === 1){
-                            subCategoryElement.click();
+                            subCategoryElement.firstChild.classList.remove('active');
+                            subCategoryElement.firstChild.click();
                         }
                         subCategoryDiv.appendChild(subCategoryElement);
                     });
