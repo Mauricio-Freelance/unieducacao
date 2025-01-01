@@ -6,25 +6,16 @@ document.addEventListener('DOMContentLoaded', async () => {
         return str.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()).join(' ');
     }
     
-    const getImage = (category, subCategory, subsubcategory='', courseName) => {
-        let path = './assets/grade-course'
-        const defaultPath = `${path}/default.png`
+    function getImage(category, subCategory, subsubcategory = '', courseName) {
+        const basePath = '../../assets/grade-curso';
+        const defaultPath = `${basePath}/default.png`;
     
         if (subsubcategory) {
-            path = `${path}/${category}/${subCategory}/${subsubcategory}/${courseName}.png`
+            return `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${capitalizeWords(subsubcategory)}/${courseName}.png`;
         } else {
-            path = `${path}/${category}/${subCategory}/${courseName}.png`
+            return `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${courseName}.png`;
         }
-    
-        return fetch(path, { method: 'HEAD' })
-            .then(response => {
-                if (response.ok) {
-                    return path;
-                } else {
-                    return defaultPath;
-                }
-            })
-            .catch(() => defaultPath);
+        
     }
 
     async function getDatabase() {
@@ -99,14 +90,20 @@ document.addEventListener('DOMContentLoaded', async () => {
         */
         const card = document.createElement('div');
         card.className = 'course-card';
+
+        
+
         const img = document.createElement('img');
-        img.src = "../../assets/grade-curso/default.png"
-        //img.src = getImage(categoryName, subCategoryName, subSubCategoryName, course["Curso"]);
-        //console.log()
-        //console.log(path);
-        //img.src = path
+        img.src = getImage(categoryName, subCategoryName, subSubCategoryName, course["Curso"]);
+        console.log("Linha 98: ",img.src);
         img.alt = course["Curso"];
         img.className = 'course-image';
+    
+        // Define fallback para imagem padrão se a original falhar, carrega a default
+        img.onerror = () => {
+            img.src = '../../assets/grade-curso/default.png';
+        };
+
 
         const button = document.createElement('a');
         button.href = 'https://api.whatsapp.com/send/?phone=5519991428363&text=type=phone_number&app_absent=0';
@@ -271,7 +268,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 let count = 0;
                 if (categoryName !== "Pós Graduação"){
                     Object.keys(subCategoriesData).forEach(subCategory => {
-                        console.log("299: ", subCategory)
                         count += 1;
                         const subCategoryElement = generateSubCategory(subCategory, database[categoryName], categoryName);
                         if (count === 1){
