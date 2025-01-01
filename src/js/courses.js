@@ -8,7 +8,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     function getImage(category, subCategory, subsubcategory = '', courseName) {
         const basePath = '../../assets/grade-curso';
-        const defaultPath = `${basePath}/default.png`;
     
         if (subsubcategory) {
             return `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${capitalizeWords(subsubcategory)}/${courseName}.png`;
