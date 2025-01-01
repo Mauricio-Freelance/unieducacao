@@ -68,6 +68,15 @@
     color: #8ebb65;
 }
 
+.subSubCategory{
+    font-size: 0.9rem;
+    margin-left: 50px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    background-color: red;
+}
+
 .courses{
     display: grid;
     width: 100%;

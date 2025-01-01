@@ -85,6 +85,18 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     function generateCard(course, categoryName, subCategoryName, subSubCategoryName = ''){
+        /*
+        Gera um cartão com as informações do curso
+
+        - Args:
+            - course: Objeto com as informações do curso
+            - categoryName: Nome da categoria do curso
+            - subCategoryName: Nome da sub categoria do curso
+            - subSubCategoryName: Nome da subsub categoria do curso (Opcional)
+
+        - Returns:
+            - Elemento do cartão com as informações do curso
+        */
         const card = document.createElement('div');
         card.className = 'course-card';
         const img = document.createElement('img');
@@ -154,14 +166,104 @@ document.addEventListener('DOMContentLoaded', async () => {
                     });
                 }
             })
+            subCategoryContainer.appendChild(subCategoryTitle);
         }
-        else{
+        else
+        {
+            const subData = getSubSubCategories(subCategoryDatabase)
+            /*
+            Direito:
+                Direito Institucional:
+                    - Curso 1
+                        -   Curso
+                        -   Duração
+                    - Curso 2
+            */
+            Object.keys(subData).forEach(fakeCategory => { // Direito
+                
+                // Adicionando uma div as SubCategorias de Direito e Um texto clicavel para direito
+                subCategoryTitle.textContent = capitalizeWords(fakeCategory);
+                const subSubCategoryContainer = document.createElement("div");
+                subSubCategoryContainer.classList.add('subSubCategories');
+                subCategoryContainer.appendChild(subCategoryTitle);
+                subCategoryContainer.appendChild(subSubCategoryContainer)
+                
+                subCategoryTitle.addEventListener("click", () => {
+                    if (subCategoryTitle.classList.contains("active")) {
+                        subCategoryTitle.classList.remove("active");
+                        cleanCoursesActives();
+                    } 
+                    else {
+                        document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
 
+                        subCategoryTitle.classList.add('active');
 
-            subCategoryTitle.textContent = capitalizeWords("Ola Mundo");
+                        cleanCoursesActives()
+                        // Gera as subcategorias de Direito
+                        Object.keys(subData[fakeCategory]).forEach(fakeSubCategory => {
+
+                            const subSubCategoryTitle = document.createElement("h4");
+                            subSubCategoryTitle.textContent = capitalizeWords(fakeSubCategory);
+                            subSubCategoryTitle.classList.add('subSubCategory');
+                            // Cada filha pode ser clicada para abrir seus respectivos cursos
+                            subSubCategoryContainer.appendChild(subSubCategoryTitle);
+                            //TODO: Voltar aqui e corrigir
+                            subSubCategoryTitle.addEventListener("click", () => {
+                                if (subSubCategoryTitle.classList.contains("active")) {
+                                    subSubCategoryTitle.classList.remove("active");
+                                    cleanCoursesActives();
+                                } 
+                                else {
+                                    document.querySelectorAll('.subSubCategory').forEach(subSubCategoryTitle => subSubCategoryTitle.classList.remove('active'));
+
+                                    subSubCategoryTitle.classList.add('active');
+
+                                    cleanCoursesActives()
+
+                                    const coursesDiv = document.getElementById("courses");
+
+                                    Object.keys(subData[fakeCategory][fakeSubCategory]).forEach(course => {
+
+                                        const courseElement = generateCard(subData[fakeCategory][fakeSubCategory][course], CategoryName, fakeCategory, fakeSubCategory);
+
+                                        coursesDiv.appendChild(courseElement);
+
+                                    });
+                                }
+                            })
+                            
+                            
+                            const coursesDiv = document.getElementById("courses");
+
+                            Object.keys(subData[fakeCategory][fakeSubCategory]).forEach(course => {
+                                console.log("Linha 239: ",subData[fakeCategory][fakeSubCategory][course]);
+                                const courseElement = generateCard(
+                                    subData[fakeCategory][fakeSubCategory][course],
+                                    CategoryName,
+                                    fakeCategory,
+                                    fakeSubCategory,
+                                );
+
+                                coursesDiv.appendChild(courseElement);
+
+                            });
+                        })
+
+                        
+
+                        Object.keys(subData).forEach(course => {
+
+                            const courseElement = generateCard(subData[course], CategoryName,subCategory, '');
+
+                            coursesDiv.appendChild(courseElement);
+
+                        });
+                    }
+                })
+            });
+            
 
         }
-        subCategoryContainer.appendChild(subCategoryTitle);
 
         return subCategoryContainer;
     };
