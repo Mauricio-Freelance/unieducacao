@@ -187,10 +187,13 @@ document.addEventListener('DOMContentLoaded', async () => {
             subCategoryContainer.appendChild(subCategoryTitle);
             subCategoryContainer.appendChild(subSubCategoryContainer)
 
-            subCategoryTitle.addEventListener("click", () => {
+            subCategoryTitle.addEventListener("click", () => { // Adiciona um evento de clique ao h3 para abrir ou esconder as subsubcategorias
                 if (subCategoryTitle.classList.contains("active")) {
                     subCategoryTitle.classList.remove("active");
                     cleanCoursesActives();
+                    //subSubCategoryContainer.style.display = "none"; // Inicialmente, as subsubcategorias ficam escondidas
+                    subSubCategoryContainer.innerHTML = ""; // Limpa as subsubcategorias
+                    document.querySelectorAll('.subSubCategory').forEach(subSubCategory => subSubCategory.classList.remove('active'));
                 } 
                 else {
                     document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
