@@ -281,12 +281,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                     });
                 }
                 else{
-                    // Quando for subcategorias de Pós Graduação, iremos gerar a subcategorias de Pós Graduação todas de uma vez, pois os dados devem ser processados separadamente
                     const subData = getSubSubCategories(database[categoryName]);
-                    console.log("237: ", subData)
                     Object.keys(subData).forEach(fakeCategory => {
-                        // subCategory, subCategoryDatabase, CategoryName
-                        console.log("240: ", fakeCategory)
                         const subCategoryElement = generateSubCategory(fakeCategory, subData[fakeCategory], categoryName);
                         subCategoryDiv.appendChild(subCategoryElement);
                     });
