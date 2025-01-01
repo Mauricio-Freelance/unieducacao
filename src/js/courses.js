@@ -118,27 +118,51 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
     function generateSubCategory(subCategory, subCategoryDatabase, CategoryName){
-        const subCategoryContainer = document.createElement("div");
-        const subCategoryTitle = document.createElement("h3");
-        subCategoryTitle.textContent = capitalizeWords(subCategory);
-        subCategoryTitle.classList.add('subCategory');
-        subCategoryTitle.addEventListener("click", () => {
-            if (subCategoryTitle.classList.contains("active")) {
-                subCategoryTitle.classList.remove("active");
-                cleanCoursesActives();
-            } else {
-                document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
-                subCategoryTitle.classList.add('active');
-                cleanCoursesActives()
-                const coursesDiv = document.getElementById("courses");
-                Object.keys(subCategoryDatabase[subCategory]).forEach(course => {
-                    const courseElement = generateCard(subCategoryDatabase[subCategory][course], CategoryName,subCategory, '');
-                    coursesDiv.appendChild(courseElement);
-                });
 
-            }
-        })
+        const subCategoryContainer = document.createElement("div");
+
+        const subCategoryTitle = document.createElement("h3");
+
+        subCategoryTitle.classList.add('subCategory');
+
+        if (CategoryName !== "Pós Graduação"){
+
+
+            subCategoryTitle.textContent = capitalizeWords(subCategory);
+            
+
+            subCategoryTitle.addEventListener("click", () => {
+                if (subCategoryTitle.classList.contains("active")) {
+                    subCategoryTitle.classList.remove("active");
+                    cleanCoursesActives();
+                } 
+                else {
+                    document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
+
+                    subCategoryTitle.classList.add('active');
+
+                    cleanCoursesActives()
+
+                    const coursesDiv = document.getElementById("courses");
+
+                    Object.keys(subCategoryDatabase[subCategory]).forEach(course => {
+
+                        const courseElement = generateCard(subCategoryDatabase[subCategory][course], CategoryName,subCategory, '');
+
+                        coursesDiv.appendChild(courseElement);
+
+                    });
+                }
+            })
+        }
+        else{
+
+
+            subCategoryTitle.textContent = capitalizeWords("Ola Mundo");
+
+        }
         subCategoryContainer.appendChild(subCategoryTitle);
+
         return subCategoryContainer;
     };
 
