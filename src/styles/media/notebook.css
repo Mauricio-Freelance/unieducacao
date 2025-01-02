@@ -93,7 +93,7 @@
         transition: transform 0.3s ease;
     }
     .category{
-        font-size: 0.79rem;
+        font-size: 0.75rem;
         color: #000;
         cursor: pointer;
         position: relative;

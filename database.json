@@ -292,7 +292,7 @@
         },
         "IDIOMAS": {
             "0": {
-                "Curso": "Espanhol ",
+                "Curso": "Espanhol",
                 "Duração": "110 horas"
             },
             "1": {
@@ -314,7 +314,7 @@
                 "Duração": "22 horas "
             },
             "2": {
-                "Curso": "Canva ",
+                "Curso": "Canva",
                 "Duração": "30 horas"
             },
             "3": {
@@ -536,172 +536,172 @@
     "Pós Técnico":{
         "ADMINISTRAÇÃO": {
             "0": {
-                "Curso": "Especialização Técnica em Administração de Materiais ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Administração de Materiais",
+                "Duração": "60 a 180 dias"
             },
             "1": {
                 "Curso": "Especialização Técnica em Administração de Produção",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica em Educação Ambiental ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Educação Ambiental",
+                "Duração": "60 a 180 dias"
             }
         },
         "EDIFICAÇÕES": {
             "0": {
                 "Curso": "Especialização Técnica em licitações de Obras Publicas",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "1": {
-                "Curso": "Especialização Técnica em Programas de Qualidade na Construção Civil ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Programas de Qualidade na Construção Civil",
+                "Duração": "60 a 180 dias"
             }
         },
         "ELETROMECÂNICA": {
             "0": {
-                "Curso": "Especialização Técnica em Usinagem ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Usinagem",
+                "Duração": "60 a 180 dias"
             },
             "1": {
                 "Curso": "Especialização Técnica em Energia Solar Fotovoltaica",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica em Instalação Elétrica Predial de Baixa Tensão ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Instalação Elétrica Predial de Baixa Tensão",
+                "Duração": "60 a 180 dias"
             }
         },
         "ENFERMAGEM": {
             "0": {
                 "Curso": "Especialização Técnica em Centro de Material e Esterilização",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "1": {
                 "Curso": "Especialização Técnica em Oncologia",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica Saúde Publica",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Saúde Publica",
+                "Duração": "60 a 180 dias"
             },
             "3": {
-                "Curso": "Especialização Técnica Terapia Intensiva ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Terapia Intensiva",
+                "Duração": "60 a 180 dias"
             },
             "4": {
-                "Curso": "Especialização Técnica Urgência e Emergência / APH",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Urgência e Emergência / APH",
+                "Duração": "60 a 180 dias"
             },
             "5": {
                 "Curso": "Especialização Técnica em Saúde do Trabalhador",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             }
         },
         "ESTÉTICA": {
             "0": {
                 "Curso": "Especialização Técnica em cosmetologia",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             }
         },
         "FARMÁCIA": {
             "0": {
-                "Curso": "Especialização Técnica em controle da Qualidade em Farmácia ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Controle da Qualidade em Farmácia",
+                "Duração": "60 a 180 dias"
             },
             "1": {
                 "Curso": "Especialização Técnica em Farmácia Hospitalar",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica em Manipulação em Laboratório de Farmácia ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Manipulação em Laboratório de Farmácia",
+                "Duração": "60 a 180 dias"
             }
         },
         "LOGÍSTICA": {
             "0": {
                 "Curso": "Especialização Técnica em Logística Reversa",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "1": {
-                "Curso": "Especialização Técnica em Transporte e Distribuição ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Transporte e Distribuição",
+                "Duração": "60 a 180 dias"
             }
         },
         "RECURSOS HUMANOS": {
             "0": {
-                "Curso": "Especialização Técnica em Cálculos Trabalhistas ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Cálculos Trabalhistas",
+                "Duração": "60 a 180 dias"
             },
             "1": {
-                "Curso": "Especialização Técnica em Legislação Trabalhista ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Legislação Trabalhista",
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica em Recrutamento e Seleção ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Recrutamento e Seleção",
+                "Duração": "60 a 180 dias"
             },
             "3": {
-                "Curso": "Especialização Técnica em Cargos e Salários ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Cargos e Salários",
+                "Duração": "60 a 180 dias"
             },
             "4": {
-                "Curso": "Especialização Técnica em Treinamento e Desenvolvimento ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Treinamento e Desenvolvimento",
+                "Duração": "60 a 180 dias"
             },
             "5": {
-                "Curso": "Especialização Técnica em Benefícios ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Benefícios",
+                "Duração": "60 a 180 dias"
             }
         },
         "SECRETARIA ESCOLAR": {
             "0": {
-                "Curso": "Especialização Técnica em Legislação Educacional ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Legislação Educacional",
+                "Duração": "60 a 180 dias"
             },
             "1": {
                 "Curso": "Especialização Técnica em em Informação e Documentação Escolar",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "2": {
                 "Curso": "Especialização Técnica em Tradução e Interpretação em Libras",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "3": {
-                "Curso": "Especialização Técnica em Educação Inclusiva ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Educação Inclusiva",
+                "Duração": "60 a 180 dias"
             }
         },
         "SEGURANÇA DO TRABALHO": {
             "0": {
-                "Curso": "Especialização Técnica em Segurança do Trabalho na Construção Civil ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Segurança do Trabalho na Construção Civil",
+                "Duração": "60 a 180 dias"
             },
             "1": {
-                "Curso": "Especialização Técnica em  Higiene Ocupacional ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em  Higiene Ocupacional",
+                "Duração": "60 a 180 dias"
             },
             "2": {
                 "Curso": "Especialização Técnica em Ergonomia",
-                "Duração": "60 a 180 dias "
+                "Duração": "60 a 180 dias"
             },
             "3": {
-                "Curso": "Especialização Técnica em Prevenção e Combate a Incêndio ",
+                "Curso": "Especialização Técnica em Prevenção e Combate a Incêndio",
                 "Duração": "60 a 180 dias "
             }
         },
         "TECNOLOGIA DA INFORMAÇÃO": {
             "0": {
-                "Curso": "Especialização Técnica em Comunicação ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Comunicação",
+                "Duração": "60 a 180 dias"
             },
             "1": {
-                "Curso": "Especialização Técnica em Redação de Contratos ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Redação de Contratos",
+                "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "Especialização Técnica em Mídias Digitais ",
-                "Duração": "60 a 180 dias "
+                "Curso": "Especialização Técnica em Mídias Digitais",
+                "Duração": "60 a 180 dias"
             }
         }
 
@@ -711,31 +711,31 @@
     "Qualificação Por Competência":{
         "EAD":{
             "1": {
-                "Curso": "ADMINISTRAÇÃO",
+                "Curso": "Administração",
                 "Duração": "60 a 180 dias"
             },
             "2": {
-                "Curso": "ENFERMAGEM",
+                "Curso": "Enfermagem",
                 "Duração": "60 a 180 dias"
             },
             "3": {
-                "Curso": "FARMÁCIA",
+                "Curso": "Farmácia",
                 "Duração": "60 a 180 dias"
             },
             "4": {
-                "Curso": "MECÂNICA",
+                "Curso": "Mecânica",
                 "Duração": "60 a 180 dias"
             },
             "5": {
-                "Curso": "MEIO AMBIENTE",
+                "Curso": "Meio Ambiente",
                 "Duração": "60 a 180 dias"
             },
             "6": {
-                "Curso": "SECRETARIA ESCOLAR",
+                "Curso": "Secretaria Escolar",
                 "Duração": "60 a 180 dias"
             },
             "7": {
-                "Curso": "SEGURANÇA DO TRABALHO",
+                "Curso": "Segurança do Trabalho",
                 "Duração": "60 a 180 dias"
             }
         }
@@ -743,7 +743,7 @@
     "Graduação":{
         "TECNÓLOGOS": {
             "0": {
-                "Curso": "Analise e Desenvolvimento de Sistemas",
+                "Curso": "Análise e Desenvolvimento de Sistemas",
                 "Duração": "INDEFINIDO"
             },
             "1": {
@@ -771,7 +771,7 @@
                 "Duração": "INDEFINIDO"
             },
             "7": {
-                "Curso": "Logística ",
+                "Curso": "Logística",
                 "Duração": "INDEFINIDO"
             },
             "8": {
@@ -779,7 +779,7 @@
                 "Duração": "INDEFINIDO"
             },
             "9": {
-                "Curso": "Negócios Imobiliários ",
+                "Curso": "Negócios Imobiliários",
                 "Duração": "INDEFINIDO"
             },
             "10": {
@@ -791,7 +791,7 @@
                 "Duração": "INDEFINIDO"
             },
             "12": {
-                "Curso": "Segurança Publica",
+                "Curso": "Segurança Pública",
                 "Duração": "INDEFINIDO"
             },
             "13": {
@@ -799,7 +799,7 @@
                 "Duração": "INDEFINIDO"
             },
             "14": {
-                "Curso": "Tecnologia da Informação ",
+                "Curso": "Tecnologia da Informação",
                 "Duração": "INDEFINIDO"
             },
             "15": {
@@ -817,7 +817,7 @@
                 "Duração": "INDEFINIDO"
             },
             "1": {
-                "Curso": "Historia",
+                "Curso": "História",
                 "Duração": "INDEFINIDO"
             },
             "2": {
@@ -833,7 +833,7 @@
                 "Duração": "INDEFINIDO"
             }
         },
-        "SEGUNDA LICENCIATURA ": {
+        "SEGUNDA LICENCIATURA": {
             "0": {
                 "Curso": "Artes Visuais",
                 "Duração": "INDEFINIDO"
@@ -863,11 +863,11 @@
                 "Duração": "INDEFINIDO"
             },
             "7": {
-                "Curso": "Historia ",
+                "Curso": "História",
                 "Duração": "INDEFINIDO"
             },
             "8": {
-                "Curso": "Letras - Lingua Portuguesa e Libras",
+                "Curso": "Letras - Língua Portuguesa e Libras",
                 "Duração": "INDEFINIDO"
             },
             "9": {
@@ -875,7 +875,7 @@
                 "Duração": "INDEFINIDO"
             },
             "10": {
-                "Curso": "Letras - Português e Ingles",
+                "Curso": "Letras - Português e Inglês",
                 "Duração": "INDEFINIDO"
             },
             "11": {
@@ -883,11 +883,11 @@
                 "Duração": "INDEFINIDO"
             },
             "12": {
-                "Curso": "Musica ",
+                "Curso": "Música",
                 "Duração": "INDEFINIDO"
             },
             "13": {
-                "Curso": "Pedagogia com Habilitação em Magistério e Gestão Escolar ",
+                "Curso": "Pedagogia com Habilitação em Magistério e Gestão Escolar",
                 "Duração": "INDEFINIDO"
             },
             "14": {
@@ -925,11 +925,11 @@
                 "Duração": "INDEFINIDO"
             },
             "6": {
-                "Curso": "Historia ",
+                "Curso": "História",
                 "Duração": "INDEFINIDO"
             },
             "7": {
-                "Curso": "Letras - Lingua Portuguesa e Libras",
+                "Curso": "Letras - Língua Portuguesa e Libras",
                 "Duração": "INDEFINIDO"
             },
             "8": {
@@ -937,7 +937,7 @@
                 "Duração": "INDEFINIDO"
             },
             "9": {
-                "Curso": "Letras - Português e Ingles",
+                "Curso": "Letras - Português e Inglês",
                 "Duração": "INDEFINIDO"
             },
             "10": {
@@ -945,7 +945,7 @@
                 "Duração": "INDEFINIDO"
             },
             "11": {
-                "Curso": "Musica ",
+                "Curso": "Música",
                 "Duração": "INDEFINIDO"
             },
             "12": {
@@ -959,7 +959,7 @@
         },
         "BACHARELADOS": {
             "0": {
-                "Curso": "Administração ",
+                "Curso": "Administração",
                 "Duração": "INDEFINIDO"
             },
             "1": {
@@ -979,7 +979,7 @@
                 "Duração": "INDEFINIDO"
             },
             "5": {
-                "Curso": "Engenharia de Produção ",
+                "Curso": "Engenharia de Produção",
                 "Duração": "INDEFINIDO"
             },
             "6": {
@@ -991,7 +991,7 @@
                 "Duração": "INDEFINIDO"
             },
             "8": {
-                "Curso": "Teologia ",
+                "Curso": "Teologia",
                 "Duração": "INDEFINIDO"
             }
         }
@@ -3157,15 +3157,15 @@
     "Mestrado":{
         "EAD":{
             "0":{ 
-                "Curso": "Ciências da Administração ",
+                "Curso": "Ciências da Administração",
                 "Duração": "INDEFINIDO"
             },
             "1":{ 
-                "Curso": "Ciências da Educação ",
+                "Curso": "Ciências da Educação",
                 "Duração": "INDEFINIDO"
             },
             "2":{ 
-                "Curso": "Ciências da Saúde ",
+                "Curso": "Ciências da Saúde",
                 "Duração": "INDEFINIDO"
             },
             "3":{ 
