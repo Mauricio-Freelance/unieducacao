@@ -510,7 +510,7 @@
     
     .course-button {
         display: flex;
-        margin-top: 4px;
+        margin-top: 1px;
         padding: 5px 10px;
         background-color: #BEF987;
         color: #000000;
@@ -524,19 +524,26 @@
     }
     
     .course-image{
-        width: 80px;
-        margin-top: -18px;
+        width: 75px;
+        margin-top: -8px;
     }
     
     .course-title {
         width: 80%;
-        font-size: 8.25px;
+        font-size: 8px;
         margin-top: -5px;
     }
     
     .course-duration {
-        font-size: 8px;
+        font-size: 7.5px;
         color: #000000;
         margin-top: 5px;
+    }
+    .subSubCategory{
+        font-size: 0.6rem;
+        margin-left: 0px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
     }
 }

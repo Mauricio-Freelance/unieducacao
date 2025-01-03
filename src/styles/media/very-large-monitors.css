@@ -4,6 +4,7 @@
         align-items: center;
         justify-content: center;
         padding: 20px 40px;
+
     }
 
     footer p {
@@ -391,7 +392,7 @@
     }
     
     .subCategory{
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         margin-left: 30px;
         color: #000;
         cursor: pointer;
@@ -465,6 +466,13 @@
         color: #000000;
         margin-top: 5px;
     }
+    .subSubCategory{
+        font-size: 1.4rem;
+        margin-left: 50px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+    }
 
     /* Contact */
     .contato,
@@ -507,3 +515,177 @@
     }
 }
 
+@media (min-width: 1600px) and (max-width: 1800px) {
+    .categories{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 10px;
+        padding: 10px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .category{
+        font-size: 1.2rem;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+        bottom: 30%;
+        left: 0;
+    }
+    
+    .category::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        width: 0;
+        height: 2px;
+        background-color: #000000;
+        transition: width 0.3s ease, left 0.3s ease;
+    }
+    
+    .category:hover::after{
+        width: 100%;
+        left: 0;
+    }
+    
+    .category.active{
+        color: green;
+    }
+    
+    .courses-container{
+        display: flex;
+        flex-direction: row;
+        margin: 0 10px;
+        padding: 10px 0;
+        /* background-color: blue; */
+    }
+    
+    .subCategories{
+        display: flex;;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 10px;
+        padding: 10px 0;
+        width: 45%;
+    }
+    
+    .subCategory{
+        font-size: 1.4rem;
+        margin-left: 30px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+        /* background-color: red; */
+    }
+    
+    .subCategory.active{
+        color: #8ebb65;
+    }
+    
+    .courses{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        column-gap: 0px;
+        align-items: start;
+        height: 100%;
+    }
+    
+    .course-card {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        background-color: #ECEDEF;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        width: 85%;
+        height: 400px;
+        /* caso vc queira que dê certo, use height: auto; */
+    
+    }
+    
+    .course-card:hover {
+        background-color: rgb(241, 240, 225);
+    }
+    
+    .course-button {
+        display: flex;
+        margin-top: 8px;
+        padding: 5px 10px;
+        background-color: #BEF987;
+        color: #000000;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        width: 120px;
+        border-radius: 25px;
+        font-size: 20px;
+    }
+    
+    .course-image{
+        margin-top: -10px;
+        width: 160px;
+    }
+    
+    .course-title {
+        width: 80%;
+        font-size: 18.5px;
+        margin-top: -5px;
+    }
+    
+    .course-duration {
+        font-size: 20px;
+        color: #000000;
+        margin-top: 5px;
+    }
+    .subSubCategory{
+        font-size: 1.2rem;
+        margin-left: 50px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+    }
+}
+
+@media (min-width: 1801px) and (max-width: 2000px) {
+    .category{
+        font-size: 1.3rem;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+        bottom: 30%;
+        left: 0;
+    }
+    
+    .subCategories{
+        display: flex;;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 10px;
+        padding: 10px 0;
+        width: 45%;
+    }
+    
+    .subCategory{
+        font-size: 1.5rem;
+        margin-left: 30px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+        /* background-color: red; */
+    }
+    .subSubCategory{
+        font-size: 1.4rem;
+        margin-left: 50px;
+        color: #000;
+        cursor: pointer;
+        position: relative;
+    }
+}
