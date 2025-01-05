@@ -268,12 +268,12 @@
     .cards-free-education {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 100px;
         font-size: 2rem;
     }
 
     .card-free-education {
-        width: calc((100% - 90px) / 3);
+        width: calc((100% - 300px) / 3);
         height: 760px;;
     }
 
