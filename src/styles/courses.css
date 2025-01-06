@@ -76,6 +76,10 @@
     position: relative;
 }
 
+.subSubCategory.active{
+    color: #8ebb65;
+}
+
 .courses{
     display: grid;
     width: 100%;

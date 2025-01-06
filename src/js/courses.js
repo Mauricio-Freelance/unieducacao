@@ -193,6 +193,8 @@ document.addEventListener('DOMContentLoaded', async () => {
                 } 
                 else {
                     document.querySelectorAll('.subCategory').forEach(subCategory => subCategory.classList.remove('active'));
+                    document.querySelectorAll('.subSubCategory').forEach(subSubCategory => subSubCategory.classList.remove('active'));
+                    document.querySelectorAll('.subSubCategories').forEach(subSubCategory => subSubCategory.innerHTML = "");
                     subCategoryTitle.classList.add('active');
 
                     cleanCoursesActives()
