@@ -290,14 +290,14 @@
     
     .card img {
         width: 150px;
-        height: 200px;
+        height: 210px;
         object-fit: cover;
         border-radius: 8px;
     }
     
     .card h3 {
-        font-size: 0.8em;
-        margin-left: 5px;
+        font-size: 0.78em;
+        margin-left: 2px;
         color: #333;
     }
     .card button {
