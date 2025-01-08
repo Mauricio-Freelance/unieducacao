@@ -997,7 +997,35 @@
         }
     },
     "Pós Graduação": {
-        "DIREITO  - Direito Público e Constitucional": {
+        "COMUNICAÇÃO - Comunicação e Informação": {
+            "0": {
+                "Curso": "Comunicação e Oratória",
+                "Duração": "3 a 6 Meses"
+            },
+            "1": {
+                "Curso": "Comunicação Empresarial e Institucional com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Jornalismo",
+                "Duração": "3 a 6 Meses"
+            }
+        },
+        "COMUNICAÇÃO - Gestão e Desenvolvimento Humano": {
+            "0": {
+                "Curso": "Comportamento Organizacional e Gestão de Pessoas com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "1": {
+                "Curso": "Desenvolvimento Humano em Gestão de Projetos com Habilitação em Docência no Ensino Superior",
+                "Duração": "3 a 10 Meses "
+            },
+            "2": {
+                "Curso": "Transtornos Globais do Desenvolvimento e Comunicação Alternativa",
+                "Duração": "3 a 10 Meses "
+            }
+        },
+        "DIREITO - Direito Público e Constitucional": {
             "0": {
                 "Curso": "Direito Público: Constitucional, Administrativo e Tributário",
                 "Duração": "3 a 6 Meses"
@@ -1051,7 +1079,7 @@
                 "Duração": "3 a 10 Meses "
             }
         },
-        "DIREITO  - Direito Privado e Relações Familiares e Empresariais": {
+        "DIREITO - Direito Privado e Relações Familiares e Empresariais": {
             "0": {
                 "Curso": "Direito Condominial",
                 "Duração": "3 a 10 Meses "
@@ -1085,7 +1113,7 @@
                 "Duração": "3 a 10 Meses "
             }
         },
-        "DIREITO  - Processos e Direito Penal": {
+        "DIREITO - Processos e Direito Penal": {
             "0": {
                 "Curso": "Criminologia",
                 "Duração": "3 a 6 Meses"
@@ -1115,7 +1143,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "DIREITO  - Direitos Específicos e Interdisciplinaridades": {
+        "DIREITO - Direitos Específicos e Interdisciplinaridades": {
             "0": {
                 "Curso": "Direito de Trânsito",
                 "Duração": "3 a 6 Meses"
@@ -1157,7 +1185,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "EDUCAÇÃO INCLUSIVA  - Educação Especial e Inclusiva": {
+        "EDUCAÇÃO INCLUSIVA - Educação Especial e Inclusiva": {
             "0": {
                 "Curso": "Atendimento Educacional Especializado com Ênfase em Autismo",
                 "Duração": "3 a 6 Meses"
@@ -1215,7 +1243,7 @@
                 "Duração": "3 a 10 Meses "
             }
         },
-        "EDUCAÇÃO INCLUSIVA  - Psicologia, Neurociências e Intervenções em Autismo": {
+        "EDUCAÇÃO INCLUSIVA - Psicologia, Neurociências e Intervenções em Autismo": {
             "0": {
                 "Curso": "A Psicanálise com Ênfase em Autismo",
                 "Duração": "3 a 10 Meses "
@@ -1269,7 +1297,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "EDUCAÇÃO INCLUSIVA  - Educação Básica e Infantojuvenil": {
+        "EDUCAÇÃO INCLUSIVA - Educação Básica e Infantojuvenil": {
             "0": {
                 "Curso": "Alfabetização, Letramento e Psicopedagogia",
                 "Duração": "3 a 6 Meses"
@@ -1331,7 +1359,7 @@
                 "Duração": "3 a 10 Meses "
             }
         },
-        "EDUCAÇÃO INCLUSIVA  - Ensino Fundamental, Médio e Formação Geral": {
+        "EDUCAÇÃO INCLUSIVA - Ensino Fundamental, Médio e Formação Geral": {
             "0": {
                 "Curso": "Andragogia: Formação de Jovens e Adultos",
                 "Duração": "3 a 6 Meses"
@@ -1433,7 +1461,7 @@
                 "Duração": "3 a 10 Meses "
             }
         },
-        "EDUCAÇÃO INCLUSIVA  - Ensino Superior, Especializações e Áreas Transversais": {
+        "EDUCAÇÃO INCLUSIVA - Ensino Superior, Especializações e Áreas Transversais": {
             "0": {
                 "Curso": "Arte-Educação",
                 "Duração": "3 a 6 Meses"
@@ -2929,7 +2957,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "TICS - Tecnologia da Informação e Comunicação - Tecnologia da Informação e Desenvolvimento de Sistema ": {
+        "TICS - Tecnologia da Informação e Comunicação - Tecnologia da Informação e Desenvolvimento de Sistema": {
             "0": {
                 "Curso": "Administração de Banco de Dados",
                 "Duração": "3 a 6 Meses"

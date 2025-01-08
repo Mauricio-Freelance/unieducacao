@@ -8,12 +8,19 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     function getImage(category, subCategory, subsubcategory = '', courseName) {
         const basePath = '../../assets/grade-curso';
+
+        let targetPath = '';
     
         if (subsubcategory) {
-            return `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${capitalizeWords(subsubcategory)}/${courseName}.png`;
+            targetPath = `${basePath}/${category}/${subCategory}/${subsubcategory}/${courseName}.png`;
+            console.log("Linha 16: Entrei na SubSubCategory")
         } else {
-            return `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${courseName}.png`;
+            targetPath = `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${courseName}.png`;
+            console.log("Linha 19: Entrei na SubCategory")
+            
         }
+        console.log("Target Path Retornado na linha 23: ", targetPath);
+        return targetPath
         
     }
 
@@ -222,6 +229,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 const coursesDiv = document.getElementById("courses"); // Pega a div que guarda os cursos
         
                                 Object.keys(subCategoryDatabase[subSubCategory]).forEach(course => { // Para cada curso dentro da subsubcategoria
+                                    console.log("Linha 225: ->", subCategoryDatabase[subSubCategory][course]);
+                                    console.log("Linha 226: ->", CategoryName);
+                                    console.log("Linha 227: ->", subCategory);
+                                    console.log("Linha 228: ->", subSubCategory);
                                     const courseElement = generateCard(subCategoryDatabase[subSubCategory][course], CategoryName, subCategory, subSubCategory); // Gera um card com as informações do curso
                                     coursesDiv.appendChild(courseElement); // Adiciona o card à div que guarda os cursos
                                 });
