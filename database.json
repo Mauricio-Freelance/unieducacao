@@ -1004,7 +1004,7 @@
             },
             "1": {
                 "Curso": "Comunicação Empresarial e Institucional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "2": {
                 "Curso": "Jornalismo",
@@ -1014,15 +1014,15 @@
         "COMUNICAÇÃO - Gestão e Desenvolvimento Humano": {
             "0": {
                 "Curso": "Comportamento Organizacional e Gestão de Pessoas com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "1": {
                 "Curso": "Desenvolvimento Humano em Gestão de Projetos com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "2": {
                 "Curso": "Transtornos Globais do Desenvolvimento e Comunicação Alternativa",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             }
         },
         "DIREITO - Direito Público e Constitucional": {
@@ -1036,15 +1036,15 @@
             },
             "2": {
                 "Curso": "Direito Administrativo com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "3": {
-                "Curso": "Direito Ambiental ",
+                "Curso": "Direito Ambiental",
                 "Duração": "3 a 6 Meses"
             },
             "4": {
                 "Curso": "Direito Ambiental com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "5": {
                 "Curso": "Direito Constitucional",
@@ -1052,7 +1052,7 @@
             },
             "6": {
                 "Curso": "Direito Constitucional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "7": {
                 "Curso": "Direito Eleitoral",
@@ -1060,15 +1060,15 @@
             },
             "8": {
                 "Curso": "Direito Eleitoral com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "9": {
-                "Curso": "Direito Previdenciário ",
+                "Curso": "Direito Previdenciário",
                 "Duração": "3 a 6 Meses"
             },
             "10": {
                 "Curso": "Direito Previdenciário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "11": {
                 "Curso": "Direito Tributário",
@@ -1076,17 +1076,17 @@
             },
             "12": {
                 "Curso": "Direito Tributário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             }
         },
         "DIREITO - Direito Privado e Relações Familiares e Empresariais": {
             "0": {
                 "Curso": "Direito Condominial",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "1": {
                 "Curso": "Direito Condominial com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "2": {
                 "Curso": "Direito da Família",
@@ -1094,7 +1094,7 @@
             },
             "3": {
                 "Curso": "Direito de Família com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "4": {
                 "Curso": "Direito Empresarial",
@@ -1102,7 +1102,7 @@
             },
             "5": {
                 "Curso": "Direito Empresarial com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "6": {
                 "Curso": "Direito Imobiliário",
@@ -1110,7 +1110,7 @@
             },
             "7": {
                 "Curso": "Direito Imobiliário com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             }
         },
         "DIREITO - Processos e Direito Penal": {
@@ -1120,23 +1120,23 @@
             },
             "1": {
                 "Curso": "Direito Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "2": {
                 "Curso": "Direito Penal e Processo Penal",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "3": {
                 "Curso": "Direito Penal e Processo Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "4": {
                 "Curso": "Direito Processual Penal",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "5": {
                 "Curso": "Direito Processual Penal com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "6": {
                 "Curso": "Direitos Humanos e Perícia Criminal",
@@ -1150,23 +1150,23 @@
             },
             "1": {
                 "Curso": "Direito do Consumidor",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "2": {
                 "Curso": "Direito do Consumidor com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "3": {
                 "Curso": "Direito do Trabalho",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "4": {
                 "Curso": "Direito do Trabalho com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "5": {
                 "Curso": "Direito Educacional com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "6": {
                 "Curso": "Direito Processual Civil",
@@ -1174,7 +1174,7 @@
             },
             "7": {
                 "Curso": "Direito Processual Civil com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "8": {
                 "Curso": "Especialização em Direito do Trabalho e Processual Trabalhista",
@@ -1580,7 +1580,7 @@
         "ENGENHARIA - Engenharia Industrial e de Infraestrutura": {
             "0": {
                 "Curso": "Engenharia da Qualidade com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "1": {
                 "Curso": "Engenharia de Manutenção",
@@ -1588,11 +1588,11 @@
             },
             "2": {
                 "Curso": "Engenharia de Obras",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "3": {
                 "Curso": "Engenharia de Obras com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "4": {
                 "Curso": "Engenharia de Produção",
@@ -1600,11 +1600,11 @@
             },
             "5": {
                 "Curso": "Engenharia de Produção com Ênfase em Gestão",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "6": {
                 "Curso": "Engenharia de Produção com Ênfase em Gestão com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "7": {
                 "Curso": "Engenharia de Qualidade",
@@ -1612,11 +1612,11 @@
             },
             "8": {
                 "Curso": "Engenharia de Segurança Contra Incêndio e Pânico",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "9": {
                 "Curso": "Engenharia de Segurança Contra Incêndio e Pânico com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "10": {
                 "Curso": "Engenharia de Segurança do Trabalho",
@@ -1624,19 +1624,19 @@
             },
             "11": {
                 "Curso": "Engenharia Elétrica",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "12": {
                 "Curso": "Engenharia Elétrica com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "13": {
                 "Curso": "Engenharia Elétrica: Sistemas de Potência",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "14": {
                 "Curso": "Engenharia Elétrica: Sistemas de Potência com Habilitação em Docência no Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "15": {
                 "Curso": "Especialização em Engenharia Logística",
@@ -1654,7 +1654,7 @@
             },
             "1": {
                 "Curso": "Estética Avançada",
-                "Duração": "4 a 6 Meses "
+                "Duração": "4 a 6 Meses"
             },
             "2": {
                 "Curso": "Estética Corporal e Facial",
@@ -1666,7 +1666,7 @@
             },
             "4": {
                 "Curso": "Nutrição e Estética Funcional",
-                "Duração": "4 a 6 Meses "
+                "Duração": "4 a 6 Meses"
             },
             "5": {
                 "Curso": "Nutrição Esportiva",
@@ -1674,23 +1674,23 @@
             },
             "6": {
                 "Curso": "Nutrição Esportiva com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "7": {
                 "Curso": "Nutrição Esportiva e Estética com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "8": {
                 "Curso": "Nutrição Estética",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "9": {
                 "Curso": "Nutrição Estética com Habilitação em Docência do Ensino Superior",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             },
             "10": {
                 "Curso": "Obesidade e Saúde",
-                "Duração": "3 a 10 Meses "
+                "Duração": "3 a 10 Meses"
             }
         },
         "ESTÉTICA E NUTRIÇÃO - Saúde Clínica e Coletiva": {
@@ -1728,7 +1728,7 @@
             },
             "8": {
                 "Curso": "Microbiologia Clínica",
-                "Duração": "4 a 6 Meses "
+                "Duração": "4 a 6 Meses"
             },
             "9": {
                 "Curso": "Microbiologia: Clínica, Ambiental e Alimentos",
@@ -1851,7 +1851,7 @@
                 "Duração": "3 a 6 Meses"
             },
             "3": {
-                "Curso": "Docência No Ensino Superior Com Enfase Nas Tecnologias Digitais",
+                "Curso": "Docência No Ensino Superior Com Ênfase Nas Tecnologias Digitais",
                 "Duração": "4 a 6 Meses"
             },
             "4": {
@@ -2957,7 +2957,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "TICS - Tecnologia da Informação e Comunicação - Tecnologia da Informação e Desenvolvimento de Sistema": {
+        "TICS | Tecnologia da Informação e Comunicação - Tecnologia da Informação e Desenvolvimento de Sistema": {
             "0": {
                 "Curso": "Administração de Banco de Dados",
                 "Duração": "3 a 6 Meses"
@@ -3055,7 +3055,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "TICS - Tecnologia da Informação e Comunicação - Gestão Estratégica em Tecnologia": {
+        "TICS | Tecnologia da Informação e Comunicação - Gestão Estratégica em Tecnologia": {
             "0": {
                 "Curso": "Business com Ênfase em TI",
                 "Duração": "4 a 6 Meses"
@@ -3125,7 +3125,7 @@
                 "Duração": "4 a 12 Meses"
             }
         },
-        "TICS - Tecnologia da Informação e Comunicação - Segurança Cibernética e Defesa Digital": {
+        "TICS | Tecnologia da Informação e Comunicação - Segurança Cibernética e Defesa Digital": {
             "0": {
                 "Curso": "Defesa Cibernética",
                 "Duração": "3 a 6 Meses"
@@ -3159,7 +3159,7 @@
                 "Duração": "3 a 6 Meses"
             }
         },
-        "TICS - Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica": {
+        "TICS | Tecnologia da Informação e Comunicação - Educação e Inovação Tecnológica": {
             "0": {
                 "Curso": "Docência no Ensino Digital: Ensino 4.0",
                 "Duração": "4 a 12 Meses"
