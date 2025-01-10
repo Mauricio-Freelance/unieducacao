@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        /* Estilos base */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #123D67;
+            color: #FFFFFF;
+        }
+        section {
+            padding: 50px;
+        }
+        .section-gradient {
+            background: linear-gradient(135deg, #123D67, #110228);
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-family: 'Lato', sans-serif;
+        }
+        .countdown div {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .button {
+            background-color: #accc44;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            padding: 15px 32px;
+            border: none;
+            border-radius: 32px;
+            cursor: pointer;
+            font-weight: 800;
+        }
+        .button:hover {
+            background-color: #94b03b;
+        }
+    </style>
+</head>
+<body>
+    <!-- Seção 1 -->
+    <section class="section-gradient">
+        <h1 style="text-align: center; font-weight: 900;">Lançamento Oficial</h1>
+        <div class="countdown">
+            <div>
+                <div id="days">0</div>
+                <span>Dias</span>
+            </div>
+            <div>
+                <div id="hours">0</div>
+                <span>Horas</span>
+            </div>
+            <div>
+                <div id="minutes">0</div>
+                <span>Minutos</span>
+            </div>
+            <div>
+                <div id="seconds">0</div>
+                <span>Segundos</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção 2 -->
+    <section style="background-color: #2C4C6C; text-align: center;">
+        <img src="./assets/logo.png" alt="Logo" style="max-width: 200px;">
+        <p>Prepare-se: dia 10 de janeiro vai mudar tudo!</p>
+        <h2>Educação e mercado nunca mais serão os mesmos!</h2>
+        <p>A <strong>Unieducação</strong> traz um modelo inovador de ensino e desenvolvimento humano.</p>
+        <button class="button">Participe de forma gratuita!</button>
+    </section>
+
+    <!-- Seção 3 -->
+    <section style="text-align: center;">
+        <h2>Por que você não pode perder?</h2>
+        <ul style="list-style: none; padding: 0; display: inline-block; text-align: left;">
+            <li>Aprender com os melhores: estratégias práticas e experiências acumuladas.</li>
+            <li>Impulsionar sua carreira: conhecimento de metodologias aplicáveis imediatamente.</li>
+        </ul>
+        <br>
+        <button class="button">Participe de forma gratuita!</button>
+    </section>
+
+    <script>
+        function redirectToWhatsApp() {
+            window.location.href = "https://chat.whatsapp.com/FC0DyJw6bTu0BMVZLvDrEn";
+        }
+
+        document.querySelectorAll('.button').forEach(button => {
+            button.addEventListener('click', redirectToWhatsApp);
+        });
+
+        // Contador regressivo
+        const countdownDate = new Date("2025-01-10T20:00:00").getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerText = days;
+            document.getElementById("hours").innerText = hours;
+            document.getElementById("minutes").innerText = minutes;
+            document.getElementById("seconds").innerText = seconds;
+
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.querySelector(".countdown").innerText = "Contagem regressiva finalizada!";
+            }
+        }
+
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
