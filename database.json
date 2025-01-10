@@ -2316,66 +2316,66 @@
             },
             "5": {
                 "Curso": "MBA em Gestão Administrativa e Marketing",
-                "Duração": "INDEFINIDO"
-            },
-            "6": {
-                "Curso": "MBA em Gestão Administrativa e Marketing",
                 "Duração": "3 a 10 Meses"
             },
-            "7": {
+            "6": {
                 "Curso": "Mba em Gestão de Departamento Pessoal e Relações Trabalhistas",
                 "Duração": "3 a 6 Meses"
             },
-            "8": {
+            "7": {
                 "Curso": "MBA em Gestão de Eventos",
                 "Duração": "3 a 6 Meses"
             },
-            "9": {
+            "8": {
                 "Curso": "MBA em Gestão de Marketing Digital",
                 "Duração": "3 a 6 Meses"
             },
-            "10": {
+            "9": {
                 "Curso": "MBA em Gestão de Negócios com Ênfase em Finanças",
                 "Duração": "3 a 10 Meses"
             },
-            "11": {
+            "10": {
                 "Curso": "MBA em Gestão de Negócios Imobiliários",
                 "Duração": "3 a 6 Meses"
             },
-            "12": {
-                "Curso": "MBA em GESTÃO DE PESSOAS E Liderança",
+            "11": {
+                "Curso": "MBA em Gestão de Pessoas e Liderança",
                 "Duração": "3 a 6 Meses"
             },
-            "13": {
+            "12": {
                 "Curso": "MBA em Gestão de Processos",
                 "Duração": "3 a 10 Meses"
             },
-            "14": {
+            "13": {
                 "Curso": "MBA em Gestão de Projetos",
                 "Duração": "3 a 10 Meses"
             },
-            "15": {
+            "14": {
                 "Curso": "MBA em Gestão e Liderança de Equipes",
                 "Duração": "3 a 10 Meses"
             },
-            "16": {
+            "15": {
                 "Curso": "MBA em Gestão em Administração e Marketing",
                 "Duração": "3 a 10 Meses"
             },
-            "17": {
+            "16": {
                 "Curso": "MBA em Gestão em Administração Financeira e Orçamentária",
                 "Duração": "3 a 10 Meses"
             },
-            "18": {
+            "17": {
                 "Curso": "Mba em Gestão Estratégica de Cooperativas",
                 "Duração": "3 a 6 Meses"
             },
-            "19": {
+            "18": {
                 "Curso": "MBA em Gestão Estratégica de Pessoas e Psicologia Organizacional",
                 "Duração": "3 a 10 Meses"
             },
-            "20": {
+            "19": {
                 "Curso": "MBA em Gestão Estratégica de Pessoas: Desenvolvimento Humano de Gestores",
+                "Duração": "3 a 10 Meses"
+            },
+            "20": {
+                "Curso": "MBA em Gestão Profissional de Condomínios",
                 "Duração": "3 a 10 Meses"
             },
             "21": {
@@ -2383,38 +2383,34 @@
                 "Duração": "3 a 10 Meses"
             },
             "22": {
-                "Curso": "MBA em Gestão Profissional de Condomínios",
-                "Duração": "3 a 10 Meses"
-            },
-            "23": {
                 "Curso": "MBA em Inteligência de Mercado",
                 "Duração": "3 a 10 Meses"
             },
-            "24": {
+            "23": {
                 "Curso": "MBA em Liderança nas Organizações",
                 "Duração": "3 a 10 Meses"
             },
-            "25": {
+            "24": {
                 "Curso": "MBA em Marketing de Varejo, Gestão, Estratégias e Negócios",
                 "Duração": "3 a 6 Meses"
             },
-            "26": {
+            "25": {
                 "Curso": "MBA em Marketing Digital e Comunicação Online",
                 "Duração": "3 a 6 Meses"
             },
-            "27": {
+            "26": {
                 "Curso": "MBA em Marketing Digital e Negócios Interativos",
                 "Duração": "3 a 10 Meses"
             },
-            "28": {
+            "27": {
                 "Curso": "MBA em Negociação e Vendas",
                 "Duração": "3 a 10 Meses"
             },
-            "29": {
+            "28": {
                 "Curso": "MBA em Relacionamento Interpessoal",
                 "Duração": "3 a 10 Meses"
             },
-            "30": {
+            "2  9": {
                 "Curso": "MBA Executivo em Gestão Estratégica e Econômica de Negócios",
                 "Duração": "3 a 10 Meses"
             }
@@ -2486,7 +2482,7 @@
             },
             "16": {
                 "Curso": "MBA em Gestão Estratégica em Compras",
-                "Duração": "3 a 6 Meses"
+                "Duração": "3 a 6 Meses"    
             },
             "17": {
                 "Curso": "MBA em Gestão Estratégica, Inovação e Conhecimento",
@@ -2497,14 +2493,10 @@
                 "Duração": "3 a 10 Meses"
             },
             "19": {
-                "Curso": "MBA em Gestão Operacional e Logística",
-                "Duração": "3 a 10 Meses"
-            },
-            "20": {
                 "Curso": "MBA em Negócios Internacionais e Comércio Exterior",
                 "Duração": "3 a 6 Meses"
             },
-            "21": {
+            "20": {
                 "Curso": "MBA em Planejamento Estratégico de Marketing no Varejo",
                 "Duração": "3 a 10 Meses"
             }
