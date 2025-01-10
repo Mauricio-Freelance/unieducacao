@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     
         if (subsubcategory) {
             targetPath = `${basePath}/${category}/${subCategory}/${subsubcategory}/${courseName}.png`;
-            console.log("Linha 16: Entrei na SubSubCategory")
         } else {
             targetPath = `${basePath}/${capitalizeWords(category)}/${capitalizeWords(subCategory)}/${courseName}.png`;
-            console.log("Linha 19: Entrei na SubCategory")
             
         }
-        console.log("Target Path Retornado na linha 23: ", targetPath);
+
         return targetPath
         
     }
@@ -31,7 +29,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 throw new Error(`Erro ao carregar o JSON: ${response.status}`);
             }
             const jsonData = await response.json();
-            console.log('JSON carregado:', jsonData); // Verifique os dados aqui
             return jsonData;
         } catch (error) {
             console.error('Erro ao carregar o JSON:', error);
@@ -101,7 +98,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const img = document.createElement('img');
         img.src = getImage(categoryName, subCategoryName, subSubCategoryName, course["Curso"]);
-        console.log("Linha 98: ",img.src);
         img.alt = course["Curso"];
         img.className = 'course-image';
     
@@ -229,10 +225,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 const coursesDiv = document.getElementById("courses"); // Pega a div que guarda os cursos
         
                                 Object.keys(subCategoryDatabase[subSubCategory]).forEach(course => { // Para cada curso dentro da subsubcategoria
-                                    console.log("Linha 225: ->", subCategoryDatabase[subSubCategory][course]);
-                                    console.log("Linha 226: ->", CategoryName);
-                                    console.log("Linha 227: ->", subCategory);
-                                    console.log("Linha 228: ->", subSubCategory);
                                     const courseElement = generateCard(subCategoryDatabase[subSubCategory][course], CategoryName, subCategory, subSubCategory); // Gera um card com as informações do curso
                                     coursesDiv.appendChild(courseElement); // Adiciona o card à div que guarda os cursos
                                 });
@@ -326,9 +318,3 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     
 });
-
-
-        // Adiciona a classe 'active' apenas à categoria clicada
-        // categoryTitle.classList.add('active');
-            //console.log(categoryTitle.nextElementSibling) //Pega o elemento da direita do clicado, caso não tenha, retorna null
-            //console.log(categoryTitle.innerText) // Acessa o nome do elemento clicado
