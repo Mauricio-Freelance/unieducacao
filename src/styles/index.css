@@ -179,7 +179,7 @@
 
 .anuncie_aqui {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     flex-wrap: wrap;
     padding: 20px;
     background-color: #f9f9f9;
